@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>BananaMud!</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+
+    
+        <script src="Vendor/jquery-1.11.3.min.js"></script>
+        <script src="Vendor/phaser.min.js"></script>
+        <!--<script src="Vendor/phaser.js"></script>-->
+        <!--<script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>-->
+        <script src='socket.io/socket.io.js'></script>
+        
+        <script>
+          var socket = io.connect('http://bananastorm.com:3000');
+          socket.on('news', function (data) {
+            console.log(data);
+            socket.emit('my other event', { my: 'data' });
+          });
+        </script>
+        <script src='RemotePlayer.js'></script>
+        <script src='LocalItem.js'></script>        
+        <script src="BananaMud.js"></script>
+
+
+
+        <script>
+            
+        document.addEventListener('keydown', checkInput, false);
+
+        function checkInput(evt) {
+            var charCode = evt.keyCode;
+            //alert(charCode);
+            if (charCode != 0) {
+                if (charCode == 8) {
+                    evt.preventDefault();
+                    processBackspace();
+                } else if (charCode == 9) {
+                    evt.preventDefault();
+                    processTab();
+                }
+            }
+        }
+            
+        </script> 
+        
+    </head>
+    <body id="body">
+    <script src="popLogin.js"></script>    
+    <script src="popNewCharacter.js"></script>         
+    <script src="popCharacterSheet.js"></script>         
+    <script src="popChatter.js"></script>  
+    <script src="popInventory.js"></script>  
+    <script src="popShop.js"></script>           
+    <script src="popCombat.js"></script>                    
+    <script src='processChat.js'></script>
+    <script src='popImage.js'></script>        
+    <script src='popProperty.js'></script>
+    <script src='popMessages.js'></script>
+
+    
+        
+    </body>
+</html>

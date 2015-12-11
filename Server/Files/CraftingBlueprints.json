@@ -1,0 +1,177 @@
+{
+  "Blueprints": [
+    {
+      "components": {
+          "componentHilt": {
+              "name": "Hilt",
+              "description": "A weapon hilt. Used to create slashing and poking weapons.",
+              "type": "componentHilt",
+              "invImage": "?",
+              "baseValue": 3,
+              "materials": {
+                  "required": {
+                      "metal bar": 1,
+                      "light leather": 1
+                  },
+                  "optional": {
+                      "gem": 1
+                  }                  
+              },
+              "stats": {
+                "attack": 3,
+                "speed": 10,
+                "meleepower": 2
+              }
+          },
+          "componentDragonHilt": {
+              "name": "Dragon Hilt",
+              "description": "A weapon hilt with a detailed dragon mouth as the guard. Used to create slashing and poking weapons.",
+              "type": "componentHilt",
+              "invImage": "?",
+              "baseValue": 4,
+              "materials": {
+                  "required": {
+                      "metal bar": 1,
+                      "light leather": 1
+                  },
+                  "optional": {
+                      "gem": 1
+                  }                  
+              },
+              "stats": {
+                "attack": 4,
+                "speed": 5,
+                "meleepower": 3
+              }
+          },          
+          "componentLongBlade": {
+              "name": "Long Blade",
+              "description": "A lengthy piece of sharpened metal. Used to make long sharp and pointy weapons.",
+              "type": "componentLongBlade",
+              "invImage": "?",
+              "baseValue": 4,
+              "materials": {
+                  "required": {
+                      "metal bar": 2,
+                  },
+                  "optional": {
+
+                  }                  
+              },
+              "stats": {
+                "attack": 4,
+                "speed": 5,
+                "meleepower": 5
+              }
+          },          
+          "componentShortBlade": {
+              "name": "Short Blade",
+              "description": "A short piece of sharpened metal. Used to make short pointy weapons.",
+              "type": "componentShortBlade",
+              "invImage": "?",
+              "baseValue": 3,
+              "materials": {
+                  "required": {
+                      "metal bar": 1,
+                  },
+                  "optional": {
+
+                  }                  
+              },
+              "stats": {
+                "attack": 4,
+                "speed": 20,
+                "stealth": 5
+              }
+          }
+      },        
+      "weapons": {
+          "weaponDagger": {
+              "name": "Dagger",
+              "description": "A pokin' sharp dagger, ready to stab!",
+              "type": "weapon",
+              "invImage": "weaponDagger",
+              "baseValue": 10,
+              "materials": {
+                  "required": {
+                      "componentHilt": 1,
+                      "componentShortBlade": 1
+                  },
+                  "optional": {
+
+                  }                  
+              },
+              "stats": {
+                "attack": 3,
+                "speed": 30,
+                "meleepower": 4,
+                "stealth": 5
+              }
+          },          
+          "weaponLongsword": {
+              "name": "Longsword",
+              "description": "It is practically wieldy.",
+              "type": "weapon",
+              "invImage": "weaponLongsword",
+              "baseValue": 18,
+              "materials": {
+                  "required": {
+                      "componentHilt": 1,
+                      "componentLongBlade": 1
+                  },
+                  "optional": {
+
+                  }                  
+              },
+              "stats": {
+                "attack": 4,
+                "speed": 20,
+                "meleepower": 5
+              }
+          },          
+          "weaponSaber": {
+              "name": "Saber",
+              "description": "This curved sword is traditionally used by mounted cavalry. You appear to be swinging it around like a dairy farmer.",
+              "type": "weapon",
+              "invImage": "weaponSaber",
+              "baseValue": 18,
+              "materials": {
+                  "required": {
+                      "componentHilt": 1,
+                      "componentLongBlade": 1
+                  },
+                  "optional": {
+
+                  }                  
+              },
+              "stats": {
+                "attack": 6,
+                "speed": 10,
+                "meleepower": 6
+              }
+          }
+      },
+      "armor": {
+          "armorLeatherHat": {
+              "name": "Leather Hat",
+              "description": "A spongy leather hat.",
+              "type": "headarmor",
+              "invImage": "armorLeatherHat",
+              "baseValue": 12,
+              "materials": {
+                  "required": {
+                      "light leather": 2
+                  },
+                  "optional": {
+                      "feather": 1
+                  }                  
+              },
+              "stats": {
+                "defence": 2,
+                "stealth": 5
+              }
+          }
+      }
+    }
+  ]
+}

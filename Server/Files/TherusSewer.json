@@ -1,0 +1,287 @@
+{
+    "TherusSewerRooms": [
+    {
+      "id": 0,
+      "roomid": "THERUSSEWERMAIN1",
+      "name": "Sewer Entry, Therus",
+      "description": "   You realize your life has taken a turn for the worse when you arrive in a filthy sewer. Above you, a manhole cover leads back to streetlevel, but if you are adventurous, the sewer leads off into darkness to the east and west.",
+      "mapX": 404,
+      "mapY": 304,
+      "roomExits": {
+        "Up": "RREASTUMBEREAST",
+        "West": "THERUSSEWERMAIN2",
+        "East": "THERUSSEWERMAIN4"
+      },
+      "flavorObjects": {
+          "walls": "They're filthy..",
+          "ground": "Its filthy.",
+          "water": "That is also filthy.",
+          "manhole": "Just a metal disc, fashioned into the ceiling, offering you escape from this fetid hellhole."
+      },
+      "inventory": {
+
+      },
+      "spawns": {
+          "monsters" : {
+              "Feral Ratman" : {
+                  "timer" : 600000
+              }
+          }          
+           
+      },         
+
+      "region": {
+          "area" : ["therus sewer"],
+          "map" : "TherusSewer"
+      }         
+    },
+    {
+      "id": 0,
+      "roomid": "THERUSSEWERMAIN2",
+      "name": "Sewer Tunnel, Therus",
+      "description": "   You step gingerly down the catwalk of the sewer tunnel, trying desparately not to end up in the acrid fluids flowing through here. The tunnel continues east and west.",
+      "mapX": 384,
+      "mapY": 304,
+      "roomExits": {
+        "East": "THERUSSEWERMAIN1",
+        "West": "THERUSSEWERMAIN3"
+      },
+      "flavorObjects": {
+          "walls": "They're filthy..",
+          "ground": "Its filthy.",
+          "water": "That is also filthy."
+      },
+      "inventory": {
+
+      },
+
+      "region": {
+          "area" : ["therus sewer"],
+          "map" : "TherusSewer"
+      }         
+    },
+    {
+      "id": 0,
+      "roomid": "THERUSSEWERMAIN3",
+      "name": "Sewer Tunnel, Therus",
+      "description": "   You've reached the end of any physically passable tunnel. Ahead of you, in the western wall, the walls become too tight to pass, although water continues to flow freely through. The tunnel continues east.",
+      "mapX": 364,
+      "mapY": 304,
+      "roomExits": {
+        "East": "THERUSSEWERMAIN2"
+      },
+      "flavorObjects": {
+          "walls": "They're filthy..",
+          "ground": "Its filthy.",
+          "water": "That is also filthy."
+      },
+      "inventory": {
+
+      },
+
+      "region": {
+          "area" : ["therus sewer"],
+          "map" : "TherusSewer"
+      }         
+    },
+    {
+      "id": 0,
+      "roomid": "THERUSSEWERMAIN4",
+      "name": "Sewer Tunnel Intersection, Therus",
+      "description": "   The sewer tunnel you are oh so graciously occupying widens here as it intersects with another tunnel. A variety of refuse has arrived here, potentially permanently. The intersecting tunnel continues north and south, and a small landing with a ladder heading into the ceiling is visible to the west.",
+      "mapX": 424,
+      "mapY": 304,
+      "roomExits": {
+        "West": "THERUSSEWERMAIN1",
+        "South": "THERUSSEWERMAIN5"
+      },
+      "flavorObjects": {
+          "walls": "They're filthy..",
+          "ground": "Its filthy.",
+          "water": "That is also filthy.",
+          "refuse": "Trash, both paper and people."
+      },
+      "inventory": {
+
+      },
+
+      "region": {
+          "area" : ["therus sewer"],
+          "map" : "TherusSewer"
+      }         
+    },
+    {
+      "id": 0,
+      "roomid": "THERUSSEWERMAIN5",
+      "name": "Southern Sewer Tunnel, Therus",
+      "description": "   You travel further down a filthy tunnel full of garbage and feces. If you absolutely must have more of this, it continues to the south. To the north you see an intersecting tunnel.",
+      "mapX": 424,
+      "mapY": 324,
+      "roomExits": {
+        "North": "THERUSSEWERMAIN4",
+        "South": "THERUSSEWERMAIN6"
+      },
+      "flavorObjects": {
+          "walls": "They're filthy..",
+          "ground": "Its filthy.",
+          "water": "That is also filthy."
+      },
+      "inventory": {
+
+      },
+      "spawns": {
+          "monsters" : {
+              "Feral Ratman" : {
+                  "timer" : 600000
+              }
+          }          
+           
+      },         
+
+      "region": {
+          "area" : ["therus sewer"],
+          "map" : "TherusSewer"
+      }         
+    } ,
+    {
+      "id": 0,
+      "roomid": "THERUSSEWERMAIN6",
+      "name": "Southern Sewer Tunnel, Therus",
+      "description": "   Darkness surrounds you as you delve deeper into this dirty dungeon of drain water and debris. This tunnel continues north and south.",
+      "mapX": 424,
+      "mapY": 344,
+      "roomExits": {
+        "North": "THERUSSEWERMAIN5",
+        "South": "THERUSSEWERMAIN7"
+      },
+      "flavorObjects": {
+          "walls": "They're filthy..",
+          "ground": "Its filthy.",
+          "water": "That is also filthy."
+      },
+      "inventory": {
+
+      },
+
+      "region": {
+          "area" : ["therus sewer"],
+          "map" : "TherusSewer"
+      }         
+    },
+    {
+      "id": 0,
+      "roomid": "THERUSSEWERMAIN7",
+      "name": "Southern Sewer Tunnel, Therus",
+      "description": "   The sewer tunnel bends to the southwest here, shifting its flowing sewage with it. The tunnel also continues to the north.",
+      "mapX": 424,
+      "mapY": 364,
+      "roomExits": {
+        "North": "THERUSSEWERMAIN6",
+        "Southwest": "THERUSSEWERMAIN8"
+      },
+      "flavorObjects": {
+          "walls": "They're filthy..",
+          "ground": "Its filthy.",
+          "water": "That is also filthy."
+      },
+      "inventory": {
+
+      },
+
+      "region": {
+          "area" : ["therus sewer"],
+          "map" : "TherusSewer"
+      }         
+    },
+    {
+      "id": 0,
+      "roomid": "THERUSSEWERMAIN8",
+      "name": "Southern Sewer Tunnel, Therus",
+      "description": "   You begin to feel the tingles of dread as the dark tunnel walls and rank stench get to you. The tunnel continues to the southwest and northeast, where it bends to the north.",
+      "mapX": 404,
+      "mapY": 384,
+      "roomExits": {
+        "Northeast": "THERUSSEWERMAIN7",
+        "Southwest": "THERUSSEWERMAIN9"
+      },
+      "flavorObjects": {
+          "walls": "They're filthy..",
+          "ground": "Its filthy.",
+          "water": "That is also filthy."
+      },
+      "inventory": {
+
+      },
+
+      "region": {
+          "area" : ["therus sewer"],
+          "map" : "TherusSewer"
+      }         
+    },
+    {
+      "id": 0,
+      "roomid": "THERUSSEWERMAIN9",
+      "name": "Southern Sewer Tunnel, Therus",
+      "description": "   The feeling of dread becomes stronger, just as the scent and smell of this place becomes nearly overwhelming. Further down the tunnel, you hear low, inhumna echos. The tunnel continues to the northeast and to the southwest.",
+      "mapX": 384,
+      "mapY": 404,
+      "roomExits": {
+        "Northeast": "THERUSSEWERMAIN8",
+        "Southwest": "THERUSSEWERRATKING"
+      },
+      "flavorObjects": {
+          "walls": "They're filthy..",
+          "ground": "Its filthy.",
+          "water": "That is also filthy."
+      },
+      "inventory": {
+
+      },
+      "spawns": {
+          "monsters" : {
+              "Feral Ratman" : {
+                  "timer" : 600000
+              }
+          }          
+           
+      },        
+
+      "region": {
+          "area" : ["therus sewer"],
+          "map" : "TherusSewer"
+      }         
+    },
+    {
+      "id": 0,
+      "roomid": "THERUSSEWERRATKING",
+      "name": "Disgusting Sewer Lair, Therus",
+      "description": "   All that is holy and right in the world has been stripped from this one tiny ten foot square of water and filth and menagerie. Piles of bones and debris circle this entire room. Rats shuffle and squeak, sending chilling echos through your body. The only escape is to the northeast.",
+      "mapX": 364,
+      "mapY": 424,
+      "roomExits": {
+        "Northeast": "THERUSSEWERMAIN9"
+      },
+      "flavorObjects": {
+          "walls": "They're filthy..",
+          "ground": "Its filthy.",
+          "water": "That is also filthy."
+      },
+      "inventory": {
+
+      },
+      "spawns": {
+          "monsters" : {
+              "Feral Rat King" : {
+                  "timer" : 600000
+              }
+          }          
+           
+      },         
+
+      "region": {
+          "area" : ["therus sewer"],
+          "map" : "TherusSewer"
+      }         
+    }       
+]
+}

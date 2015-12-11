@@ -1,0 +1,33 @@
+{
+  "Combat": [
+    {
+      "id": 0,
+      "skillID": "skillThrust",
+      "name": "Thrust",
+      "description": "A quick poke with your weapon.",
+      "imageIndex": 1,
+      "powerCost": 1,
+      "energyCost": 4,
+      "type": ["hostile", "immediate", "damage", "combat"],
+      "time": 0,
+      "cooldown": 5000,
+      "onHitValue": 2
+    }
+  ],
+  "Stealth": [
+    {
+      "id": 0,
+      "skillID": "skillBackstab",
+      "name": "Backstab",
+      "description": "A stealthy stab in the back. High critical chance.",
+      "imageIndex": 31,
+      "powerCost": 1,
+      "energyCost": 4,
+      "type": ["hostile", "next", "stat increase", "combat"],
+      "time": 0,
+      "onHitValue": 0,
+      "totalValue": 0,
+      "stat increase": {"criticalchance": 50}
+    }
+  ]
+}

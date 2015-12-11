@@ -1,0 +1,91 @@
+{
+  "Resources": [
+    {
+      "id": 0,
+      "resourceID": "copperOre",
+      "name": "Copper Ore",
+      "description": "A pile of copper chunks and grit. With a solid smelter, you might be able to turn this into something better.",
+      "type": "metal ore",
+      "imageIndex": "1",
+      "baseValue": 5,
+      "qualities": {
+        "quality": 3,
+        "defence": 1,
+        "attack": 1
+      }
+    },
+    {
+      "id": 1,
+      "resourceID": "copperBar",
+      "name": "Copper Bar",
+      "description": "A heavy bar of copper. If you had enough of this and a forge, maybe you could make some parts.",
+      "type": "metal bar",
+      "imageIndex": "11",
+      "baseValue": 6,
+      "qualities": {
+        "quality": 4,
+        "defence": 2,
+        "attack": 2
+      }
+    },
+    {
+      "id": 2,
+      "resourceID": "wolfSkin",
+      "name": "Wolf Skin",
+      "description": "A light, furry section of skinned wolf. You can probably turn this into some light leather at a tannery.",
+      "type": "animal skin",
+      "imageIndex": "31",
+      "baseValue": 2,
+      "qualities": {
+        "quality": 1,
+        "speed": 2,
+        "criticalchance": 2
+      }
+    },
+    {
+      "id": 3,
+      "resourceID": "lightLeather",
+      "name": "Light Leather",
+      "description": "A thin, wide panel of leather, tanned at a tannery.",
+      "type": "light leather",
+      "imageIndex": "41",
+      "baseValue": 3,
+      "qualities": {
+        "quality": 2,
+        "speed": 3,
+        "criticalchance": 3,
+        "stealth": 1
+      }        
+    },
+    {
+      "id": 4,
+      "resourceID": "softlogsPine",
+      "name": "Pine Logs",
+      "description": "A pile of light pine logs.",
+      "type": "soft wood",
+      "imageIndex": "51",
+      "baseValue": 1,
+      "qualities": {
+        "quality": 1,
+        "speed": 3,
+        "stealth": 2,
+        "meleepower": 1
+      }        
+    },
+    {
+      "id": 4,
+      "resourceID": "softplanksPine",
+      "name": "Pine Planks",
+      "description": "A stack of light pine planks.",
+      "type": "soft planks",
+      "imageIndex": "61",
+      "baseValue": 2,
+      "qualities": {
+        "quality": 2,
+        "speed": 4,
+        "stealth": 3,
+        "meleepower": 2
+      }        
+    }     
+  ]
+}

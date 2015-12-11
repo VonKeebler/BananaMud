@@ -1,0 +1,54 @@
+{
+  "Cities": [
+    {
+      "id": 0,
+      "cityID": "cityTherus",
+      "name": "Therus",
+      "description": "Therus is a metropolitan city of thousands. One of the largest cities of the Streamlands, it provides most any service or market in need.",
+      "population": 4988,
+      "propertyTax": ".08",
+      "market": {
+        "food": {
+          "demand": ".125",
+          "value": 25,
+          "tax": ".05"
+        },
+        "drink": {
+          "demand": ".125",
+          "value": 25,
+          "tax": ".05"            
+        },          
+        "services": {
+          "demand": ".125",
+          "value": 25,
+          "tax": ".05"            
+        },
+        "inn": {
+          "demand": ".125",
+          "value": 25,
+          "tax": ".05"            
+        },
+        "housing": {
+          "demand": ".125",
+          "value": 25,
+          "tax": ".05"            
+        },
+        "weapons": {
+          "demand": ".125",
+          "value": 25,
+          "tax": ".05"            
+        },
+        "armor": {
+          "demand": ".125",
+          "value": 25,
+          "tax": ".05"            
+        },
+        "magic": {
+          "demand": ".125",
+          "value": 25,
+          "tax": ".05"            
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,2219 @@
+{
+  "TherusRooms": [
+    {
+      "id": 0,
+      "roomid": "BBBINN",
+      "name": "Buttonstuffers Bed & Breakfast, East Umberton",
+      "description": "   Buttonstuffers B&B is like no place you've ever seen. Halflings mill about while Wholelings pound tables and beer and muse musically out loud. Spending anymore time in here than is necessary will likely leave you with tinnitus. Dingy windows adorn the eastern wall, surrounding an open door.",
+      "mapX": 364,
+      "mapY": 264,
+      "roomExits": {
+        "East": "BLAMID"
+      },
+      "flavorObjects": {
+          "halflings": "They're scurrying all over the goddamn place.",
+          "wholelings": "Just dudes and ladies in various modes of vagrancy.",
+          "inn": "The inn is dilapidated, sure, but what are you gonna do when you got 3 copper to your name and you need a nap?"
+      },
+      "inventory": {
+          "drinkCheapBeer" : "2"
+      },
+      "shop": {
+          "foodTurkey" : {
+              "basePriceDif" : "-2",
+              "count" : "5"
+          },
+          "drinkCheapBeer" : {
+              "basePriceDif" : "-1",
+              "count" : "10"
+          },
+          "drinkExpensiveWine" : {
+              "basePriceDif" : "0",
+              "count" : "2"
+          },
+          "foodFoulMeal" : {
+              "basePriceDif" : "-1",
+              "count" : "4"
+          }
+      },
+      "spawns": {
+          "items" : {
+              "drinkCheapBeer" : {
+                  "timer" : 1800000,
+                  "count" : 2
+              }
+          }
+
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 1,
+      "roomid": "BLAMID",
+      "name": "Brickleavers Alley, East Umberton",
+      "description": "  Brickleavers alley stretches to the South and North. An open door centered on the Western wall is pouring sound, pooling in your ears and echoing down the alley. A relatively new sign swings above, chained to an overhang.",
+      "mapX": 384,
+      "mapY": 264,
+      "roomExits": {
+        "West": "BBBINN",
+        "South": "BLASOUTH",
+        "North": "BLANORTH"
+      },
+      "flavorObjects": {
+          "brick": "Bricks are literally left here. All over the place. Like someone had to ditch bricks quick.",
+          "bricks": "Bricks are literally left here. All over the place. Like someone had to ditch bricks quick.",
+          "alley": "Bricks are literally left here. All over the place. Like someone had to ditch bricks quick.",
+          "sign": "The sign says 'Buttonstuffers Bed & Breakfast', but its been hastily scrawled over what appears to be the prior establishment, 'Ku Horkrux Klan'. I'm sure someones really upset about that.",
+          "door": "Its all open, inviting and shit."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 2,
+      "roomid": "BLASOUTH",
+      "name": "Brickleavers Alley, East Umberton",
+      "description": "   You stand in the southern end of Brickleavers Alley. Raucous echoes float down the alley from the North, mixing with the sound of creaking wheels and foot traffic of a main road to the South.",
+      "mapX": 384,
+      "mapY": 284,
+      "roomExits": {
+        "North": "BLAMID",
+        "South": "RREASTUMBER"
+      },
+      "flavorObjects": {
+          "brick": "Bricks are literally left here. All over the place. Like someone had to ditch bricks quick.",
+          "bricks": "Bricks are literally left here. All over the place. Like someone had to ditch bricks quick.",
+          "alley": "Bricks are literally left here. All over the place. Like someone had to ditch bricks quick."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 3,
+      "roomid": "RREASTUMBER",
+      "name": "Ruther's Road, East Umberton",
+      "description": "    A flurry of activity, both wheeled and hooved, paths its way through the dirt-packed cobblestone road. The movement is accompanied by persistent chatter of passengers riding in and out of the city. A thin brick-layered alley opens to your North. Ruther's Road flows West to East from here.",
+      "mapX": 384,
+      "mapY": 304,
+      "roomExits": {
+        "North": "BLASOUTH",
+        "West": "RREASTUMBERWEST",
+        "East": "RREASTUMBEREAST"
+      },
+      "flavorObjects": {
+          "road": "The road is dirt packed and heavily worn, but you can still make out the original cobblestones.",
+          "cobblestone road": "The road is dirt packed and heavily worn, but you can still make out the original cobblestones.",
+          "alley": "Just an opening in the wall to the North. Foot traffic passes it, but no one you see goes in."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 4,
+      "roomid": "RREASTUMBERWEST",
+      "name": "Ruther's Road, East Umberton",
+      "description": "    Beggars and merchants, menfolk and merfolk, citymen and liver-wizards. The crowd is stifling, pouring from the inner city into the suburb of East Umberton. A city bridge spans a river to the West while Ruther's Road flows East.",
+      "mapX": 364,
+      "mapY": 304,
+      "roomExits": {
+        "East": "RREASTUMBER",
+        "West": "UMBERBRIDGE"
+      },
+      "flavorObjects": {
+          "beggars": "A myriad of wanton souls, some carrying bowls, others are burdened with the length of their lives.",
+          "merchants": "Eh, they seem to be eeking out a living selling foodstuffs, drinkstuffs, and everything inbetween.",
+          "menfolk": "Some dudes wandering around looking kind of gruff. Probably farmers or something, given that most of them look filthy and smell worse.",
+          "hat": "Oh wait no, thats some kind of squid-person. Those are tentacles.",
+          "guy wearing a hat": "Oh wait no, thats some kind of squid-person. Those are tentacles.",
+          "guy with a hat": "Oh wait no, thats some kind of squid-person. Those are tentacles.",
+          "squid-person": "Its best not to think about it.",
+          "squidperson": "Its best not to think about it.",
+          "tentacles": "Its best not to think about it.",
+          "merfolk": "A couple of gillmen consult a damp map of the city and gurgle in their language to each other.",
+          "gillmen": "A couple of gillmen consult a damp map of the city and gurgle in their language to each other.",
+          "citymen": "Random people. THe kind you might see on a busy street. Like the one you are on. I think that guy is wearing a hat.",
+          "liver-wizards": "Some wizards who have mastered the art of the 'Expecto Zymurgem' spell are making themselves useful by lounging around a trashcan, looking ill and spilling beer from their wands.",
+          "liverwizards": "Some wizards who have mastered the art of the 'Expecto Zymurgem' spell are making themselves useful by lounging around a trashcan, looking ill and spilling beer from their wands.",
+          "liver-wizard": "Some wizards who have mastered the art of the 'Expecto Zymurgem' spell are making themselves useful by lounging around a trashcan, looking ill and spilling beer from their wands.",
+          "liverwizard": "Some wizards who have mastered the art of the 'Expecto Zymurgem' spell are making themselves useful by lounging around a trashcan, looking ill and spilling beer from their wands.",
+          "bridge": "Its the East Umberton bridge. Made of stone, it spans a small waterway flowing through the city.",
+          "city bridge": "Its the East Umberton bridge. Made of stone, it spans a small waterway flowing through the city."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 5,
+      "roomid": "BLANORTH",
+      "name": "Brickleavers Alley, East Umberton",
+      "description": "    You stand in the northern end of Brickleavers Alley. You note the excess piles of brick, the namesake of the alley, littering the sides and making the space claustrophobic. Raucous echoes float down the alley from the South and an opening between two towers of brick to the Northwest may be your only reprieve.",
+      "mapX": 384,
+      "mapY": 244,
+      "roomExits": {
+        "South": "BLAMID",
+        "Northwest": "KERRYGOLDMID"
+      },
+      "flavorObjects": {
+          "brick": "It gets pretty tight in here, what with all these bricks left around.",
+          "bricks": "It gets pretty tight in here, what with all these bricks left around.",
+          "alley": "Bricks are literally left here. All over the place. Like someone had to ditch bricks quick."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      },
+      "interactiveObjects": {
+          "brick": {"alias": ["two ten", "2/10"], "action": "push",  "description": "There is a brick here with the number 2 divided by the number 10 written on it.",  "function": "BLANORTHBRICK"}
+      }
+    },
+    {
+      "id": 6,
+      "roomid": "UMBERBRIDGE",
+      "name": "East Umberton Bridge, East Umberton",
+      "description": "Carts and carriages clatter along over the cobblestones of the worn bridge, creating its own flow perpendicular to the stream below. The suburb of East Umberton sprawls out along the East bank, with many businesses and homes overlooking the water. A bustling market square opens up to the West as Ruther's Road continues into the heart of the city.",
+      "mapX": 344,
+      "mapY": 304,
+      "roomExits": {
+        "East": "RREASTUMBERWEST",
+        "West": "RRHELGURDEAST"
+      },
+      "flavorObjects": {
+          "cobblestone": "The bridge is dirt packed and heavily worn, but you can still make out the original cobblestones.",
+          "cobblestone street": "The bridge is dirt packed and heavily worn, but you can still make out the original cobblestones.",
+          "water": "The dark stream flows mildly. You are unable to see past its churning surface, but based on the trash packed shoreline, you wouldn't want to.",
+          "waterway": "The dark stream flows mildly. You are unable to see past its churning surface, but based on the trash packed shoreline, you wouldn't want to.",
+          "rivulet": "The dark stream flows mildly. You are unable to see past its churning surface, but based on the trash packed shoreline, you wouldn't want to.",
+          "carts": "A variety of carts carrying goods, and potentially services underneath dark covers, roll past, their iron-clad wheels clashing against the cobblestone street.",
+          "carriages": "Carriages rumble through the crowds, potentially carrying either the wealthy elite, or someone who has pique their interest, good or bad.",
+          "bridge": "The East Umberton Bridge spans one of the many rivulets surrounding Lake Tulla.",
+          "homes": "East Umberton homes are commonly sandstone, adorned with hollow windows and topped with flat rooves.",
+          "businesses": "Business has found a home along the length of the waterway. Backdoors and small docks serve as avenues for delivery of goods and services."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 7,
+      "roomid": "RREASTUMBEREAST",
+      "name": "Ruther's Road, East Umberton",
+      "description": "The crowds thin the closer you are to Therus's East Gate. Anyone here on business is in the city center, and those who live here are in their district proper. Ruther's Road continues West, onward through the suburbs of East Umberton, and East, to the town's East Gate.",
+      "mapX": 404,
+      "mapY": 304,
+      "roomExits": {
+        "West": "RREASTUMBER",
+        "East": "RREASTUMBERRING",
+        "North": "RREASTUMBERPROPERTY"
+      },
+      "flavorObjects": {
+          "road": "The road is dirt packed and heavily worn, but you can still make out the original cobblestones.",
+          "cobblestone road": "The road is dirt packed and heavily worn, but you can still make out the original cobblestones.",
+          "cobblestone": "The road is dirt packed and heavily worn, but you can still make out the original cobblestones.",
+          "gate": "From here, the gate is a distant facade of stone and portcullis.",
+          "east gate": "From here, the gate is a distant facade of stone and portcullis."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      },
+      "interactiveObjects": {
+          "manhole cover": {"alias": ["cover", "manhole"], "action": "open", "roomDescription" : "A manhole cover sits in the middle of the street.", "description": "An average man-sized metal disc, covering up Therus's unmentionables.",  "function": "RREASTUMBEREASTMANHOLE"}
+      }
+    },
+    {
+      "id": 8,
+      "roomid": "RREASTUMBERRING",
+      "name": "Ruther's Road, East Umberton",
+      "description": "The far East end of Ruther's Road serves as a crossroads for those just entering the city of Therus. The portcullis and thick stone block facade of the East Gate stands open to the East, while Ruther's Road bears inward into the city to the West. The street serving as the Outer Ring of Therus passes through here from North to South.",
+      "mapX": 424,
+      "mapY": 304,
+      "roomExits": {
+        "West": "RREASTUMBEREAST",
+        "East": "EASTGATE",
+        "North": "OUTERRINGUMBER1",
+        "South": "OUTERRINGEASTUMBERTON3"
+      },
+      "flavorObjects": {
+          "road": "The road is dirt packed and heavily worn, but you can still make out the original cobblestones.",
+          "cobblestone road": "The road is dirt packed and heavily worn, but you can still make out the original cobblestones.",
+          "cobblestone": "The road is dirt packed and heavily worn, but you can still make out the original cobblestones.",
+          "gate": "The East Gate is comprised of two flagstone towers and an iron portcullis held up into a gatehouse above.",
+          "east gate": "The East Gate is comprised of two flagstone towers and an iron portcullis held up into a gatehouse above.",
+          "ring": "The Outer Ring is a street that runs along the outer-most suburbs of Therus. It plays host to many varieties of local flavor, but don't get caught looking too out of place. Remain on your guard.",
+          "outer ring": "The Outer Ring is a street that runs along the outer-most suburbs of Therus. It plays host to many varieties of local flavor, but don't get caught looking too out of place. Remain on your guard."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 9,
+      "roomid": "EASTGATE",
+      "name": "East Gate, Therus",
+      "description": "Great flagstone walls impose themselves on you and you travel through Therus's East Gate. Both entries through here are equipped with portcullises which, althought rarely closed, invoke a sense of hesitant welcome. Ruther's Road, one of Therus's main thoroughfares, begins on the other side of the gate to the West. A view of the greater countryside is visible through the entry to the East.",
+      "mapX": 444,
+      "mapY": 304,
+      "roomExits": {
+        "West": "RREASTUMBERRING",
+        "East": "EASTGATECOUNTRY"
+      },
+      "flavorObjects": {
+          "road": "The road is dirt packed and heavily worn, but you can still make out the original cobblestones.",
+          "cobblestone road": "The road is dirt packed and heavily worn, but you can still make out the original cobblestones.",
+          "cobblestone": "The road is dirt packed and heavily worn, but you can still make out the original cobblestones.",
+          "gate": "The East Gate is comprised of two flagstone towers and two iron portcullises held up into a gatehouse above.",
+          "east gate": "The East Gate is comprised of two flagstone towers and two iron portcullises held up into a gatehouse above.",
+          "countryside": "Therus's countryside is dark and lush, with deep forests and grey skies.",
+          "country": "Therus's countryside is dark and lush, with deep forests and grey skies."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 10,
+      "roomid": "EASTGATECOUNTRY",
+      "name": "East Gate, Therus Countryside",
+      "description": "To the West stands the East Gate of Therus, one of the Streamlands largest city-state. The iron portcullis stands open, but guarded from threat. The countryside, with its rolling hills and dense forest, continues East.",
+      "mapX": 464,
+      "mapY": 304,
+      "transitionX": 484,
+      "transitionY": 304,        
+      "roomExits": {
+        "West": "EASTGATE",
+        "East": "THERUSCOUNTRYSIDE1"
+      },
+      "flavorObjects": {
+          "road": "The road here is thinned to a layer of tight packed gravel. Ruts from many carriages and visitors have been worn in.",
+          "gravel road": "The road here is thinned to a layer of tight packed gravel. Ruts from many carriages and visitors have been worn in.",
+          "gravel": "Tight packed grey, indeterminate rock. Probably a bitch if you get it in your shoes.",
+          "gate": "The East Gate is comprised of two flagstone towers and an iron portcullis held up into a gatehouse above.",
+          "east gate": "The East Gate is comprised of two flagstone towers and an iron portcullis held up into a gatehouse above.",
+          "countryside": "Therus's countryside is dark and lush, with deep forests and grey skies.",
+          "country": "Therus's countryside is dark and lush, with deep forests and grey skies.",
+          "therus": "Therus is a sprawling city, with multiple suburbs, streets, and alleys to get lost in.",
+          "forest": "While most of the countryside is lush hills with a light covering of trees, you notice a trail to the East leading into one of the area's darker, denser forests."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus countryside"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 11,
+      "roomid": "BLASECRET",
+      "name": "Brickleavers Alley, Secret Hideout",
+      "description": "    The room is claustrophobic, with loose bricks making up the walls, causing a variety of irregular shapes to jut out and cast sharp shadows in all directions. A lone candle sits on a table, providing darkness plenty of leg room to prey on your imagination.",
+      "mapX": 364,
+      "mapY": 244,
+      "roomExits": {
+
+      },
+      "flavorObjects": {
+          "brick": "It gets pretty tight in here, what with all these bricks left around.",
+          "bricks": "It gets pretty tight in here, what with all these bricks left around.",
+          "alley": "Bricks are literally left here. All over the place. Like someone had to ditch bricks quick.",
+          "table": "Strewn over the table are renditions and blueprints of municipal buildings.",
+          "blueprints": "Guard towers, town meeting places, and parts of the Helgurd Manor. You see a particularly interesting map of the Western Wing that seems to indicate a previously unknown passage.",
+          "renditions": "Guard towers, town meeting places, and parts of the Helgurd Manor. You see a particularly interesting map of the Western Wing that seems to indicate a previously unknown passage."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : []
+      },
+      "interactiveObjects": {
+          "lever": {"alias": ["lever", "handle"], "action": "pull", "roomDescription" : "An old lever is sticking out of the wall.", "description": "A lever is fit into the wall here. Its handle is old and greasy.",  "function": "BLASECRETLEVER"}
+      }
+    },
+    {
+      "id": 12,
+      "roomid": "OUTERRINGUMBER1",
+      "name": "Outer Ring, East Umberton",
+      "description": "  The Outer Ring of Therus continues through the East Umberton suburb, allowing those who live in Therus the opportunity to avoid the busier central area of the city. The Outer Ring continues north, while you can see the cross roads of Ruther's Road to the south.",
+      "mapX": 424,
+      "mapY": 284,
+      "roomExits": {
+        "South": "RREASTUMBERRING",
+        "North": "OUTERRINGUMBER2"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 13,
+      "roomid": "OUTERRINGUMBER2",
+      "name": "Outer Ring, East Umberton",
+      "description": "  The Outer Ring of Therus continues through the East Umberton suburb, allowing those who live in Therus the opportunity to avoid the busier central area of the city. The Outer Ring continues both north and south from here",
+      "mapX": 424,
+      "mapY": 264,
+      "roomExits": {
+        "South": "OUTERRINGUMBER1",
+        "North": "OUTERRINGUMBER3"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 14,
+      "roomid": "OUTERRINGUMBER3",
+      "name": "Outer Ring, East Umberton",
+      "description": "  The Outer Ring of Therus begins to bend here as it continues its path around the edge of the city. The Outer Ring continues northwest and south from here",
+      "mapX": 424,
+      "mapY": 244,
+      "roomExits": {
+        "South": "OUTERRINGUMBER2",
+        "Northwest": "OUTERRINGUMBER4"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 15,
+      "roomid": "OUTERRINGUMBER4",
+      "name": "Outer Ring, East Umberton",
+      "description": "  The Outer Ring of Therus begins to bend here as it continues its path around the edge of the city. The Outer Ring continues southeast from here. You can see the intersection of Kerrygold Road to the northwest.",
+      "mapX": 404,
+      "mapY": 224,
+      "roomExits": {
+        "Southeast": "OUTERRINGUMBER3",
+        "Northwest": "KERRYGOLDRING"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 16,
+      "roomid": "KERRYGOLDRING",
+      "name": "Kerrygold Street, East Umberton and Silvermere",
+      "description": "  Kerrygold Road intersects with the Outer Ring here, running Northwest and Southeast just before the Northeast Gate of Therus. Merchants and travellers bustle by, either on the way into the heart of Therus, or looking for the nearest exit. Kerrygold continues Southwest from here, while the Northeast gate is visible to the Northeast.",
+      "mapX": 384,
+      "mapY": 204,
+      "roomExits": {
+        "Southeast": "OUTERRINGUMBER4",
+        "Southwest": "KERRYGOLDMID",
+        "Northwest": "OUTERRINGSILVER1"
+      },
+      "flavorObjects": {
+          "road": "The road is dirt packed and worn with deep carriage wheel ruts.",
+          "cobblestone road": "The road is dirt packed and worn with deep carriage wheel ruts.",
+          "cobblestone": "The road is dirt packed and worn with deep carriage wheel ruts.",
+          "gate": "The Northeast Gate is comprised of two flagstone towers and two iron portcullises held up into a gatehouse above.",
+          "Northeast gate": "The Northeast Gate is comprised of two flagstone towers and two iron portcullises held up into a gatehouse above.",
+          "merchants": "Various merchants and their wares truck by on the back of horses and other beasts of burden. Headed toward the Therus parade grounds, no doubt.",
+          "travellers": "Men and women of all shapes and sizes astride mounts or simply walking in and out of the city."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 17,
+      "roomid": "KERRYGOLDMID",
+      "name": "Kerrygold Street, East Umberton and Silvermere",
+      "description": "  Kerrygold Street divides the suburbs of East Umberton, to the southeast, and Silvermere, to the northwest. The road plays host to a number of travellers, both driving in and out of Therus. Kerrygold continues Northeast, toward the Northeast gate, and Southwest spanning a small rivulet. A slight, bricked-in alleyway is hastily opened to the Southeast.",
+      "mapX": 364,
+      "mapY": 224,
+      "roomExits": {
+        "Northeast": "KERRYGOLDRING",
+        "Southeast": "BLANORTH",
+        "Southwest": "KERRYGOLDBRIDGE"
+      },
+      "flavorObjects": {
+          "road": "The road is dirt packed and worn with deep carriage wheel ruts.",
+          "cobblestone road": "The road is dirt packed and worn with deep carriage wheel ruts.",
+          "cobblestone": "The road is dirt packed and worn with deep carriage wheel ruts.",
+          "gate": "The Northeast Gate is comprised of flagstone towers and iron portcullises held up into a gatehouse above.",
+          "Northeast gate": "The Northeast Gate is comprised of flagstone towers and iron portcullises held up into a gatehouse above.",
+          "merchants": "Various merchants and their wares truck by on the back of horses and other beasts of burden. Headed toward the Therus parade grounds, no doubt.",
+          "travellers": "Men and women of all shapes and sizes astride mounts or simply walking in and out of the city.",
+          "alley": "An alleyway to the Southeast echos with both noise and voice, only slightly audible over the local crowd.",
+          "brick alley": "An alleyway to the Southeast echos with both noise and voice, only slightly audible over the local crowd."
+      },
+      "inventory": {
+      },
+      "money": 1,
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 18,
+      "roomid": "KERRYGOLDBRIDGE",
+      "name": "Kerrygold Bridge",
+      "description": "  Kerrygold Bridge spans one of the minor rivulets of Lake Tulla. It provides entry into the parade grounds of Therus, visible to the Southwest. Kerrygold Street, which separates the suburbs of Silvermere and East Umberton, continues Northeast.",
+      "mapX": 344,
+      "mapY": 244,
+      "roomExits": {
+        "Northeast": "KERRYGOLDMID",
+        "Southwest": "HELGURDPARADENORTHEAST"
+      },
+      "flavorObjects": {
+          "road": "The road is dirt packed and worn with deep carriage wheel ruts.",
+          "cobblestone road": "The road is dirt packed and worn with deep carriage wheel ruts.",
+          "cobblestone": "The road is dirt packed and worn with deep carriage wheel ruts.",
+          "bridge": "This stone bridge spans a small stream, gurgling below.",
+          "kerrygold bridge": "This stone bridge spans a small stream, gurgling below.",
+          "stream": "A thin, shallow waterway. You can't see past the surface. Its clarity is beset on all sides by wastewater and runoff.",
+          "rivulet": "A thin, shallow waterway. You can't see past the surface. Its clarity is beset on all sides by wastewater and runoff."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 19,
+      "roomid": "HELGURDPARADENORTHEAST",
+      "name": "Helgurd Manor Parade Grounds",
+      "description": "  You stand in the northeast corner of the parade grounds of Helgurd Manor. The manor proper is just visible beyond a tall stone wall far to the south. Kerrygold bridge lies to the northeast, leading residents into the suburbs of Silvermere or East Umberton. The parade grounds continue west and south from here.",
+      "mapX": 324,
+      "mapY": 264,
+      "roomExits": {
+        "Northeast": "KERRYGOLDBRIDGE",
+        "South": "HELGURDPARADEEAST",
+        "West": "HELGURDPARADENORTH"
+      },
+      "flavorObjects": {
+          "parade": "There isn't a god damn parade here, its just an area of grass.",
+          "grounds": "The grounds are an open area between the Silvermere suburb and the Helgurd Manor. It is where citizens of Therus meet and mingle, and where any civil announcement can be made.",
+          "parade grounds": "The grounds are an open area between the Silvermere suburb and the Helgurd Manor. It is where citizens of Therus meet and mingle, and where any civil announcement can be made.",
+          "bridge": "This stone bridge spans a small stream, gurgling below.",
+          "kerrygold bridge": "This stone bridge spans a small stream, gurgling below.",
+          "manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus.",
+          "helgurd manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus.",
+          "silvermere": "Silvermere is the older suburb, made primarily of dark aging brick. Its residents represent old families who have resided in the area long before Therus was established.",
+          "umberton": "The suburb of East Umberton is a newer suburb, made of sandstone. Its residents are primarily commoners new to the area.",
+          "east umberton": "The suburb of East Umberton is a newer suburb, made of sandstone. Its residents are primarily commoners new to the area."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 20,
+      "roomid": "HELGURDPARADEEAST",
+      "name": "Helgurd Manor Parade Grounds",
+      "description": "  You stand on the eastern side of the Helgurd Manor parade grounds. The manor proper is just visible beyond a tall stone wall to the south. Ruther's Road, one of the primary thoroughfares, lies south. The parade grounds continue west and north from here.",
+      "mapX": 324,
+      "mapY": 284,
+      "roomExits": {
+        "North": "HELGURDPARADENORTHEAST",
+        "West": "HELGURDPARADEMID",
+        "South": "RRHELGURDEAST"
+      },
+      "flavorObjects": {
+          "parade": "There isn't a god damn parade here, its just an area of grass.",
+          "grounds": "The grounds are an open area between the Silvermere suburb and the Helgurd Manor. It is where citizens of Therus meet and mingle, and where any civil announcement can be made.",
+          "parade grounds": "The grounds are an open area between the Silvermere suburb and the Helgurd Manor. It is where citizens of Therus meet and mingle, and where any civil announcement can be made.",
+          "manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus.",
+          "helgurd manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus.",
+          "east umberton": "The suburb of East Umberton is a newer suburb, made of sandstone. Its residents are primarily commoners new to the area."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 21,
+      "roomid": "RRHELGURDEAST",
+      "name": "Ruther's Road, Helgurd Manor Parade Grounds",
+      "description": "  Ruther's Road cuts through the heart of the city here. To the north lie the open fields, along with great masses of Therus rabble, of the Helgurd Manor Parade Grounds. The heavy stone wall that demarcates Lord Helgurd's property follows the road to the west. The East Umberton bridge crosses a small stream to the east.",
+      "mapX": 324,
+      "mapY": 304,
+      "roomExits": {
+        "North": "HELGURDPARADEEAST",
+        "East": "UMBERBRIDGE",
+        "West": "RRHELGURDEAST2"
+      },
+      "flavorObjects": {
+          "parade": "There isn't a god damn parade here, its just an area of grass.",
+          "grounds": "The grounds are an open area between the Silvermere suburb and the Helgurd Manor. It is where citizens of Therus meet and mingle, and where any civil announcement can be made.",
+          "parade grounds": "The grounds are an open area between the Silvermere suburb and the Helgurd Manor. It is where citizens of Therus meet and mingle, and where any civil announcement can be made.",
+          "manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus. Its rooftop is just visible over the great grey wall along the road here.",
+          "helgurd manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus. Its rooftop is just visible over the great grey wall along the road here.",
+          "east umberton": "The suburb of East Umberton is a newer suburb, made of sandstone. Its residents are primarily commoners new to the area.",
+          "bridge": "Its the East Umberton bridge. Made of stone, it spans a small waterway flowing through the city.",
+          "city bridge": "Its the East Umberton bridge. Made of stone, it spans a small waterway flowing through the city.",
+          "east umberton bridge": "Its the East Umberton bridge. Made of stone, it spans a small waterway flowing through the city.",
+          "wall": "A thick stone wall runs the length of Ruther's Road, except for a gatehouse in the distance to the west."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 22,
+      "roomid": "RRHELGURDEAST2",
+      "name": "Ruther's Road, Helgurd Manor Parade Grounds",
+      "description": "  Ruther's Road cuts through the heart of the city here. People have gathered in the manor parade grounds to the north. The heavy stone wall that demarcates Lord Helgurd's property follows the road to the east and west.",
+      "mapX": 304,
+      "mapY": 304,
+      "roomExits": {
+        "East": "RRHELGURDEAST",
+        "West": "RRHELGURDGATE",
+        "North": "HELGURDPARADEMID"
+      },
+      "flavorObjects": {
+          "parade": "There isn't a god damn parade here, its just an area of grass.",
+          "grounds": "The grounds are an open area between the Silvermere suburb and the Helgurd Manor. It is where citizens of Therus meet and mingle, and where any civil announcement can be made.",
+          "parade grounds": "The grounds are an open area between the Silvermere suburb and the Helgurd Manor. It is where citizens of Therus meet and mingle, and where any civil announcement can be made.",
+          "manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus. Its rooftop is just visible over the great grey wall along the road here.",
+          "helgurd manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus. Its rooftop is just visible over the great grey wall along the road here.",
+          "wall": "A thick stone wall runs the length of Ruther's Road, except for a gatehouse to the west."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 23,
+      "roomid": "OUTERRINGSILVER1",
+      "name": "Outer Ring, Silvermere",
+      "description": "  The Outer Ring of Therus begins to bend here as it continues its path around the edge of the city. The Outer Ring continues west from here. You can see the intersection of Kerrygold Road to the southeast.",
+      "mapX": 364,
+      "mapY": 184,
+      "roomExits": {
+        "Southeast": "KERRYGOLDRING",
+        "West": "OUTERRINGSILVER2"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 24,
+      "roomid": "OUTERRINGSILVER2",
+      "name": "Outer Ring, Silvermere",
+      "description": "  The Outer Ring of Therus continues to run its course through the outermost bank of the city. The Outer Ring continues west and east from here. One of Silvermere's apartment houses has an open common area to the south.",
+      "mapX": 344,
+      "mapY": 184,
+      "roomExits": {
+        "East": "OUTERRINGSILVER1",
+        "West": "OUTERRINGSILVER3",
+        "South": "KLEPPIRAPARTMENTS"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "apartment house": "A tall, four story red brick walk up. The front and sides are covered in windows, many of which are adorned in the resident's belongings.",
+          "house": "A tall, four story red brick walk up. The front and sides are covered in windows, many of which are adorned in the resident's belongings.",
+          "apartment": "A tall, four story red brick walk up. The front and sides are covered in windows, many of which are adorned in the resident's belongings.",
+          "common area": "A place for residents of the apartment building to mingle. It sits just before the entrance doors."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 25,
+      "roomid": "KLEPPIRAPARTMENTS",
+      "name": "Kleppir House Apartments, Silvermere",
+      "description": "  On the northern edge of Therus, deep in the suburb of Silvermere, sits a four story red brick walk up known as the Kleppir House Apartments. You stand in the common area, where a number of residents come and go from the building. A nice set of benches sit here, accompanied by trash bins. A hotdog cart has been set up here. A brick path leads north, to the Outer Ring of Therus.",
+      "mapX": 344,
+      "mapY": 204,
+      "roomExits": {
+        "North": "OUTERRINGSILVER2"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "apartment house": "Kleppir House Apartments is a tall, four story red brick walk up. The front and sides are covered in windows, many of which are adorned in the resident's belongings.",
+          "house": "Kleppir House Apartments is a tall, four story red brick walk up. The front and sides are covered in windows, many of which are adorned in the resident's belongings.",
+          "apartment": "Kleppir House Apartments is a tall, four story red brick walk up. The front and sides are covered in windows, many of which are adorned in the resident's belongings.",
+          "common area": "A place for residents of the apartment building to mingle. It sits just before the entrance doors.",
+          "benches": "A nice set of wooden benches, recently built and placed here.",
+          "trash": "A couple of nice metal bins for trash.",
+          "bins": "A couple of nice metal bins for trash.",
+          "trash bins": "A couple of nice metal bins for trash.",
+          "hot dog cart": "A garish metal box on wheels, with an umbrella standing over it. Condiments litter the top.",
+          "cart": "A garish metal box on wheels, with an umbrella standing over it. Condiments litter the top."
+      },
+      "inventory": {
+      },
+      "shop": {
+          "foodHotDog" : {
+              "basePriceDif" : "0",
+              "count" : "4"
+          },
+          "foodToppedHotDog" : {
+              "basePriceDif" : "0",
+              "count" : "4"
+          },
+          "foodWeirdHotDog" : {
+              "basePriceDif" : "0",
+              "count" : "2"
+          }
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 25,
+      "roomid": "OUTERRINGSILVER3",
+      "name": "Outer Ring, Silvermere",
+      "description": "  The Outer Ring of Therus continues to run its course through the outermost bank of the city. The Outer Ring continues east from here. The Silvermere Bridge is to the west, spanning a rushing stream.",
+      "mapX": 324,
+      "mapY": 184,
+      "roomExits": {
+        "East": "OUTERRINGSILVER2",
+        "West": "SILVERMEREBRIDGE"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "silvermere bridge": "To the west, an old wooden bridge spanning a rivulet running through the city.",
+          "bridge": "To the west, an old wooden bridge spanning a rivulet running through the city."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 26,
+      "roomid": "SILVERMEREBRIDGE",
+      "name": "Silvermere Bridge, Silvermere",
+      "description": "  Silvermere Bridge spans on of the rivulets coming off of Lake Tulla, north of the city. There is just enough space to allow one lane of cart traffic, although Silvermere doesn't see much merchant traffic. The Outer Ring of Therus continues east and west from here.",
+      "mapX": 304,
+      "mapY": 184,
+      "roomExits": {
+        "East": "OUTERRINGSILVER3",
+        "West": "OUTERRINGSILVER4"
+      },
+      "flavorObjects": {
+          "road": "The bridge is made of a light cedar wood, although it has darkened with age, travel, and grit. Underneath flows a stream of dark foamy water.",
+          "bridge": "The bridge is made of a light cedar wood, although it has darkened with age, travel, and grit. Underneath flows a stream of dark foamy water.",
+          "silvermere bridge": "The bridge is made of a light cedar wood, although it has darkened with age, travel, and grit. Underneath flows a stream of dark foamy water.",
+          "tulla": "You can't see Lake Tulla from here, but you know its out there, with its mysteries.",
+          "lake tulla": "You can't see Lake Tulla from here, but you know its out there, with its mysteries.",
+          "traffic": "Every so often someone comes through with a cart or carriage, but they seem to manage the trek across the narrow bridge just fine."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 27,
+      "roomid": "OUTERRINGSILVER4",
+      "name": "Outer Ring, Silvermere",
+      "description": "  The Outer Ring of Therus continues to run its course through the outermost bank of the city. The Outer Ring continues west from here. The Silvermere Bridge is to the east, spanning a rushing stream.",
+      "mapX": 284,
+      "mapY": 184,
+      "roomExits": {
+        "East": "SILVERMEREBRIDGE",
+        "West": "OUTERRINGSILVER5"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "silvermere bridge": "To the west, an old wooden bridge spanning a rivulet running through the city.",
+          "bridge": "To the west, an old wooden bridge spanning a rivulet running through the city."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 28,
+      "roomid": "OUTERRINGSILVER5",
+      "name": "Outer Ring, Silvermere",
+      "description": "  The Outer Ring of Therus continues to run its course through the outermost bank of the city. The Outer Ring runs east and west, where it begins to bend toward the western edge of the city.",
+      "mapX": 264,
+      "mapY": 184,
+      "roomExits": {
+        "East": "OUTERRINGSILVER4",
+        "West": "OUTERRINGSILVER6"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 28,
+      "roomid": "OUTERRINGSILVER6",
+      "name": "Outer Ring, Silvermere",
+      "description": "  The Outer Ring of Therus continues to run its course through the outermost bank of the city. A small colonnade leads to a dark alley between two of the local flathouses to the south. The Outer Ring runs east and southwest as it bends around the western edge of the city.",
+      "mapX": 244,
+      "mapY": 184,
+      "roomExits": {
+        "East": "OUTERRINGSILVER5",
+        "South": "SILVERCOLONNADE",
+        "Southwest": "OUTERRINGSILVER7"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "flathouses": "Small brick walkups line the entirety of the Outer Ring as it winds through the Silvermere suburbs.",
+          "colonnade": "A small section of roof juts out from the alleyway, creating a small alcove between the two buildings.",
+          "alley": "A dark, brick lined alley is visible just past a short colonnade to the south."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 29,
+      "roomid": "SILVERCOLONNADE",
+      "name": "Colonnade, Silvermere",
+      "description": "  You stand underneath a red brick colonnade created between two local flathouses. It offers some protection from the elements to local residents. A small dark alleyway is open to the south, an aged signed is perchedjust over its opening. The Outer Ring of Therus runs through Silvermere to the west and north from here.",
+      "mapX": 244,
+      "mapY": 204,
+      "roomExits": {
+        "North": "OUTERRINGSILVER6",
+        "South": "OLDSILVERHOLLOW1",
+        "West": "OUTERRINGSILVER7"
+      },
+      "flavorObjects": {
+          "flathouses": "Two flathouses sit opposite of each other here, their front doors opening into the colonnade.",
+          "colonnade": "A small section of roof juts out from the alleyway, creating a small alcove between two local flathouses.",
+          "alley": "A dark, brick lined alley lies south. It appears to tunnel through some sort of tenement housing above.",
+          "alleyway": "A dark, brick lined alley lies south. It appears to tunnel through some sort of tenement housing above.",
+          "sign": "The sign is grimy and old, but you can make out the words 'Old Silvermere Hollow'"
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 30,
+      "roomid": "OLDSILVERHOLLOW1",
+      "name": "Old Silvermere Hollow, Silvermere",
+      "description": "  Red bricks line the floors, ceiling and walls here, extending further east as the alley continues. A small hole in the ceiling provides dim light, but sunlight streams in from an exit to the north. The alleyway continues east.",
+      "mapX": 244,
+      "mapY": 224,
+      "roomExits": {
+        "North": "SILVERCOLONNADE",
+        "East": "OLDSILVERHOLLOW2"
+      },
+      "flavorObjects": {
+          "bricks": "Ancient red brick, with crumbling mortar, surrounds you.",
+          "hole": "It is a hole not large enough to even fit a hand through. Dim light filters in from an unknown source.",
+          "small hole": "It is a hole not large enough to even fit a hand through. Dim light filters in from an unknown source.",
+          "alley": "You are standing in a dark, dank alley. It doesn't seem to be frequented by many people. The light plays tricks on your eyes and you are sure you hear footsteps but you are unsure where they come from.",
+          "sunlight": "Sunlight is streaming in through an archway to the north. It appears to lead to a colonnade between the nearby flat houses."
+
+      },
+      "inventory": {
+      },
+      "spawns": {
+          "monsters" : {
+              "Nameless Thug" : {
+                  "timer" : 600000
+              }
+          }
+
+      },
+      "region": {
+          "area" : ["therus city", "therus city old silver hollow"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 31,
+      "roomid": "OUTERRINGSILVER7",
+      "name": "Outer Ring, Silvermere",
+      "description": "  The Outer Ring of Therus continues to run its course through the outermost bank of the city. A small colonnade leads to a dark alley between two of the local flathouses to the east. The Outer Ring runs northeast and southwest as it bends around the western edge of the city.",
+      "mapX": 224,
+      "mapY": 204,
+      "roomExits": {
+        "Northeast": "OUTERRINGSILVER6",
+        "East": "SILVERCOLONNADE",
+        "Southwest": "OUTERRINGSILVER8"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "flathouses": "Small brick walkups line the entirety of the Outer Ring as it winds through the Silvermere suburbs.",
+          "colonnade": "A small section of roof juts out from the alleyway, creating a small alcove between the two buildings.",
+          "alley": "A dark, brick lined alley is visible just past a short colonnade to the east."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 31,
+      "roomid": "OUTERRINGSILVER8",
+      "name": "Outer Ring, Silvermere",
+      "description": "  The Outer Ring of Therus continues to run its course through the outermost bank of the city. The Outer Ring runs northeast and southwest as it approaches the western side of the city.",
+      "mapX": 204,
+      "mapY": 224,
+      "roomExits": {
+        "Northeast": "OUTERRINGSILVER7",
+        "Southwest": "OUTERRINGSILVER9"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 32,
+      "roomid": "OUTERRINGSILVER9",
+      "name": "Outer Ring, Silvermere",
+      "description": "  The Outer Ring of Therus continues to run its course through the outermost bank of the city. Here, at the western most wall of the city, the Outer Ring runs northeast and south.",
+      "mapX": 184,
+      "mapY": 244,
+      "roomExits": {
+        "Northeast": "OUTERRINGSILVER8",
+        "South": "OUTERRINGSILVER10",
+          "East": "WESTRINGSILVERPROPERTY"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 33,
+      "roomid": "OUTERRINGSILVER10",
+      "name": "Outer Ring, Silvermere",
+      "description": "  The Outer Ring of Therus continues to run its course through the western side of the city. The road continues north and south from here. A small, dark alleyway is open in the eastern wall.",
+      "mapX": 184,
+      "mapY": 264,
+      "roomExits": {
+        "North": "OUTERRINGSILVER9",
+        "South": "OUTERRINGSILVER11",
+        "East": "OLDSILVERHOLLOW8"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "alley": "A dark, brick lined alley lies east. It looks like it provided rear access to local shops and businesses, but the area around it has been converted into tenement housing. The alley looks long disused. A small sign sits above the alley.",
+          "alleyway": "A dark, brick lined alley lies east. It looks like it provided rear access to local shops and businesses, but the area around it has been converted into tenement housing. The alley looks long disused. A small sign sits above the alley.",
+          "sign": "The sign is grimy and old, but you can make out the words 'Old Silvermere Hollow'"
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 35,
+      "roomid": "OUTERRINGSILVER11",
+      "name": "Outer Ring, Silvermere",
+      "description": "  The Outer Ring of Therus continues to run its course through the western side of the city. The road continues north from here. An intersection with Ruther's Road is visible south, although the area sees very little traffic.",
+      "mapX": 184,
+      "mapY": 284,
+      "roomExits": {
+        "North": "OUTERRINGSILVER10",
+        "South": "RRSILVERMERERING"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "intersection": "The Ruther's Road intersection to the south is where the Outer Ring intersects with one of Therus's main thoroughfares. There doesn't seem to be a lot of traffic coming through here."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 36,
+      "roomid": "RRSILVERMERERING",
+      "name": "Outer Ring and Ruther's Road, Silvermere",
+      "description": "  The Outer Ring and Ruther's Road intersect here, providing travellers with a way to cut directly through the heart of the city. Ruther's Road continues east, toward Helgurd Manor, while the Outher Ring runs north and south here.",
+      "mapX": 184,
+      "mapY": 304,
+      "roomExits": {
+        "North": "OUTERRINGSILVER11",
+        "East": "RRSILVERMERE4",
+        "South": "OUTERRINGSW1"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "intersection": "Although Ruther's Road is one of Therus's main thoroughfares, there doesn't seem to be a lot of traffic coming through here.",
+          "helgurd manor": "Helgurd Manor isn't visible from here, but occupies a large amount of space in the middle of the city along Ruther's Road.",
+          "manor": "Helgurd Manor isn't visible from here, but occupies a large amount of space in the middle of the city along Ruther's Road."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 37,
+      "roomid": "RRHELGURDGATE",
+      "name": "Ruther's Road, Helgurd Manor Gate",
+      "description": "  Ruther's Road cuts through the heart of the city here. People have gathered in the manor parade grounds to the north. A tall iron gate in the stone wall to the south bars entry into the Helgurd Manor proper. The heavy stone wall that demarcates Lord Helgurd's property follows the road to the west and east.",
+      "mapX": 284,
+      "mapY": 304,
+      "roomExits": {
+        "East": "RRHELGURDEAST2",
+        "West": "RRSILVERMERE",
+        "North": "HELGURDPARADEWEST"
+      },
+      "flavorObjects": {
+          "parade": "There isn't a god damn parade here, its just an area of grass.",
+          "grounds": "The grounds are an open area between the Silvermere suburb and the Helgurd Manor. It is where citizens of Therus meet and mingle, and where any civil announcement can be made.",
+          "parade grounds": "The grounds are an open area between the Silvermere suburb and the Helgurd Manor. It is where citizens of Therus meet and mingle, and where any civil announcement can be made.",
+          "manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus. Its grounds are visible through a heavy iron gate barring entry to the south.",
+          "helgurd manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus. Its grounds are visible through a heavy iron gate barring entry to the south.",
+          "wall": "A thick stone wall runs the length of Ruther's Road, except for a gatehouse standing here."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 38,
+      "roomid": "RRSILVERMERE",
+      "name": "Ruther's Road, Silvermere",
+      "description": "  The suburb of Silvermere begins from this point westward. One of the oldest parts of Therus, its age is apparent in its architecture. The brick facade of 'Therus Medical and Health' stands over the street to the north. A heavy stone wall demarcating the Helgurd Manor grounds continues along the road. Ruther's Road continues east and west from here.",
+      "mapX": 264,
+      "mapY": 304,
+      "roomExits": {
+        "East": "RRHELGURDGATE",
+        "North": "THERUSMEDICAL",
+        "West": "RRSILVERMERE2"
+      },
+      "flavorObjects": {
+          "manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus. Its roof is visible peeking out over the heavy stone wall to the south.",
+          "helgurd manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus. Its roof is visible peeking out over the heavy stone wall to the south.",
+          "wall": "A thick stone wall runs the length of Ruther's Road, except for a gatehouse to the east.",
+          "therus medical and health": "A tall, 4 story brick building adorned in medical icons and emblems. This building likely offers medical attention to every citizen in the Therus area.",
+          "hospital": "A tall, 4 story brick building adorned in medical icons and emblems. This building likely offers medical attention to every citizen in the Therus area.",
+          "silvermere": "The architecture of Silvermere's aged brick and mortar can attest to it being the oldest suburb of Therus."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 39,
+      "roomid": "THERUSMEDICAL",
+      "name": "Therus Medical and Health",
+      "description": "  The lobby of Therus Medical and Health is clean and the atmosphere is an attempt at serenity. A front desk is staffed by a nurse and a set of chairs line one of the entryway walls. Behind the desk is a set of large doors leading into the depths of the hospital. A door set in the southern wall allows exit back onto Ruther's Road.",
+      "mapX": 264,
+      "mapY": 284,
+      "roomExits": {
+        "South": "RRSILVERMERE"
+      },
+      "flavorObjects": {
+          "therus medical and health": "A tall, 4 story brick building adorned in medical icons and emblems. This building likely offers medical attention to every citizen in the Therus area.",
+          "hospital": "A tall, 4 story brick building adorned in medical icons and emblems. This building likely offers medical attention to every citizen in the Therus area.",
+          "chairs": "Several chairs are set against the wall, allowing those interested in general health care to wait their turn.",
+          "desk": "A wide wooden desk allowing staff members to interrogate incoming people and triage their needs."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 40,
+      "roomid": "RRSILVERMERE2",
+      "name": "Ruther's Road, Silvermere",
+      "description": "  The suburb of Silvermere stretches before you to the north, its redstone flats and tenements blocking your view of the sky. A small dark alleyway appears to the north between two buildings, while the tall stone wall of Helgurd Manor follows along the south side of the road. Ruther's Road continues east and west from here.",
+      "mapX": 244,
+      "mapY": 304,
+      "roomExits": {
+        "East": "RRSILVERMERE",
+        "West": "RRSILVERMERE3",
+        "North": "OLDSILVERHOLLOW6"
+      },
+      "flavorObjects": {
+          "manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus. Its roof is visible peeking out over the heavy stone wall to the south.",
+          "helgurd manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus. Its roof is visible peeking out over the heavy stone wall to the south.",
+          "wall": "A thick stone wall runs the length of Ruther's Road, except for a gatehouse in the distance to the east.",
+          "silvermere": "The architecture of Silvermere's aged brick and mortar can attest to it being the oldest suburb of Therus.",
+          "alley": "A dark, brick lined alley lies north. It looks like it provided rear access to local shops and businesses, but the area around it has been converted into tenement housing. The alley looks long disused. A small sign sits above the alley.",
+          "alleyway": "A dark, brick lined alley lies east. It looks like it provided rear access to local shops and businesses, but the area around it has been converted into tenement housing. The alley looks long disused. A small sign sits above the alley.",
+          "sign": "The sign is grimy and old, but you can make out the words 'Old Silvermere Hollow'"
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 40,
+      "roomid": "RRSILVERMERE3",
+      "name": "Ruther's Road, Silvermere",
+      "description": "  The suburb of Silvermere stretches before you to the north, its redstone flats and tenements blocking your view of the sky. Set into the brick building to the north is a non-descript flight of stairs with the sign 'Old Silvermere Inn' posted above. The tall stone wall of Helgurd Manor links backs into the shorter wall of the Therus cemetary along the south side of the road. Ruther's Road continues east and west from here.",
+      "mapX": 224,
+      "mapY": 304,
+      "roomExits": {
+        "East": "RRSILVERMERE2",
+        "North": "OLDSILVERMEREINN",
+        "West": "RRSILVERMERE4"
+      },
+      "roomExitFunctions": {
+        "North": {"function": "OLDSILVERMEREINNFIRSTVISIT"}
+      },
+      "flavorObjects": {
+          "manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus. Its roof is visible peeking out over the heavy stone wall far to the east.",
+          "helgurd manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus. Its roof is visible peeking out over the heavy stone wall far to the east.",
+          "wall": "A thick stone wall runs the length of Ruther's Road to the east, but here it backs into the shorter stone wall surrounding the Therus cemetary.",
+          "silvermere": "The architecture of Silvermere's aged brick and mortar can attest to it being the oldest suburb of Therus.",
+          "old silvermere inn": "The Old Silvermere Inn entrance is a non-descript set of stairs walking down into a doorway you can only partly see. The building is old, bordering on ancient, and some of the windows of the building look boarded up from the inside.",
+          "inn": "The Old Silvermere Inn entrance is a non-descript set of stairs walking down into a doorway you can only partly see. The building is old, bordering on ancient, and some of the windows of the building look boarded up from the inside.",
+          "sign": "It says 'Old Silvermere Inn' in worn painted letters.",
+          "cemetary": "The stone wall surrounding the cemetary is so tall you can barely see anything over it. You do spy a mausoleum roof and some of the taller grave markers inside.",
+          "therus cemetary": "The stone wall surrounding the cemetary is so tall you can barely see anything over it. You do spy a mausoleum roof and some of the taller grave markers inside."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 41,
+      "roomid": "OLDSILVERMEREINN",
+      "name": "Old Silvermere Inn",
+      "description": "  The great room of the Old Silvermere Inn is dark, where light is only provided by a few flickering lamps set into the walls or on some of the tables throughout. The walls and floors are the same old brick and mortar the rest of Silvermere is made from. The air is as chilly as the other patrons, however few there are. A long, dark mahogany bar runs the length of the far end of the room. A set of stairs next to it lead up to a loft with doorways lining the eastern wall. A small door in the southern wall leads back up and out to Ruther's Road.",
+      "mapX": 224,
+      "mapY": 284,
+      "roomExits": {
+        "South": "RRSILVERMERE3"
+      },
+      "flavorObjects": {
+          "lamps": "Several small oil lamps are placed onto tables the dot the great room or hung from iron hooks along the walls.",
+          "tables": "There are quite a few tables in the room.",
+          "bar": "The bar is as old as the inn. It seems to be more epoxy than wood these days.",
+          "patrons": "A few humanoid shapes occupy a table in the corner of the room. Another, what looks like an orc, sits at the bar. There is seldom movement from any of them.",
+          "stairs": "The stairs are bare except for a handrail following them up. All of it is made of mahogany, similar to the bar.",
+          "loft": "A second floor loft is accessible via the staircase in the far corner of the room. Four doors leading to upper rooms are visible along the eastern wall.",
+          "doors": "Four dark wood doors are set into the wall on the second floor overlooking the great room."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 42,
+      "roomid": "RRSILVERMERE4",
+      "name": "Ruther's Road, Silvermere",
+      "description": "  The suburb of Silvermere stretches before you to the north, its redstone flats and tenements blocking your view of the sky. The stone wall surrounding the cemetary of Therus follows the road to the south. Ruther's Road continues east and west, where it intersects the Outer Ring.",
+      "mapX": 204,
+      "mapY": 304,
+      "roomExits": {
+        "East": "RRSILVERMERE3",
+        "West": "RRSILVERMERERING"
+      },
+      "flavorObjects": {
+          "wall": "A stone wall made of little more than large stones and simple mortar. This wall surrounds Therus's cemetary.",
+          "cemetary": "The stone wall surrounding the cemetary is so tall you can barely see anything over it. You do spy a mausoleum roof and some of the taller grave markers inside.",
+          "therus cemetary": "The stone wall surrounding the cemetary is so tall you can barely see anything over it. You do spy a mausoleum roof and some of the taller grave markers inside."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 30,
+      "roomid": "OLDSILVERHOLLOW2",
+      "name": "Old Silvermere Hollow, Silvermere",
+      "description": "  Red bricks line the floors, ceiling and walls here, extending west and south as the alley continues. A small hole in the ceiling provides dim light, but more light streams in from an exit to the east. The alleyway continues west and bends toward the south.",
+      "mapX": 264,
+      "mapY": 224,
+      "roomExits": {
+        "West": "OLDSILVERHOLLOW1",
+        "East": "OLDSILVERHOLLOWLANDING",
+        "South": "OLDSILVERHOLLOW3"
+      },
+      "flavorObjects": {
+          "bricks": "Ancient red brick, with crumbling mortar, surrounds you.",
+          "hole": "It is a hole not large enough to even fit a hand through. Dim light filters in from an unknown source.",
+          "small hole": "It is a hole not large enough to even fit a hand through. Dim light filters in from an unknown source.",
+          "alley": "You are standing in a dark, dank alley. It doesn't seem to be frequented by many people. The light plays tricks on your eyes and you are sure you hear footsteps but you are unsure where they come from.",
+          "sunlight": "Light is streaming in through an archway to the east. It looks like it leads to a flat stone landing from in here."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city old silver hollow"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 31,
+      "roomid": "OLDSILVERHOLLOWLANDING",
+      "name": "Old Silvermere Landing, Silvermere",
+      "description": "  The flat stone nature of this patio seems out of place in the middle of the red brick menagery of buildings that surrounds this landing. In the western wall is an archway leading into a dark alley. Across from the alleyway exit is a short mooring, allowing small boats to anchor and access the shore here.",
+      "mapX": 284,
+      "mapY": 224,
+      "roomExits": {
+        "West": "OLDSILVERHOLLOW2"
+      },
+      "flavorObjects": {
+          "bricks": "Ancient red brick, with crumbling mortar, surrounds you.",
+          "alley": "A dark, brick lined alley lies west. It appears to tunnel through some sort of tenement housing above.",
+          "alleyway": "A dark, brick lined alley lies west. It appears to tunnel through some sort of tenement housing above.",
+          "archway": "Practically a hole in the western wall. It leads into a dark alleyway.",
+          "flat stone": "It looks as if this landing was carved directly into stone. It may pre-date the city itself.",
+          "moor": "A pair of heavy stone pillars show wear from ropes being tied around them for ages.",
+          "mooring": "A pair of heavy stone pillars show wear from ropes being tied around them for ages.",
+          "pillars": "As old as this landing is, and as old as these pillars are, you can't help but notice their frequent recent wear.",
+          "shore": "The shore is covered in detritus which seems to ebb and flow with the tide."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city old silver hollow"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 32,
+      "roomid": "OLDSILVERHOLLOW3",
+      "name": "Old Silvermere Hollow, Silvermere",
+      "description": "  Red bricks line the floors, ceiling and walls here, causing an uncomfortable amount of claustrophobia. A small hole in the ceiling provides dim light, but some corners remain impenetrably dark. The alleyway continues north and south.",
+      "mapX": 264,
+      "mapY": 244,
+      "roomExits": {
+        "North": "OLDSILVERHOLLOW2",
+        "South": "OLDSILVERHOLLOW4"
+      },
+      "flavorObjects": {
+          "bricks": "Ancient red brick, with crumbling mortar, surrounds you.",
+          "hole": "It is a hole not large enough to even fit a hand through. Dim light filters in from an unknown source.",
+          "small hole": "It is a hole not large enough to even fit a hand through. Dim light filters in from an unknown source.",
+          "alley": "You are standing in a dark, dank alley. It doesn't seem to be frequented by many people. The light plays tricks on your eyes and you are sure you hear footsteps but you are unsure where they come from."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city old silver hollow"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 33,
+      "roomid": "OLDSILVERHOLLOW4",
+      "name": "Old Silvermere Hollow, Silvermere",
+      "description": "  Red bricks line the floors, ceiling and walls here, extending north and west as the alley continues. A small hole in the ceiling provides dim light. Sound echos down the alleyway coming from an exit in the wall to the east. The alleyway bends to the north and west here.",
+      "mapX": 264,
+      "mapY": 264,
+      "roomExits": {
+        "North": "OLDSILVERHOLLOW3",
+        "West": "OLDSILVERHOLLOW5",
+        "East": "HELGURDPARADENORTHWEST"
+
+      },
+      "flavorObjects": {
+          "bricks": "Ancient red brick, with crumbling mortar, surrounds you.",
+          "hole": "It is a hole not large enough to even fit a hand through. Dim light filters in from an unknown source.",
+          "small hole": "It is a hole not large enough to even fit a hand through. Dim light filters in from an unknown source.",
+          "alley": "You are standing in a dark, dank alley. It doesn't seem to be frequented by many people. The light plays tricks on your eyes and you are sure you hear footsteps but you are unsure where they come from."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city old silver hollow"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 34,
+      "roomid": "OLDSILVERHOLLOW5",
+      "name": "Old Silvermere Hollow, Silvermere",
+      "description": "  Red bricks line the floors, ceiling and walls here, causing an uncomfortable amount of claustrophobia. A small hole in the ceiling provides dim light, but some corners remain impenetrably dark. The alleyway splits east, west, and south here.",
+      "mapX": 244,
+      "mapY": 264,
+      "roomExits": {
+        "East": "OLDSILVERHOLLOW4",
+        "South": "OLDSILVERHOLLOW6",
+        "West": "OLDSILVERHOLLOW7"
+      },
+      "flavorObjects": {
+          "bricks": "Ancient red brick, with crumbling mortar, surrounds you.",
+          "hole": "It is a hole not large enough to even fit a hand through. Dim light filters in from an unknown source.",
+          "small hole": "It is a hole not large enough to even fit a hand through. Dim light filters in from an unknown source.",
+          "alley": "You are standing in a dark, dank alley. It doesn't seem to be frequented by many people. The light plays tricks on your eyes and you are sure you hear footsteps but you are unsure where they come from."
+
+      },
+      "inventory": {
+      },
+      "spawns": {
+          "monsters" : {
+              "Nameless Thug" : {
+                  "timer" : 600000
+              }
+          }
+
+      },
+      "region": {
+          "area" : ["therus city", "therus city old silver hollow"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 35,
+      "roomid": "OLDSILVERHOLLOW6",
+      "name": "Old Silvermere Hollow, Silvermere",
+      "description": "  Red bricks line the floors, ceiling and walls here, extending to the north as the alleyway continues. A small hole in the ceiling provides dim light, but sunlight streams in from an archway to the south. The alleyway continues north from here.",
+      "mapX": 244,
+      "mapY": 284,
+      "roomExits": {
+        "North": "OLDSILVERHOLLOW5",
+        "South": "RRSILVERMERE2"
+      },
+      "flavorObjects": {
+          "bricks": "Ancient red brick, with crumbling mortar, surrounds you.",
+          "hole": "It is a hole not large enough to even fit a hand through. Dim light filters in from an unknown source.",
+          "small hole": "It is a hole not large enough to even fit a hand through. Dim light filters in from an unknown source.",
+          "alley": "You are standing in a dark, dank alley. It doesn't seem to be frequented by many people. The light plays tricks on your eyes and you are sure you hear footsteps but you are unsure where they come from.",
+          "sunlight": "An archway to the south is letting in sunlight. Outside, the commotion of Ruther's Road can be heard."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city old silver hollow"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 36,
+      "roomid": "OLDSILVERHOLLOW7",
+      "name": "Old Silvermere Hollow, Silvermere",
+      "description": "  Red bricks line the floors, ceiling and walls here, causing an uncomfortable amount of claustrophobia. A small hole in the ceiling provides dim light, but some corners remain impenetrably dark. The alleyway continues running east to west here.",
+      "mapX": 224,
+      "mapY": 264,
+      "roomExits": {
+        "East": "OLDSILVERHOLLOW5",
+        "West": "OLDSILVERHOLLOW8"
+      },
+      "flavorObjects": {
+          "bricks": "Ancient red brick, with crumbling mortar, surrounds you.",
+          "hole": "It is a hole not large enough to even fit a hand through. Dim light filters in from an unknown source.",
+          "small hole": "It is a hole not large enough to even fit a hand through. Dim light filters in from an unknown source.",
+          "alley": "You are standing in a dark, dank alley. It doesn't seem to be frequented by many people. The light plays tricks on your eyes and you are sure you hear footsteps but you are unsure where they come from."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city old silver hollow"],
+          "map" : "CityOfTherus"
+      },
+      "interactiveObjects": {
+          "Old Steel Door": {"alias": ["door", "steel door", "old steel door", ""], "action": "knock", "roomDescription" : "An old steel door is set into the southern wall.", "description": "A heavy metal door is set into the southern wall. A small panel is visible behind a heavy layer of grime.",  "function": "OSHSTEELDOOR"}
+      }
+    },
+    {
+      "id": 35,
+      "roomid": "OLDSILVERHOLLOW8",
+      "name": "Old Silvermere Hollow, Silvermere",
+      "description": "  Red bricks line the floors, ceiling and walls here, extending to the north as the alleyway continues. A small hole in the ceiling provides dim light, but sunlight streams in from an archway to the west. The alleyway continues east from here.",
+      "mapX": 204,
+      "mapY": 264,
+      "roomExits": {
+        "East": "OLDSILVERHOLLOW7",
+        "West": "OUTERRINGSILVER10"
+      },
+      "flavorObjects": {
+          "bricks": "Ancient red brick, with crumbling mortar, surrounds you.",
+          "hole": "It is a hole not large enough to even fit a hand through. Dim light filters in from an unknown source.",
+          "small hole": "It is a hole not large enough to even fit a hand through. Dim light filters in from an unknown source.",
+          "alley": "You are standing in a dark, dank alley. It doesn't seem to be frequented by many people. The light plays tricks on your eyes and you are sure you hear footsteps but you are unsure where they come from.",
+          "sunlight": "An archway to the west is letting in sunlight. From your view in the alley you can see the Outer Ring of Therus just outside the alley."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city old silver hollow"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 36,
+      "roomid": "OUTERRINGSW1",
+      "name": "Outer Ring, Southwest Therus",
+      "description": "  The Outer Ring of Therus continues to run its course through the western side of the city. The road continues south from here, a stone wall following it alongside. An intersection with Ruther's Road is visible north, although the area sees very little traffic.",
+      "mapX": 184,
+      "mapY": 324,
+      "roomExits": {
+        "North": "RRSILVERMERERING",
+        "South": "OUTERRINGSW2"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "intersection": "The Ruther's Road intersection to the south is where the Outer Ring intersects with one of Therus's main thoroughfares. There doesn't seem to be a lot of traffic coming through here.",
+          "wall": "A stone wall made of little more than large stones and simple mortar. This wall surrounds Therus's cemetary.",
+          "cemetary": "The stone wall surrounding the cemetary is so tall you can barely see anything over it. You do spy a mausoleum roof and some of the taller grave markers inside.",
+          "therus cemetary": "The stone wall surrounding the cemetary is so tall you can barely see anything over it. You do spy a mausoleum roof and some of the taller grave markers inside."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 37,
+      "roomid": "OUTERRINGSW2",
+      "name": "Outer Ring, Southwest Therus",
+      "description": "  The Outer Ring of Therus continues to run its course through the western side of the city. The road continues north and south from here, a stone wall following it alongside. A gate barring entry into the cemetary of Therus is built into the eastern wall.",
+      "mapX": 184,
+      "mapY": 344,
+      "roomExits": {
+        "North": "OUTERRINGSW1",
+        "South": "OUTERRINGSW3"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "wall": "A stone wall made of little more than large stones and simple mortar. This wall surrounds Therus's cemetary.",
+          "cemetary": "Through the gate you can see a mausoleum, a couple of neat headstones, and a large statue in the middle. The place seems peaceful. No skeletons, ghosts, wights, zombies, ghouls, undead, vampires, draugr, liches, mummies, banshees, or wraiths. None at all.",
+          "therus cemetary": "Through the gate you can see a mausoleum, a couple of neat headstones, and a large statue in the middle. The place seems peaceful. No skeletons, ghosts, wights, zombies, ghouls, undead, vampires, draugr, liches, mummies, banshees, or wraiths. None at all.",
+          "gate": "It's wrought ironm of course, and pointy as all get out. Like maybe the interred will be deterred from fear of being poked as they crawl over the gate."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 38,
+      "roomid": "OUTERRINGSW3",
+      "name": "Outer Ring, Southwest Therus",
+      "description": "  The Outer Ring of Therus begins to turn east here, banking away from the western side of the city. It continues north and southeast, a stone wall following it alongside.",
+      "mapX": 184,
+      "mapY": 364,
+      "roomExits": {
+        "North": "OUTERRINGSW2",
+        "Southeast": "OUTERRINGSW4"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "wall": "A stone wall made of little more than large stones and simple mortar. This wall surrounds Therus's cemetary.",
+          "cemetary": "The stone wall surrounding the cemetary is so tall you can barely see anything over it. You do spy a mausoleum roof and some of the taller grave markers inside.",
+          "therus cemetary": "The stone wall surrounding the cemetary is so tall you can barely see anything over it. You do spy a mausoleum roof and some of the taller grave markers inside."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 39,
+      "roomid": "OUTERRINGSW4",
+      "name": "Outer Ring, Southwest Therus",
+      "description": "  The Outer Ring of Therus turns here alongside the southwest wall of the city. It continues northwest and southeast. To the north, a stone wall emerges from behind a dilapidated wharf warehouse.",
+      "mapX": 204,
+      "mapY": 384,
+      "roomExits": {
+        "Northwest": "OUTERRINGSW3",
+        "Southeast": "OUTERRINGSW5"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "wall": "A stone wall made of little more than large stones and simple mortar. This wall surrounds Therus's cemetary.",
+          "cemetary": "The stone wall surrounding the cemetary is so tall you can barely see anything over it. You do spy a mausoleum roof and some of the taller grave markers inside.",
+          "therus cemetary": "The stone wall surrounding the cemetary is so tall you can barely see anything over it. You do spy a mausoleum roof and some of the taller grave markers inside.",
+          "wharf": "Just in view beyond the old warehouse buildings surrounding it is a small wharf, placed alongside one of the waterways passing through the city.",
+          "warehouse": "An old wooden structure, the warehouse overlooks the Therus wharf, which runs perpendicular to the road southeast of here."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 40,
+      "roomid": "OUTERRINGSW5",
+      "name": "Outer Ring, Southwest Therus",
+      "description": "  The Outer Ring of Therus continues to turn here alongside the southwest wall of the city. It continues northwest and southeast, where a wide, tall bridge crosses one of the waterways in Therus. To the northeast, a small wharf, bordered by warehouses on the north side, follows the waterway.",
+      "mapX": 224,
+      "mapY": 404,
+      "roomExits": {
+        "Northwest": "OUTERRINGSW4",
+        "Southeast": "OUTERRINGPROMENADE1"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "wharf": "The wharf intersects the Outer Ring here, allowing travellers and merchants access to boats moored there.",
+          "warehouse": "An old wooden structure, the warehouse overlooks the Therus wharf, which runs perpendicular to the road southeast of here.",
+          "bridge": "An old bridge, tall enough to let barges and small watercraft underneath, spans a waterway to the southeast."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 41,
+      "roomid": "OUTERRINGPROMENADE1",
+      "name": "Outer Ring, Therus Promenade",
+      "description": "  The Outer Ring of Therus becomes a promenade here as it winds its way along the southern end of the city past a sandy shoreline. Across the water, Therus's wharf is visible with its many warehouses. A wide, tall bridge crosses one of the cities waterways to the northwest. The Outer Ring continues east.",
+      "mapX": 244,
+      "mapY": 424,
+      "roomExits": {
+        "Northwest": "OUTERRINGSW5",
+        "East": "OUTERRINGPROMENADE2"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "wharf": "Across the waterway, a wharf can be seen running along the shore. A set of warehouses are standing just beyond.",
+          "warehouses": "Old wooden structures in various stages of repair, the warehouses overlook the Therus wharf, which runs perpendicular to the road northwest of here.",
+          "bridge": "An old bridge, tall enough to let barges and small watercraft underneath, spans a waterway to the northwest.",
+          "shoreline": "The shoreline is mostly sand, grit, and rocks that have been filtered from the waterway as it twists through the city."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets", "therus lizard camp"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 42,
+      "roomid": "OUTERRINGPROMENADE2",
+      "name": "Outer Ring, Therus Promenade",
+      "description": "  The Outer Ring of Therus promenade widens as it winds its way along the southern end of the city past a sandy shoreline. Across the water, Therus's wharf is visible with its many warehouses. A beach forms here between the road and the water. The Outer Ring continues east and west.",
+      "mapX": 264,
+      "mapY": 424,
+      "roomExits": {
+        "West": "OUTERRINGPROMENADE1",
+          "East": "OUTERRINGPROMENADE3"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "wharf": "Across the waterway, a wharf can be seen running along the shore. A set of warehouses are standing just beyond.",
+          "warehouses": "Old wooden structures in various stages of repair, the warehouses overlook the Therus wharf, which runs perpendicular to the road northwest of here.",
+          "shoreline": "The shoreline is mostly sand, grit, and rocks that have been filtered from the waterway as it twists through the city.",
+          "beach": "The shoreline is mostly sand, grit, and rocks that have been filtered from the waterway as it twists through the city."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets", "therus lizard camp"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 43,
+      "roomid": "OUTERRINGPROMENADE3",
+      "name": "Outer Ring, Therus Promenade",
+      "description": "  The Outer Ring of Therus promenade widens as it winds its way along the southern end of the city past a sandy shoreline. Across the water, Therus's wharf is visible with its many warehouses. Lizardmen roam the beach, catching fish and basking in the glow of numerous campfires. The Outer Ring continues east and west.",
+      "mapX": 284,
+      "mapY": 424,
+      "roomExits": {
+        "West": "OUTERRINGPROMENADE2",
+        "East": "OUTERRINGPROMENADE4"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "wharf": "Across the waterway, a wharf can be seen running along the shore. A set of warehouses are standing just beyond.",
+          "warehouses": "Old wooden structures in various stages of repair, the warehouses overlook the Therus wharf, which runs perpendicular to the road northwest of here.",
+          "shoreline": "The shoreline is mostly sand, grit, and rocks that have been filtered from the waterway as it twists through the city. It appears some Lizardmen are using this as a camp. They've gathered around campfires and are actively fishing in the waterway.",
+          "beach": "The shoreline is mostly sand, grit, and rocks that have been filtered from the waterway as it twists through the city. It appears some Lizardmen are using this as a camp. They've gathered around campfires and are actively fishing in the waterway.",
+          "lizardmen": "Lizardmen are scurrying about this part of town, preparing meals and laying on rocks on the beach.",
+          "campfires": "The heat in this area of town seems unnatural, but its likely due to the numerous campfires the Lizardmen have lit in order to stave off any sense of chill."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets", "therus lizard camp"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 44,
+      "roomid": "OUTERRINGPROMENADE4",
+      "name": "Outer Ring, Therus Promenade",
+      "description": "  The Outer Ring of Therus promenade widens as it winds its way along the southern end of the city past a sandy shoreline. Across the water, Therus's wharf is visible with its many warehouses. A Lizardmen camp has consumed most of the space on the beach. A dam has been built to the east and the Outer Ring continues over the top, as well as to the west along the shoreline. A narrow path continues along the southern fork of the waterway to the southeast.",
+      "mapX": 304,
+      "mapY": 424,
+      "roomExits": {
+        "West": "OUTERRINGPROMENADE3",
+        "East": "OUTERRINGDAM"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "wharf": "Across the waterway, a wharf can be seen running along the shore. A set of warehouses are standing just beyond.",
+          "warehouses": "Old wooden structures in various stages of repair, the warehouses overlook the Therus wharf, which runs perpendicular to the road northwest of here.",
+          "shoreline": "The shoreline is mostly sand, grit, and rocks that have been filtered from the waterway as it twists through the city. It is covered in tents and campfires from the Lizardmen who have made this area of Therus their home.",
+          "beach": "The shoreline is mostly sand, grit, and rocks that have been filtered from the waterway as it twists through the city. It is covered in tents and campfires from the Lizardmen who have made this area of Therus their home.",
+          "lizardmen": "Lizardmen are scurrying about this part of town, preparing meals and laying on rocks on the beach.",
+          "campfires": "The heat in this area of town seems unnatural, but its likely due to the numerous campfires the Lizardmen have lit in order to stave off any sense of chill.",
+          "dam": "There is a wooden dam here, slowing the water flow through the southern edge of the city. It has created an additional bit of shoreline along the southern fork of the river.",
+          "path": "A narrow path steps down past the dam along the shoreline formed by the water reduction."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets", "therus lizard camp"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 45,
+      "roomid": "OUTERRINGDAM",
+      "name": "Outer Ring, Therus Dam",
+      "description": "  The Outer Ring of Therus climbs up over a dam built through the southern fork of the waterway running through town. The view is spectacular but there is a tensity to the air. There is little traffic crossing the dam, and there is sign of past struggles. The presence of numerous town guards indicates that this area isn't one you want to loiter in for too long. The road continues back down to ground level east and west.",
+      "mapX": 324,
+      "mapY": 424,
+      "roomExits": {
+        "West": "OUTERRINGPROMENADE4",
+        "East": "OUTERRINGLOWERUMBERTON1"
+      },
+      "flavorObjects": {
+          "road": "The road here is made of wood planks, built into the Therus dam.",
+          "lizardmen": "Lizardmen stay away from the center section of the dam. None cross into the opposing side, where the Gillmen have set up camp.",
+          "gillmen": "Gillmen do not cross the dam to where the Lizardmen have set up camp. They remain on the eastern side.",
+          "dam": "You stand atop a large wooden dam. Water is restricted in its flow underneath, producing a lower water level on the south side.",
+          "view": "From here you can see straight down the waterway, past the East Umberton bridge, and over the entire wharf area.",
+          "guards": "Several guards are stationed here, relaxed but wary of the traffic crossing the bridge.",
+          "wharf": "Across the waterway, a wharf can be seen running along the shore. A set of warehouses are standing just beyond.",
+          "warehouses": "Old wooden structures in various stages of repair, the warehouses overlook the Therus wharf."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 46,
+      "roomid": "OUTERRINGLOWERUMBERTON1",
+      "name": "Outer Ring, Lower East Umberton",
+      "description": "  The Outer Ring of Therus promenade widens as it winds its way along the southern end of the city past a sandy shoreline. The suburb of East Umberton is visible to the northeast, its sandstone buildings stretching into the air. Gillmen have set up camps on the shoreline to the north and south, and quite a few of them mill around the road here. A dam has been built to the west and the Outer Ring continues over the top, as well as to the east along the shoreline.",
+      "mapX": 344,
+      "mapY": 424,
+      "roomExits": {
+        "West": "OUTERRINGDAM",
+        "East": "OUTERRINGLOWERUMBERTON2"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "shoreline": "The shoreline is mostly sand, grit, and rocks that have been filtered from the waterway as it twists through the city. It is covered in tents and small pools of water from the various Gillmen who have set up camp here.",
+          "beach": "The shoreline is mostly sand, grit, and rocks that have been filtered from the waterway as it twists through the city. It is covered in tents and small pools of water from the various Gillmen who have set up camp here.",
+          "dam": "There is a wooden dam here, slowing the water flow through the southern edge of the city. It has created an additional bit of shoreline along the southern fork of the river.",
+          "gillmen": "Several Gillmen are roaming here, looking apprehensively at the dam. The rest litter the shoreline, laying in pools of water or swimming in the waterway."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets", "therus gillmen camp"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 47,
+      "roomid": "OUTERRINGLOWERUMBERTON2",
+      "name": "Outer Ring, Lower East Umberton",
+      "description": "  The Outer Ring of Therus promenade widens as it winds its way along the southern end of the city past a sandy shoreline. The suburb of East Umberton is visible to the northeast, its sandstone buildings stretching into the air. Gillmen have set up camps on the shoreline to the north, and quite a few of them mill around the road here. The Outer Ring continues west, and bends northeast.",
+      "mapX": 364,
+      "mapY": 424,
+      "roomExits": {
+        "West": "OUTERRINGLOWERUMBERTON1",
+        "Northeast": "OUTERRINGLOWERUMBERTON3"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "shoreline": "The shoreline is mostly sand, grit, and rocks that have been filtered from the waterway as it twists through the city. It is covered in tents and small pools of water from the various Gillmen who have set up camp here.",
+          "beach": "The shoreline is mostly sand, grit, and rocks that have been filtered from the waterway as it twists through the city. It is covered in tents and small pools of water from the various Gillmen who have set up camp here.",
+          "gillmen": "Several Gillmen are roaming here. The rest litter the shoreline, laying in pools of water or swimming in the waterway."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets", "therus gillmen camp"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 48,
+      "roomid": "OUTERRINGLOWERUMBERTON3",
+      "name": "Outer Ring, Lower East Umberton",
+      "description": "  The Outer Ring of Therus reaches a point where it begins to open up around a sharp corner to the southwest. The suburb of East Umberton comes to a stop, and a corner store has occupied the south corner of the nearest sandstone building. Gillmen seem much more prevalent in this area and you see a few camps up ahead along the road. The Outer Ring continues northeast and southwest.",
+      "mapX": 384,
+      "mapY": 404,
+      "roomExits": {
+        "Southwest": "OUTERRINGLOWERUMBERTON2",
+        "Northeast": "OUTERRINGLOWERUMBERTON4",
+        "Northwest": "SEAMENSPROVISIONS"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "gillmen": "A couple of Gillmen are roaming here, and there seem to be even more along the road to the southwest.",
+          "corner store": "The sign above the store reads 'Seamen's Provisions'. The storefront wraps around the south corner of the building. It seems to be a popular place, as there are gillmen coming and going freely from the entrance northwest."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets", "therus gillmen camp"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 49,
+      "roomid": "OUTERRINGLOWERUMBERTON4",
+      "name": "Outer Ring, Lower East Umberton",
+      "description": "  The Outer Ring of Therus continues to bend around the southeast wall of the city as it progresses through the East Umberton suburb. Homes and businesses litter the sandstone buildings around you. Beyond the normal path of traffic, you can see a small alleyway in between two of the buildings to the northwest. The Outer Ring continues northeast and southwest.",
+      "mapX": 404,
+      "mapY": 384,
+      "roomExits": {
+        "Southwest": "OUTERRINGLOWERUMBERTON3",
+        "Northeast": "OUTERRINGEASTUMBERTON1",
+        "Northwest": "LOWERUMBERTONALLEY1"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "alley": "A thin alley with a levelled brick floor divides two buildings to the northwest. It doesn't seem to be getting a lot of traffic.",
+          "alleyway": "A thin alley with a levelled brick floor divides two buildings to the northwest. It doesn't seem to be getting a lot of traffic.",
+          "homes": "The homes here are newer, their sandstone architecture shows much less wear than other parts of the city.",
+          "businesses": "Shops and professional business make their home in the many sandstone buildings around here."
+
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 50,
+      "roomid": "OUTERRINGEASTUMBERTON1",
+      "name": "Outer Ring, East Umberton",
+      "description": "  The Outer Ring of Therus begins to bend around the southeast wall of the city as it progresses through the East Umberton suburb. Homes and businesses litter the sandstone buildings around you. The Outer Ring continues north and southwest from here.",
+      "mapX": 424,
+      "mapY": 364,
+      "roomExits": {
+        "Southwest": "OUTERRINGLOWERUMBERTON4",
+        "North": "OUTERRINGEASTUMBERTON2"
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "homes": "The homes here are newer, their sandstone architecture shows much less wear than other parts of the city.",
+          "businesses": "Shops and professional business make their home in the many sandstone buildings around here."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 51,
+      "roomid": "OUTERRINGEASTUMBERTON2",
+      "name": "Outer Ring, East Umberton",
+      "description": "  The Outer Ring of Therus continues toward the southern end of the city as it progresses through the East Umberton suburb. Homes and businesses litter the sandstone buildings around you. The Outer Ring continues north and south from here.",
+      "mapX": 424,
+      "mapY": 344,
+      "roomExits": {
+        "South": "OUTERRINGEASTUMBERTON1",
+        "North": "OUTERRINGEASTUMBERTON3"
+
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "homes": "The homes here are newer, their sandstone architecture shows much less wear than other parts of the city.",
+          "businesses": "Shops and professional business make their home in the many sandstone buildings around here."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 52,
+      "roomid": "OUTERRINGEASTUMBERTON3",
+      "name": "Outer Ring, East Umberton",
+      "description": "  The Outer Ring of Therus continues toward the southern end of the city as it progresses through the East Umberton suburb. Homes and businesses litter the sandstone buildings around you. The Outer Ring continues south from here. To the north, you see an intersection between the Outer Ring and Ruther's Road, one of Therus's main thoroughfares.",
+      "mapX": 424,
+      "mapY": 324,
+      "roomExits": {
+        "South": "OUTERRINGEASTUMBERTON2",
+        "North": "RREASTUMBERRING"
+
+      },
+      "flavorObjects": {
+          "road": "The road here is newer and paved with cross hatched brick.",
+          "brick road": "The road here is newer and paved with cross hatched brick.",
+          "brick": "The bricks are new and have a variety of designs to them.",
+          "homes": "The homes here are newer, their sandstone architecture shows much less wear than other parts of the city.",
+          "businesses": "Shops and professional business make their home in the many sandstone buildings around here."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+      {
+      "id": 0,
+      "roomid": "SEAMENSPROVISIONS",
+      "name": "Seamen's Provisions, Lower East Umberton",
+      "description": "  This place is humid, to the point where everything feels slightly damp and overwhelmingly clammy. The walls and floors molder under the amount of water in the air. Seamen's Provisions is packed to the gills in Gillmen. They're purchasing dried food at a deli counter, squeezing baskets of kelp, and helping themselves to pairs of dungarees. The walls are covered in all sorts of tools and materials. The only exit is through a pair of double glass doors to the southeast.",
+      "mapX": 374,
+      "mapY": 390,
+      "roomExits": {
+        "Southeast": "OUTERRINGLOWERUMBERTON3"
+      },
+      "flavorObjects": {
+          "walls": "It looks like old, misplaced clapboard. The whole thing feels like a disused ship.",
+          "floors": "It looks like old, misplaced clapboard. The whole thing feels like a disused ship.",
+          "gillmen": "Gillmen. Fishpeople. Their eyes bug and shift around the place like they're always ready to scurry away from a predator.",
+          "dried food": "It all looks like dried up vegetables.",
+          "baskets of kelp": "Wicker baskets of fresh, wet kelp. You can't tell where this stuff comes from.",
+          "dungarees": "Your incomplete, land-based grade school education can't seem to recall if fish have exposed genitalia, but as a matter of taste, they'll wear pants.",
+          "tools": "Digging tools, hammering tools, nailing tools. You name it, Seamen's got it.",
+          "materials": "Primarily discarded wood, although there are a few metal scraps laying around.",
+          "double doors": "A pair of doors with inset glass with a pair of ornate wooden handles."
+      },
+      "inventory": {
+      },
+      "shop": {
+          "armorLeatherHat" : {
+              "basePriceDif" : "0",
+              "count" : "5"
+          },
+          "itemTorch" : {
+              "basePriceDif" : "0",
+              "count" : "10"
+          }
+      },
+      "region": {
+          "area" : ["therus city", "therus gillmen camp"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 0,
+      "roomid": "HELGURDPARADEMID",
+      "name": "Helgurd Manor Parade Grounds",
+      "description": "  You stand in the middle of Helgurd Manor's parade grounds. The manor proper is just visible beyond a tall stone wall far to the south. The citizens of Therus mill around here, some on their days off, some looking for something to take days off from. The parade grounds continue north, west, and east from here. To the south, you can see where Ruther's Road leads through town.",
+      "mapX": 304,
+      "mapY": 284,
+      "roomExits": {
+        "East": "HELGURDPARADEEAST",
+        "South": "RRHELGURDEAST2",
+        "North": "HELGURDPARADENORTH",
+        "West": "HELGURDPARADEWEST"
+      },
+      "flavorObjects": {
+          "parade": "There isn't a god damn parade here, its just an area of grass.",
+          "grounds": "The grounds are an open area between the Silvermere suburb and the Helgurd Manor. It is where citizens of Therus meet and mingle, and where any civil announcement can be made.",
+          "parade grounds": "The grounds are an open area between the Silvermere suburb and the Helgurd Manor. It is where citizens of Therus meet and mingle, and where any civil announcement can be made.",
+          "manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus.",
+          "helgurd manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 0,
+      "roomid": "HELGURDPARADENORTH",
+      "name": "Helgurd Manor Parade Grounds",
+      "description": "  You stand in the northern edge of Helgurd Manor's parade grounds. The manor proper is just visible beyond a tall stone wall far to the south. The citizens of Therus mill around here, some on their days off, some looking for something to take days off from. A small tent bazaar has set up here, its proprietor shouting over the din of the crowd. The parade grounds continue south, west, and east from here.",
+      "mapX": 304,
+      "mapY": 264,
+      "roomExits": {
+        "East": "HELGURDPARADENORTHEAST",
+        "South": "HELGURDPARADEMID",
+        "West": "HELGURDPARADENORTHWEST"
+      },
+      "flavorObjects": {
+          "parade": "There isn't a god damn parade here, its just an area of grass.",
+          "grounds": "The grounds are an open area between the Silvermere suburb and the Helgurd Manor. It is where citizens of Therus meet and mingle, and where any civil announcement can be made.",
+          "parade grounds": "The grounds are an open area between the Silvermere suburb and the Helgurd Manor. It is where citizens of Therus meet and mingle, and where any civil announcement can be made.",
+          "manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus.",
+          "helgurd manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus."
+      },
+      "inventory": {
+      },
+      "shop": {
+          "weaponDagger" : {
+              "basePriceDif" : "4",
+              "count" : "2"
+          },
+          "weaponLongsword" : {
+              "basePriceDif" : "4",
+              "count" : "2"
+          },
+          "armorWoodenShield" : {
+              "basePriceDif" : "4",
+              "count" : "2"
+          },
+          "weaponWoodenBow" : {
+              "basePriceDif" : "4",
+              "count" : "2"
+          }
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 0,
+      "roomid": "HELGURDPARADEWEST",
+      "name": "Helgurd Manor Parade Grounds",
+      "description": "  You stand in the western edge of Helgurd Manor's parade grounds. The manor proper is just visible beyond a tall stone wall far to the south. The tall, red brick walls of Silvermere's flats and tenements tower over the parade grounds to the west. The parade grounds continue north and east from here. You can see where Ruther's Road leads through town south of here.",
+      "mapX": 284,
+      "mapY": 284,
+      "roomExits": {
+        "East": "HELGURDPARADEMID",
+        "South": "RRHELGURDGATE",
+        "North": "HELGURDPARADENORTHWEST"
+      },
+      "flavorObjects": {
+          "parade": "There isn't a god damn parade here, its just an area of grass.",
+          "grounds": "The grounds are an open area between the Silvermere suburb and the Helgurd Manor. It is where citizens of Therus meet and mingle, and where any civil announcement can be made.",
+          "parade grounds": "The grounds are an open area between the Silvermere suburb and the Helgurd Manor. It is where citizens of Therus meet and mingle, and where any civil announcement can be made.",
+          "manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus.",
+          "helgurd manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus.",
+          "walls": "Silvermere, Therus's oldest suburb, is predominantly made of aging red brick and mortar.",
+          "flats": "Small apartments and housing for families who have lived in Therus for a very long time, or those just down on their luck. The two may be synonymous.",
+          "tenements": "Small apartments and housing for families who have lived in Therus for a very long time, or those just down on their luck. The two may be synonymous."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 0,
+      "roomid": "HELGURDPARADENORTHWEST",
+      "name": "Helgurd Manor Parade Grounds",
+      "description": "  You stand in the northwestern corner of Helgurd Manor's parade grounds. The tall, red brick walls of Silvermere's flats and tenements surround the parade grounds to the north and west. Tunneled into the western wallis a thin, dark alley. The parade grounds continue south and east from here.",
+      "mapX": 284,
+      "mapY": 264,
+      "roomExits": {
+        "East": "HELGURDPARADENORTH",
+        "South": "HELGURDPARADEWEST",
+        "West": "OLDSILVERHOLLOW4"
+      },
+      "flavorObjects": {
+          "parade": "There isn't a god damn parade here, its just an area of grass.",
+          "grounds": "The grounds are an open area between the Silvermere suburb and the Helgurd Manor. It is where citizens of Therus meet and mingle, and where any civil announcement can be made.",
+          "parade grounds": "The grounds are an open area between the Silvermere suburb and the Helgurd Manor. It is where citizens of Therus meet and mingle, and where any civil announcement can be made.",
+          "manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus.",
+          "helgurd manor": "Helgurd Manor is the homestead of Rufus Helgurd, Lord of Therus.",
+          "alley": "A dark, brick lined alley lies west. It appears to tunnel through some sort of tenement housing above.",
+          "alleyway": "A dark, brick lined alley lies west. It appears to tunnel through some sort of tenement housing above.",
+          "sign": "The sign is grimy and old, but you can make out the words 'Old Silvermere Hollow'",
+          "flats": "Small apartments and housing for families who have lived in Therus for a very long time, or those just down on their luck. The two may be synonymous.",
+          "tenements": "Small apartments and housing for families who have lived in Therus for a very long time, or those just down on their luck. The two may be synonymous."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city", "therus city streets"],
+          "map" : "CityOfTherus"
+      }
+    },
+    {
+      "id": 0,
+      "roomid": "LOWERUMBERTONALLEY1",
+      "name": "Alleyway, Lower East Umberton",
+      "description": "  Light filters in from above, although the tall sandstone buildings of East Umberton block any direct view of the sun. The brick walkway of this alleyway turns to the southeast, where it exits onto the Other Ring of Therus. The alley also continues its crooked path northward.",
+      "mapX": 384,
+      "mapY": 364,
+      "roomExits": {
+        "Southeast": "OUTERRINGLOWERUMBERTON4"
+      },
+      "flavorObjects": {
+          "alley": "Tall sandstone walls surround this levelled brick walkway between a number of East Umberton homes and businesses. Just another one of Therus's many arterial alleyways.",
+          "alleyway": "Tall sandstone walls surround this levelled brick walkway between a number of East Umberton homes and businesses. Just another one of Therus's many arterial alleyways."   
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city"],
+          "map" : "CityOfTherus"
+      }
+    }
+      
+  ],
+  "TherusProperties": [
+    {
+      "id": 0,
+      "roomid": "RREASTUMBERPROPERTY",
+      "name": "Disused Space",
+      "description": "You stand in an old, dusty, disused commercial space. An able profiteer could turn this into bags of cash.",
+      "mapX": 403,
+      "mapY": 284,
+      "roomExits": {
+        "South": "RREASTUMBEREAST"
+      },
+      "flavorObjects": {
+          "nothing": "Yea, there isn't much here yet."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city"],
+          "map" : "CityOfTherus"
+      }
+    },
+      {
+      "id": 1,
+      "roomid": "WESTRINGSILVERPROPERTY",
+      "name": "Disused Space",
+      "description": "You stand in an old, dusty, disused commercial space. An able profiteer could turn this into bags of cash.",
+      "mapX": 204,
+      "mapY": 244,
+      "roomExits": {
+        "West": "OUTERRINGSILVER9"
+      },
+      "flavorObjects": {
+          "nothing": "Yea, there isn't much here yet."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus city"],
+          "map" : "CityOfTherus"
+      }
+    }      
+  ]
+}

@@ -1,0 +1,776 @@
+{
+  "Townsfolk": [
+    {
+      "id": 0,
+      "name": "Herod",
+      "alias": { "herod": "true", "innkeeper": "true", "buttonstuffers innkeeper": "true", "keeper": "true" },
+      "roomdescription": "Herod, Buttonstuffers Innkeeper",
+      "description": "Herod is a mid-level half-halfling. He towers over the other half-denizens, but is short enough to cause himself emotional turmoil. His demeanor matches his height, and he is regularly found arguing with something or another as he skitters about the inn.",
+      "startingroom": "BBBINN",
+      "inventory": {
+      },
+      "dialog": {
+          "Hail, Barkeep!": "Another adventure capitalist looking for gossip? I'm exceptionally busy here, so get to it.",
+          "Gossip": "'A group of those slimy Gillmen came through here, looking for a fight. Usually they stick to their turf down south near the dam and fight it out with the Lizards. Don't know why they're coming through here.'",
+          "City": "'Therus? Just another city muscling for power in the Streamlands. We're one of the biggest, so we don't see a lot of fighting, but we're not without our troubles.'",
+          "Streamlands": "'Every land that sits between the Darkwater to the southeast, and the Windswept Coast to the north, including everything around Lake Tulla, we call the Streamlands. Cause of all the streams that flow across, y'see.'"
+      },
+      "secretdialog": {
+          "Cousin": { "alias": ["cousin", "ted treadlightly"], "function": "AskHerodAboutCousin"},
+          "Gillmen": { "alias": ["gillmen"], "response": "'Yea, you know...' he lowers his voice, 'fish people. They're all over Therus now. Got their own district down south near the dam. Probably drinking up all the water.' "},
+          "Lizards": { "alias": ["lizardmen", "lizards"], "response": "'The lizardmen moved in when everything went to shit on the coast. Must have been ten or so years ago? It wasn't pretty and Therus took in a whole lotta them.' "},
+          "Wet Noose": { "alias": ["wet noose"], "response": "Herod shifts on his feet. 'The Wet Noose? Uhhh... It has bar like name, but I've never heard of it. Maybe check out the Old Silvermere Inn. If there is anywhere I'd call a Wet Noose, its that place.' "},
+          "Old Silvermere Inn": { "alias": ["old silvermere inn"], "response": "'Its over on the west side of town in the Silvermere suburb. Kinda run down. Nothing like Buttonstuffers. Did I mention we have drink specials?'"},
+          "Darkwater": { "alias": ["dark water"], "response": "'Darkwater? Its down to the south and to the east a bit. Around where the streamlands start to thin out. Just another farming village really.'"},
+          "Windswept Coast": { "alias": ["windswept coast"], "response": "'Oh yea, the Windswept Coast. Wind isn't all thats sweeping that place. Its up north, past Lake Tulla. Only has one city, Hagsmouth, but you don't want to go there.'"},
+          "Hagsmouth": { "alias": ["hagsmouth"], "response": "'Not a good place, that Hagsmouth. Ten years ago, a tidal wave nearly took the place out. The water finally left, but something else took hold. Sent most of the occupants scurrying into the Streamlands looking for higher ground.'"},
+          "Buttonstuffers": { "alias": ["buttonstuffers"], "response": "'You're standing in the spot of next biggest thing in the Streamlands! It starts right here, in Therus. I just invented something I like to call Drink Specials. Also, last night I couldn't sleep, so I invented Ladies Night! Gonna try that one out later.'"},
+          "Eddy Glitter": { "alias": ["eddy glitter", "halt eddy glitter"], "response": "Herod looks at you cross, 'Eddy Glitter? Is that some kind of pop-bard? One of those post-modern multiple member bard groups? I've never heard of them.'"}           
+      },        
+      "idleEmotes":{
+          "idle1": "Herod shuffles around.",
+          "idle2": "A table of white elves make demands for waitstaff.",
+          "idle3": "Herod cleans a glass with an old rag.",
+          "idle4": "'WE NEED MORE BACON!' Herod shouts into the kitchen through an order window.",
+          "idle5": "A local bard starts playing a hackneyed song."
+      },
+      "allegiance": "Therus Townsfolk",
+      "health": 5,
+      "maxhealth": 5,
+      "energy": 7,
+      "maxenergy": 7,
+      "magic": 4,
+      "maxmagic": 4, 
+        
+      "strength": 4,
+      "agility": 6, 
+      "intellect": 3,     
+        
+      "meleepower": 10,          
+      "speed": 30,
+      "spellpower": 8,        
+        
+      "hitchance": 11,                
+      "stealth": 10,                        
+      "criticalchance": 8,
+        
+      "defence": 4,        
+      "attack": 3 
+        
+    },
+    {
+      "id": 3,
+      "name": "Mutt",
+      "alias": { "dog": "true", "mutt": "true", "roaming mutt": "true" },
+      "roomdescription": "A Roaming Mutt",
+      "description": "Its a scruffy grey mutt, sniffing around for a bone.",
+      "startingroom": "UMBERBRIDGE",
+      "inventory": {
+      },
+      "idleEmotes":{
+          "idle1": "The mutt sniffs around for discarded food.",
+          "idle2": "The mutt's ears perk up at a faint distant sound."
+      },
+      "allegiance": "Therus Townsfolk",
+
+      "health": 5,
+      "maxhealth": 5,
+      "energy": 7,
+      "maxenergy": 7,
+      "magic": 4,
+      "maxmagic": 4, 
+        
+      "strength": 4,
+      "agility": 6, 
+      "intellect": 3,     
+        
+      "meleepower": 10,          
+      "speed": 30,
+      "spellpower": 8,        
+        
+      "hitchance": 11,                
+      "stealth": 10,                        
+      "criticalchance": 8,
+        
+      "defence": 4,        
+      "attack": 3,        
+        
+      "roaming": { "area": "therus city streets", "interval": 60000 }
+    },
+    {
+      "id": 0,
+      "name": "Therus Town Guard",
+      "alias": { "guard": "true", "town guard": "true", "therus guard": "true" },
+      "roomdescription": "Therus Town Guard",
+      "description": "One of the local magistrate's hired goons. This one in particular looks a little green.",
+      "startingroom": "RREASTUMBERRING",
+      "inventory": {
+      },
+      "dialog": {
+          "Hail, Guard!": "Wot you lookin' fer?",
+          "Gossip": "'Eh, I ain' herd nuttin.'",
+          "City": "'Therus is wotever Lord Helgurd wants it to be, yea? So now, it's bigger'n mos' the towns in the Streamlan's, yea?'",
+          "Streamlands": "'You livin' in it, bub. Everythin' you see out there, from Darkwater Mill to th' east, to the coast up north. It's a helluva place, but it beats diein' out in the wastelands.'"
+      },
+      "secretdialog": {
+          "Cousin": { "alias": ["cousin", "ted treadlightly"], "response": "The guard looks you over suspiciously, 'Iffin' this an unsolved missin' persons case, go ask one-a the inspectors at the yard. I ain'chur private detective.'"},
+          "Wet Noose": { "alias": ["wet noose"], "response": "'I'll give you a Wet Noose if ye don't get outta my way.'"},
+          "Old Silvermere Inn": { "alias": ["old silvermere inn"], "response": "'Ye, somma the men like to hang out there. One-a the oldest places in town, yea?' the guard looks you over, 'Not one fer foreigners...'"},
+          "Buttonstuffers": { "alias": ["buttonstuffers"], "response": "'Yeesh... halflings. I hear they have drink specials though. I ain't heard of drink specials afore.'"},
+          "Eddy Glitter": { "alias": ["eddy glitter", "halt eddy glitter"], "response": "'Wot are you chawin' about? Eddy Glittuh? Yer fulla'it.'"}            
+      },        
+      "idleEmotes":{
+          "idle1": "The guard pulls at one of his boots.",
+          "idle2": "It seems apparent that this guard is likely napping at his post, by the sound of his snoring.",
+          "idle3": "The town guard takes a casual look around.",
+          "idle4": "\"Loiterin', thats a paddlin'. Thieverin', thats a paddlin'. Lookin' outta sorts? Thats a paddlin'...\" the town guard continues to count off local criminal acts.",
+          "idle5": "\"'EY! YOU KIDS! GET OUTTA THE STREET AFORE I KIT YE IN THE BUTTONS!\" the town guard shouts as a couple of ne'er-do-well children chase a rat down the road."          
+      },
+      "allegiance": "Therus Townsfolk",
+        
+      "health": 5,
+      "maxhealth": 5,
+      "energy": 7,
+      "maxenergy": 7,
+      "magic": 4,
+      "maxmagic": 4, 
+        
+      "strength": 4,
+      "agility": 6, 
+      "intellect": 3,     
+        
+      "meleepower": 10,          
+      "speed": 30,
+      "spellpower": 8,        
+        
+      "hitchance": 11,                
+      "stealth": 10,                        
+      "criticalchance": 8,
+        
+      "defence": 4,        
+      "attack": 3,
+        
+      "roaming": { "area": "therus city streets", "interval": 60000 }        
+    },
+      {
+      "id": 0,
+      "name": "Onig Da",
+      "alias": { "onig": "true", "da": "true", "vendor": "true", "hot dog vendor": "true" },
+      "roomdescription": "Onig Da, Hot Dog Vendor",
+      "description": "Onig Da is a chubby bearded house elf who has obviously been trying to hock hot dogs here for some time. He flails about, shouting about his wares, his cleanly pressed apron billowing with every overdone movement.",
+      "startingroom": "KLEPPIRAPARTMENTS",
+      "inventory": {
+      },
+      "dialog": {
+          "Greetings": "'YOU! You are obviously here for Onig Da's latest menu item. You need to try this. I call it, 'Bermudadonkulous'. You take a poppy seed bun, see, and you take one of these bat-dogs, top it with ancho-chili lime sauce...'",
+          "Gossip": "Onig Da pulls at his beard, 'Ehhhh, theres a lot to know in this city. I'm just the hot dog man...'",
+          "City": "'Beautiful, beautiful Therus.' Onigs arms flail about as he gestures to the city. 'I moved here when I was just a lad. It sure beats Hagsmouth, thats for damn sure.'",
+          "Bermudadonkulous": "'... then you take precisely 13 carrot rounds and place them ever so delicately along the edge, careful not to disturb the mottling of the meat...'"
+      },
+      "secretdialog": {
+          "Cousin": { "alias": ["cousin", "ted treadlightly"], "response": "Onig Da rests a hand at his chin. 'Treadlightly... sounds more like advice than a name. Either way, I don't know 'em."},
+          "Wet Noose": { "alias": ["wet noose"], "response": "'Ha Ha! Whatta you gonna go lookin' for trouble? The Wet Noose is a gang bar under the Old Silvermere Inn, but you'll never get in without someone to speak for you.'"},
+          "Onig Da": { "alias": ["onig da"], "response": "'Oh I've been here since I was a kid. Moved from Hagsmouth back before all the mess came up on shore. Thankfully none of thats come down on the tide of the river.'"},
+          "Hagsmouth": { "alias": ["hagsmouth"], "response": "Onig Da looks into the distance as he remembers something from his past, 'Yea... Hagsmouth. Not the best place to be these days. Its up north on the Windswept Coast. Whats left of it anyway... Are you here for a hotdog or what?'"},
+          "Eddy Glitter": { "alias": ["eddy glitter", "halt eddy glitter"], "response": "'Eddy Glitter, eh? Never heard of his work. Is he some kind of magician?'"}            
+      },          
+      "idleEmotes":{
+          "idle1": "Onig tosses an old condiment container into the trash.",
+          "idle2": "'FRESH HOT DOGS! GET 'EM NOW 'FORE THE CROWS DO!' barks the vendor from behind his cart.",
+          "idle3": "Meat sizzles and pops from somewhere behind the cart.",
+          "idle4": "Onig shoos a set of gathering songbirds from a perch dangerously close to his cart.",
+          "idle5": "Onig continues shouting 'I GOT HOT DOGS IN EVERY WAY YOU WANT!'"
+      },
+      "allegiance": "Therus Townsfolk",
+      "health": 5,
+      "maxhealth": 5,
+      "energy": 7,
+      "maxenergy": 7,
+      "magic": 4,
+      "maxmagic": 4, 
+        
+      "strength": 4,
+      "agility": 6, 
+      "intellect": 3,     
+        
+      "meleepower": 10,          
+      "speed": 30,
+      "spellpower": 8,        
+        
+      "hitchance": 11,                
+      "stealth": 10,                        
+      "criticalchance": 8,
+        
+      "defence": 4,        
+      "attack": 3 
+        
+    },
+      {
+      "id": 0,
+      "name": "Polenta",
+      "alias": { "polenta": "true", "nurse": "true", "nursemaid": "true"},
+      "roomdescription": "Nursemaid Polenta",
+      "description": "Polenta is a short, mid-aged human woman with bronze hair and dark glasses. She looks over to you, waiting for you to announce your inclement health.",
+      "startingroom": "THERUSMEDICAL",
+      "inventory": {
+      },
+      "dialog": {
+          "Greetings": "Polenta stares, waiting for you to produce a suppurating wound. She utters a 'Yea?' and sharply snaps her gum. ",
+          "Gossip": "'You want to hear small office politcal gossip, you came to the right place. Otherwise, you're looking for the Old Silvermere Inn. Its up the road a bit to the west.'",
+          "City": "'I don't get out much, but its got all the basics you need. At least you don't have to go out and kill your own meal.'",
+          "Therus Medical": "'We offer healing and health service. You got a knife wound? We can fix that. You a lizardman and need a compacted egg extracted? We do that too.'"
+      },
+      "secretdialog": {
+          "Cousin": { "alias": ["cousin", "ted treadlightly"], "response": "I have no idea who you are talking about. There are a lot of people in this town.'"},
+          "Wet Noose": { "alias": ["wet noose"], "response": "'I've never heard of it. Sounds like a dive bar.'"},
+          "Eddy Glitter": { "alias": ["wet noose"], "response": "Polenta rolls her eyes, 'I can't keep track of every limping, bleeding wreck that walks in here. Although, with a name like that, I imagine I'd have remembered him.'"}          
+      },          
+      "idleEmotes":{
+          "idle1": "Polenta scribbles into a sizeable ledger.",
+          "idle2": "Polenta directs a patient to a chair and shouts 'Next!'.",
+          "idle3": "The back doors open and a dwarf nurse announces'Mister Brrglr?' A limping gillman follows her through the hallway beyond.",
+          "idle4": "An orc arrives, trailing blood behind him. Polenta directs him straight through the double doors behind her.",
+          "idle5": "A clock somewhere ticks rhytmically. For the moment, there is silence in the waiting room.'",
+          "idle6": "A pair of half-drunk halflngs carry a third into the waiting room. They set up shop in a corner chair while their friend rolls and moans on the floor.'"
+      },
+      "allegiance": "Therus Townsfolk",
+      "health": 5,
+      "maxhealth": 5,
+      "energy": 7,
+      "maxenergy": 7,
+      "magic": 4,
+      "maxmagic": 4, 
+        
+      "strength": 4,
+      "agility": 6, 
+      "intellect": 3,     
+        
+      "meleepower": 10,          
+      "speed": 30,
+      "spellpower": 8,        
+        
+      "hitchance": 11,                
+      "stealth": 10,                        
+      "criticalchance": 8,
+        
+      "defence": 4,        
+      "attack": 3 
+        
+    },
+      {
+      "id": 0,
+      "name": "Karl Afton",
+      "alias": { "karl": "true", "afton": "true", "innkeeper": "true"},
+      "roomdescription": "Karl Afton, Old Silvermere Innkeeper",
+      "description": "Karl has less than the appropriate amount of fingers. You could have looked into his steely grey eyes or his dead set jaw, but instead you can only really focus on his lack of hand digits. He wears a worn down leather jerkin and a pair of dark cotton pants. His boots are a midnight black, almost like none you've ever seen, and you are sure they hide an equally odd number of toes as well.",
+      "startingroom": "OLDSILVERMEREINN",
+      "inventory": {
+      },
+      "dialog": {
+          "Hail, Barkeep!": "Karl sneers 'Yes... I'll be with you in a moment.' ",
+          "Gossip": "Karl lowers his voice and gets in close, 'Well, I heard that old man Helgurd's got another sniveling pocket rat wandering the sewers, sticking his whiskers where they don't belong.'",
+          "City": "'Therus. Its here. We're here. We've been here longer than Therus has, but it doesn't matter. In the Streamlands, nothing is anything for too long.'",
+          "Old Silvermere Inn": "Karl straightens, a look of pride in his eye, 'The old lady keeps on. This building represented the city center of Silvermere province some time back. It used to be, if you were passing through the Streamlands, you passed through the Silvermere Inn.'"
+      },
+      "secretdialog": {
+          "Cousin": { "alias": ["cousin", "ted treadlightly"], "response": "...Treadlightly? I think he should have taken his name to heart.' an unseen patron lets out a guffaw, 'If you're looking for him, I think you'll be looking across the street, although I don't think he could afford a proper burial place.'"},
+          "Wet Noose": { "alias": ["wet noose"], "response": "Karl's eyes narrow, 'I think you've been listening to too many conspiracies belted out by old wastrels.'"},
+          "Buttonstuffers": { "alias": ["buttonstuffers"], "response": "'Hah, that halfway house for half-people? Businesses come and go. Some of them sooner than others.'"},
+          "Eddy Glitter": { "alias": ["wet noose"], "response": "'Eddy Glitter, uh... I don't think a guy with a name like that is going to come to a place like this.'"}          
+      },          
+      "idleEmotes":{
+          "idle1": "A quiet cough is uttered from no one in particular.",
+          "idle2": "Some avid conversation occurs at just above a whisper from the table in the back corner.",
+          "idle3": "Karl clinks a glass while cleaning it, piercing the silence.",
+          "idle4": "Some boards creak from above.",
+          "idle5": "You hear distant, slow, methodical footsteps somewhere in the building.",
+          "idle6": "A carriage passes, its grinding wheels filling the inn with sound."
+      },
+      "allegiance": "Therus Townsfolk",
+      "health": 5,
+      "maxhealth": 5,
+      "energy": 7,
+      "maxenergy": 7,
+      "magic": 4,
+      "maxmagic": 4, 
+        
+      "strength": 4,
+      "agility": 6, 
+      "intellect": 3,     
+        
+      "meleepower": 10,          
+      "speed": 30,
+      "spellpower": 8,        
+        
+      "hitchance": 11,                
+      "stealth": 10,                        
+      "criticalchance": 8,
+        
+      "defence": 4,        
+      "attack": 3 
+        
+    },
+      {
+      "id": 0,
+      "name": "Irolynn",
+      "alias": { "irolynn": "true"},
+      "roomdescription": "Irolynn",
+      "description": "A thin, grey-haired House Elf sits at the bar, uninterested in anything other than the mug he's been brought.",
+      "startingroom": "OLDSILVERMEREINN",
+      "inventory": {
+      },
+      "dialog": {
+          "Hello?": "Irolynn doesn't respond directly, but points to the seat next to him.",
+          "Gossip": "Irolynn doesn't seem to be the one for talking."
+      },
+      "secretdialog": {
+          "Cousin": { "alias": ["cousin", "ted treadlightly"], "function": "AskIrolynnAboutCousin"},
+          "Wet Noose": { "alias": ["wet noose"], "function": "AskIrolynnAboutWetNoose"},
+          "Eddy Glitter": { "alias": ["wet noose"], "response": "Irolynn shrugs."}
+      },          
+      "allegiance": "Therus Townsfolk",
+      "health": 5,
+      "maxhealth": 5,
+      "energy": 7,
+      "maxenergy": 7,
+      "magic": 4,
+      "maxmagic": 4, 
+        
+      "strength": 4,
+      "agility": 6, 
+      "intellect": 3,     
+        
+      "meleepower": 10,          
+      "speed": 30,
+      "spellpower": 8,        
+        
+      "hitchance": 11,                
+      "stealth": 10,                        
+      "criticalchance": 8,
+        
+      "defence": 4,        
+      "attack": 3 
+        
+    },
+      {
+      "id": 0,
+      "name": "Seamen",
+      "alias": { "seamen": "true", "seaman": true, "provisioner": true, "shopkeep": true},
+      "roomdescription": "Provisioner Seamen",
+      "description": "An iridescent green and blue Gillman, donned in a pair of overalls and a stained, damp shirt, stands behind a counter, pointing and gurgling to other patrons. His eyes skitter across counters and displays, always checking and repositioning his wares. He has the stature of a merchant at the height of his trade.",
+      "startingroom": "SEAMENSPROVISIONS",
+      "inventory": {
+      },
+      "dialog": {
+          "Hello?": "'Huuluu, guud tu see yuu. Ahhre yuu lhuuging fur suuntung?'",
+          "Gossip": "Seamen's ungulating throat hole tries to keep itself at a whisper. 'Tuh duum us truhht'nd! Tuh lusuuhdmun nut wunt wutuur. Ut truhhtun us ull.'",
+          "Gillmen": "'Muush luhve fur Tuhrus. Wuh Uhscupe tuh dusuhstuh uhf Wundsuup Cuhst.'",          
+          "Lizardmen": "'Uuu yuus! Muushh us uuupuuuuhn uuus. Tuh lusuuhdmun uh gruut truhht tuu uus.' Seamen stops to make a gulping noise, which may or may not have been for effect, 'Wuh wull fuuht tuh stuy huuur. Wuh wull nut luuve.'"                    
+      },
+      "secretdialog": {
+          "Cousin": { "alias": ["cousin", "ted treadlightly"], "response": "'Wuuht? Uuh've nuvuh suuh uhm. Uh nuvuh luhve muh shuup.'"},
+          "Wet Noose": { "alias": ["wet noose"], "response": "'Huh huh! Uuh've nut huurd uv ut. Guhhmun duh nut huhve nucgs!'"}
+      },          
+      "allegiance": "Therus Gillmen",
+      "health": 5,
+      "maxhealth": 5,
+      "energy": 7,
+      "maxenergy": 7,
+      "magic": 4,
+      "maxmagic": 4, 
+        
+      "strength": 4,
+      "agility": 6, 
+      "intellect": 3,     
+        
+      "meleepower": 10,          
+      "speed": 30,
+      "spellpower": 8,        
+        
+      "hitchance": 11,                
+      "stealth": 10,                        
+      "criticalchance": 8,
+        
+      "defence": 4,        
+      "attack": 3 
+        
+    },
+      {
+      "id": 0,
+      "name": "A Pair of Beady Eyeballs",
+      "alias": { "fairlight": "true", "eyes": true, "beady eyes": true, "dark beady eyes": true},
+      "roomdescription": "",
+      "description": "A pair of dark, beady eyes greets you in the dim light on the other side of the steel door.",
+      "startingroom": "",
+      "inventory": {
+      },
+      "dialog": {
+          "Hello?": "There is a momentary pause, '...WAT?'",
+          "Gossip": "'... JUST DA PASSWERD JOO IDIOT.'",
+          "Let Me In!": "The is a moment of decisions before the answer, 'NO...WATS DA PASSWORD?'"                  
+      },
+      "secretdialog": {
+          "Nothing": { "alias": ["nothing"], "function": "GiveFairlightPassword"},
+          "Wet Noose": { "alias": ["wet noose"], "response": "The eyes behind the door shift, 'UH, WAT... IS... DA... PASSWORD?'"}
+      },          
+      "allegiance": "Therus Townsfolk",
+      "health": 5,
+      "maxhealth": 5,
+      "energy": 7,
+      "maxenergy": 7,
+      "magic": 4,
+      "maxmagic": 4, 
+        
+      "strength": 4,
+      "agility": 6, 
+      "intellect": 3,     
+        
+      "meleepower": 10,          
+      "speed": 30,
+      "spellpower": 8,        
+        
+      "hitchance": 11,                
+      "stealth": 10,                        
+      "criticalchance": 8,
+        
+      "defence": 4,        
+      "attack": 3,
+      "visibility": "none"
+        
+    },
+      {
+      "id": 0,
+      "name": "Fairlight",
+      "alias": { "fairlight": "true"},
+      "roomdescription": "Fairlight, Doorman",
+      "description": "A gnome stands here, as tall as he can, staring at you with those dark beady eyes every gnome seems to have. This one looks pretty rough and tumble.",
+      "startingroom": "THERUSTHIEVES1",
+      "inventory": {
+      },
+      "dialog": {
+          "Hello?": "'YA YA, DE GUYS DEY'RE IN DE BACK'",
+          "Gossip": "'I'M JUS' DE DOORMEN'",
+          "Let Me Out!": "'JUS' GO. I DON NEED CHU TO TELL ME'"                  
+      },
+      "secretdialog": {
+          "Nothing": { "alias": ["nothing"], "response": "'WE DID DIS ALREADY.'"},
+          "Wet Noose": { "alias": ["wet noose"], "response": "'DIS IS IT. WELCOME.'"},
+          "Cousin": { "alias": ["cousin", "ted treadlightly", "eddy glitter"], "response": "'YEH, HE'S HERE. GO TO DE BACK.'"},
+          "Fairlight": { "alias": ["fairlight", "gnome"], "response": "'OOH YOU KNOW. GOTTA KEEP DE DOOR CLOSED. CAN'T LET DE DOOR BE OPEN FOR TOO LONG. DATS ME.'"}
+      },          
+      "allegiance": "Therus Townsfolk",
+      "health": 5,
+      "maxhealth": 5,
+      "energy": 7,
+      "maxenergy": 7,
+      "magic": 4,
+      "maxmagic": 4, 
+        
+      "strength": 4,
+      "agility": 6, 
+      "intellect": 3,     
+        
+      "meleepower": 10,          
+      "speed": 30,
+      "spellpower": 8,        
+        
+      "hitchance": 11,                
+      "stealth": 10,                        
+      "criticalchance": 8,
+        
+      "defence": 4,        
+      "attack": 3
+        
+    },
+      {
+      "id": 0,
+      "name": "Ted Treadlightly",
+      "alias": { "ted treadlightly": "true", "ted": "true", "treadlightly": "true"},
+      "roomdescription": "Ted Treadlightly is here, sitting in a captains chair and smoking a pipe",
+      "description": "Finally, your cousin Ted. He bears almost no familial resemblance, being from a distant half-relative. Ted is a house elf, his ears still retaining what little point that house elves get to keep to remind them of their elder heritage. He's getting a bit rounder with age, but his face is still stuck in his patented half grin you remember from childhood. He is propped up in a captains chair and smoking from a hefty wooden pipe.",
+      "startingroom": "THERUSTHIEVESDEN",
+      "inventory": {
+      },
+      "dialog": {
+          "Hail Cousin!": "'Oh would you look at this.' Ted puts down his pipe, 'So you finally decide to pop into my side of town? I hope Fairlight let you in without much trouble.'",
+          "Gossip": "Ted guffaws, 'We're writing the gossip as we speak.'",
+          "Therus": "Ted puffs on his pipe, 'I made it here six months ago. I couldn't believe it. Opportunity at every corner. Where else could I spent my mornings chasing halflings down the wharf and my evenings rolling those little buttonstuffers in dark alleyways.'"                  
+      },
+      "secretdialog": {
+          "Eddy Glitter": { "alias": ["eddy glitter"], "response": "'It's me. Halt Eddy Glitter? Come on, its an anagram. You weren't out there halting anyone in hopes to stop some rampant musical sideshow, were you?'"},
+          "Wet Noose": { "alias": ["wet noose"], "response": "'The Wet Noose isn't a place. Its an idea. A gathering of ideas. We're going to become bigger. I've spent far too much time in the gutter, cutting purses for loose change. Picking fruit and baking bread and selling it for pence. We need to take action.'"},
+          "Cousin": { "alias": ["cousin", "ted treadlightly"], "response": "'I'm alright. Been hunting around these streets digging up coin for so long my fingers are numb.'"},
+          "Fairlight": { "alias": ["fairlight", "gnome"], "response": "'Fairlight's alright. He talks like a gnome, but he guards a door like a son of a bitch.'"}
+      },          
+      "allegiance": "Therus Townsfolk",
+      "health": 5,
+      "maxhealth": 5,
+      "energy": 7,
+      "maxenergy": 7,
+      "magic": 4,
+      "maxmagic": 4, 
+        
+      "strength": 4,
+      "agility": 6, 
+      "intellect": 3,     
+        
+      "meleepower": 10,          
+      "speed": 30,
+      "spellpower": 8,        
+        
+      "hitchance": 11,                
+      "stealth": 10,                        
+      "criticalchance": 8,
+        
+      "defence": 4,        
+      "attack": 3
+        
+    }      
+  ],
+    "Monsters": [
+    {
+      "id": 1,
+      "name": "Goblin",
+      "alias": { "goblin": "true"},
+      "roomdescription": "Goblin",
+      "description": "Look at this little shit move. Its like he dreams of being stabbed to death in an alley.",
+      "startingroom": "BLASECRET",
+      "inventory": {
+          "armorLeatherHat": 1
+      },  
+      "money": 7,
+      "idleEmotes":{
+          "idle1": "The goblin darts his eyes around, thinking he heard a noise.",
+          "idle2": "The goblin sniffs at the air.",
+          "idle3": "A distant noise puts the goblin on edge."
+      },
+      "allegiance": "Evil",
+        
+      "health": 8,
+      "maxhealth": 8,
+      "energy": 3,
+      "maxenergy": 3,
+      "magic": 2,
+      "maxmagic": 2, 
+        
+      "strength": 3,
+      "agility": 2, 
+      "intellect": 1,     
+        
+      "meleepower": 8,          
+      "speed": 25,
+      "spellpower": 4,        
+        
+      "hitchance": 6,                
+      "stealth": 4,                        
+      "criticalchance": 5,
+        
+      "defence": 2,        
+      "attack": 2
+        
+    },
+    {
+      "id": 2,
+      "name": "Lowly Thief",
+      "alias": { "thief": "true", "lowly": "true", "lowly thief": "true"},
+      "roomdescription": "Lowly Thief",
+      "description": "A filthy street rat looking to shiv the first guy with some coin!",
+      "startingroom": "BLASECRET",
+      "inventory": {
+          "foodFoulMeal": 1
+      },  
+      "money": 5,
+      "idleEmotes":{
+          "idle1": "The thief rubs his nose.",
+          "idle2": "The thief shuffles his feet on the ground.",
+          "idle3": "'You got this, Philbo, just one more and we're off the races...' the thief muses to himself."
+      },
+      "allegiance": "Evil",
+        
+      "health": 6,
+      "maxhealth": 6,
+      "energy": 4,
+      "maxenergy": 4,
+      "magic": 2,
+      "maxmagic": 2, 
+        
+      "strength": 2,
+      "agility": 3, 
+      "intellect": 1,     
+        
+      "meleepower": 6,          
+      "speed": 20,
+      "spellpower": 4,        
+        
+      "hitchance": 6,                
+      "stealth": 5,                        
+      "criticalchance": 4,
+        
+      "defence": 2,        
+      "attack": 2       
+    },
+    {
+      "id": 3,
+      "name": "Nameless Thug",
+      "alias": { "thug": "true", "nameless thug": "true"},
+      "roomdescription": "Nameless Thug",
+      "description": "Someones half-ass attempt at parenting has resulted in a pain in the whole ass for you.",
+      "startingroom": "",
+      "inventory": {
+          "weaponDagger": 1
+      },  
+      "money": 7,
+      "idleEmotes":{
+
+      },
+      "allegiance": "Evil",
+        
+      "health": 12,
+      "maxhealth": 12,
+      "energy": 6,
+      "maxenergy": 6,
+      "magic": 3,
+      "maxmagic": 3, 
+        
+      "strength": 4,
+      "agility": 3, 
+      "intellect": 2,     
+        
+      "meleepower": 8,          
+      "speed": 30,
+      "spellpower":6,        
+        
+      "hitchance": 8,                
+      "stealth": 10,                        
+      "criticalchance": 6,
+        
+      "defence": 3,        
+      "attack": 3,
+        
+      "roaming": { "area": "therus city old silver hollow", "interval": 60000 }                
+    },
+    {
+      "id": 4,
+      "name": "Feral Ratman",
+      "alias": { "ratman": "true", "feral ratman": "true"},
+      "roomdescription": "Feral Ratman",
+      "description": "Yikes! This thing is hideous. Where did it get its pants? At the toilet store?",
+      "startingroom": "",
+      "inventory": {
+          "foodFoulMeal": 1
+      },  
+      "money": 6,
+      "idleEmotes":{
+
+      },
+      "allegiance": "Evil",
+        
+      "health": 12,
+      "maxhealth": 12,
+      "energy": 6,
+      "maxenergy": 6,
+      "magic": 3,
+      "maxmagic": 3, 
+        
+      "strength": 4,
+      "agility": 3, 
+      "intellect": 2,     
+        
+      "meleepower": 10,          
+      "speed": 30,
+      "spellpower":6,        
+        
+      "hitchance": 12,                
+      "stealth": 10,                        
+      "criticalchance": 6,
+        
+      "defence": 3,        
+      "attack": 4,
+        
+      "roaming": { "area": "therus sewer", "interval": 60000 }                
+    },
+    {
+      "id": 5,
+      "name": "Feral Rat King",
+      "alias": { "ratman": "true", "feral ratman": "true"},
+      "roomdescription": "Feral Rat King",
+      "description": "Yikes! This thing is hideous. Where did it get its pants? At the toilet store?",
+      "startingroom": "",
+      "inventory": {
+          "weaponDagger": 1,
+          "weaponBow": 1,
+          "armorLeatherHat": 1
+      },  
+      "money": 30,
+      "idleEmotes":{
+
+      },
+      "allegiance": "Evil",
+        
+      "health": 36,
+      "maxhealth": 36,
+      "energy": 6,
+      "maxenergy": 6,
+      "magic": 3,
+      "maxmagic": 3, 
+        
+      "strength": 10,
+      "agility": 8, 
+      "intellect": 4,     
+        
+      "meleepower": 20,          
+      "speed": 60,
+      "spellpower":24,        
+        
+      "hitchance": 20,                
+      "stealth": 20,                        
+      "criticalchance": 14,
+        
+      "defence": 8,        
+      "attack": 8
+        
+    },
+    {
+      "id": 6,
+      "name": "Catamount Kit",
+      "alias": { "cat": "true", "catamount": "true", "kit": "true"},
+      "roomdescription": "Catamount Kit",
+      "description": "Although still a youth, this Catamount is sizeable. As most Catamounts of the region, this one has a mottled grey and black coat.",
+      "startingroom": "",
+      "inventory": {
+          "idle1": "The kit cleans its fur.",
+          "idle2": "A loud, contented purring can be heard emitting from the Catamount Kit.",
+          "idle3": "The Catamount Kit yawns, showing its rows upon rows of sharp bristle teeth."
+      },  
+      "money": 30,
+      "idleEmotes":{
+
+      },
+      "allegiance": "Evil",
+        
+      "health": 12,
+      "maxhealth": 12,
+      "energy": 6,
+      "maxenergy": 6,
+      "magic": 3,
+      "maxmagic": 3, 
+        
+      "strength": 4,
+      "agility": 3, 
+      "intellect": 2,     
+        
+      "meleepower": 8,          
+      "speed": 30,
+      "spellpower":6,        
+        
+      "hitchance": 8,                
+      "stealth": 10,                        
+      "criticalchance": 6,
+        
+      "defence": 3,        
+      "attack": 3
+        
+    }         
+    
+  ]
+}

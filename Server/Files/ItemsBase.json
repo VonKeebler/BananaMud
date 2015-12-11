@@ -1,0 +1,268 @@
+{
+  "Items": [
+    {
+      "id": 0,
+      "itemID": "foodTurkey",
+      "name": "Turkey",
+      "description": "A smokin' fresh turkey, ready to eat!",
+      "type": "food",
+      "invImage": "foodTurkey",
+      "baseValue": 3,
+      "stats": {
+        "health": 4
+      }
+    },
+    {
+      "id": 1,
+      "itemID": "weaponDagger",
+      "name": "Dagger",
+      "description": "A pokin' sharp dagger, ready to stab!",
+      "type": "weapon",
+      "invImage": "weaponDagger",
+      "baseValue": 10,
+      "stats": {
+        "attack": 3,
+        "speed": 30,
+        "meleepower": 4,
+        "stealth": 5
+      }
+    },
+    {
+      "id": 2,
+      "itemID": "weaponLongsword",
+      "name": "Longsword",
+      "description": "It is practically wieldy.",
+      "type": "weapon",
+      "invImage": "weaponLongsword",
+      "baseValue": 18,
+      "stats": {
+        "attack": 4,
+        "speed": 20,
+        "meleepower": 5
+      }
+    },
+    {
+      "id": 3,
+      "itemID": "itemTorch",
+      "name": "Torch",
+      "description": "Smells like danger.",
+      "type": "item",
+      "invImage": "itemTorch",
+      "baseValue": 2,
+      "stats": {
+
+      }        
+    },
+    {
+      "id": 4,
+      "itemID": "itemHealthPotion",
+      "name": "Health Potion",
+      "description": "A gooey red liquid in a glass.",
+      "type": "item",
+      "invImage": "itemHealthPotion",
+      "baseValue": 20,
+      "stats": {
+          "health": 20
+      }        
+    },
+    {
+      "id": 5,
+      "itemID": "armorWoodenShield",
+      "name": "Wooden Shield",
+      "description": "A hefty wooden shield.",
+      "type": "shield",
+      "invImage": "armorShield",
+      "baseValue": 16,
+      "stats": {
+        "defence": 4,
+        "speed": -10
+      }        
+    },
+    {
+      "id": 0,
+      "itemID": "weaponWoodenBow",
+      "name": "Wooden Bow",
+      "description": "A cheap bendy wooden bow.",
+      "type": "2hweapon",
+      "invImage": "weaponWoodenBow",
+      "baseValue": 20,
+      "stats": {
+        "attack": 10,
+        "speed": -20,
+        "meleepower": 10
+      }        
+    },
+    {
+      "id": 6,
+      "itemID": "drinkCheapBeer",
+      "name": "Cheap Beer",
+      "description": "Fuzzy water.",
+      "type": "drink",
+      "invImage": "drinkCheapBeer",
+      "baseValue": 2,
+      "stats": {
+        "health": 1,
+        "magic": 1
+      }        
+    }, 
+    {
+      "id": 7,
+      "itemID": "drinkExpensiveWine",
+      "name": "Expensive Wine",
+      "description": "Plant water.",
+      "type": "drink",
+      "invImage": "drinkExpensiveWine",
+      "baseValue": 200,
+      "stats": {
+        "health": 5,
+        "magic": 10
+      }         
+    },
+    {
+      "id": 8,
+      "itemID": "foodFoulMeal",
+      "name": "Simple Meal",
+      "description": "Vermin protein and a bed of kale on which a thin red liquid has been poured. BON APPARATE!",
+      "type": "food",
+      "invImage": "foodFoulMeal",
+      "baseValue": 4,
+      "stats": {
+        "health": 1
+      } 
+    },
+    {
+      "id": 9,
+      "itemID": "armorLeatherHat",
+      "name": "Leather Hat",
+      "description": "A spongy leather hat.",
+      "type": "headarmor",
+      "invImage": "armorLeatherHat",
+      "baseValue": 12,
+      "stats": {
+        "defence": 2,
+        "stealth": 5
+      }        
+    },
+    {
+      "id": 10,
+      "itemID": "armorSandals",
+      "name": "Cheap Sandals",
+      "description": "A pair of your cheapest sandals, sir, and make them sticky as hell.",
+      "type": "feetarmor",
+      "invImage": "armorSandals",
+      "baseValue": 1,
+      "stats": {
+        "defence": 1
+      }        
+    },
+    {
+      "id": 11,
+      "itemID": "armorDungarees",
+      "name": "Old Dungarees",
+      "description": "A solid pair of dungarees will keep licking flames and fucking imps at bay. These are not solid.",
+      "type": "legarmor",
+      "invImage": "armorDungarees",
+      "baseValue": 1,
+      "stats": {
+        "defence": 1
+      }        
+    },
+    {
+      "id": 12,
+      "itemID": "armorElCheapoTunic",
+      "name": "El Cheapo™ Tunic",
+      "description": "Its an old tunic some elf sold you on your way here. It has 'Link' written on the tag.",
+      "type": "bodyarmor",
+      "invImage": "armorElCheapoTunic",
+      "baseValue": 1,
+      "stats": {
+        "defence": 1
+      }        
+    },
+    {
+      "id": 13,
+      "itemID": "itemCousinsLetter",
+      "name": "Letter from Your Cousin",
+      "description": "It is a letter from your cousin! You should read it (or use it, whatever).",
+      "type": "item",
+      "invImage": "itemLetter",
+      "baseValue": 0,
+      "stats": {
+      },
+      "use": "Screw it, we'll do this later "
+    },
+    {
+      "id": 14,
+      "itemID": "foodHotDog",
+      "name": "HotDog",
+      "description": "A long frank made of animal meats in a basic bun.",
+      "type": "food",
+      "invImage": "foodHotDog",
+      "baseValue": 5,
+      "stats": {
+        "health": 3
+      }
+    },
+    {
+      "id": 15,
+      "itemID": "foodToppedHotDog",
+      "name": "HotDog with Toppings",
+      "description": "A long frank made of animal meats, slathered in condiments, in a basic bun.",
+      "type": "food",
+      "invImage": "foodToppedHotDog",
+      "baseValue": 7,
+      "stats": {
+        "health": 4
+      }
+          
+    },
+    {
+      "id": 16,
+      "itemID": "foodWeirdHotDog",
+      "name": "Bermudadonkulous HotDog",
+      "description": "A long frank made of animal meats, slathered in condiments, covered in small slivers of something in a poppy seed bun.",
+      "type": "food",
+      "invImage": "foodWeirdHotDog",
+      "baseValue": 10,
+      "stats": {
+        "health": 6
+      }
+    },
+    {
+      "id": 17,
+      "itemID": "itemCousinsLetter2Envelope",
+      "name": "A Strange Envelope",
+      "description": "Herod says its for you. What could be in it?",
+      "type": "item",
+      "invImage": "itemEnvelope",
+      "baseValue": 0,
+      "stats": {
+      },
+      "use": "Screw it, we'll do this later "
+    },
+    {
+      "id": 18,
+      "itemID": "itemCousinsLetter2",
+      "name": "Another Letter from Your Cousin",
+      "description": "Hey, your cousin needs to invest in a better pen. Regardless, you could read what he wrote to you.",
+      "type": "item",
+      "invImage": "itemLetter",
+      "baseValue": 0,
+      "stats": {
+      },
+      "use": "Screw it, we'll do this later "
+    },
+    {
+      "id": 19,
+      "itemID": "itemOldSilvermereInnNote",
+      "name": "A Mysterious Note",
+      "description": "Where did you get this?",
+      "type": "item",
+      "invImage": "itemNote",
+      "baseValue": 0,
+      "stats": {
+      },
+      "use": "Screw it, we'll do this later "
+    }      
+  ]
+}

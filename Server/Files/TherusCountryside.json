@@ -1,0 +1,34 @@
+{
+    "TherusCountrysideRooms": [
+    {
+      "id": 0,
+      "roomid": "THERUSCOUNTRYSIDE1",
+      "name": "Therus Countryside",
+      "description": "   A brisk wind blows through this crossroads. To the east stretches the farms and fields of the Therus countryside. To the south, you see a path leading toward a thicket of dark trees. Therus's east gate stands in the distance to the west.",
+      "mapX": 110,
+      "mapY": 184,
+      "transitionX": 90,
+      "transitionY": 184,
+      "roomExits": {
+        "West": "EASTGATECOUNTRY"
+      },
+      "flavorObjects": {
+          "road": "The road here is thinned to a layer of tight packed gravel. Ruts from many carriages and visitors have been worn in.",
+          "gravel road": "The road here is thinned to a layer of tight packed gravel. Ruts from many carriages and visitors have been worn in.",
+          "gravel": "Tight packed grey, indeterminate rock. Probably a bitch if you get it in your shoes.",
+          "gate": "The East Gate is comprised of two flagstone towers and an iron portcullis held up into a gatehouse above.",
+          "east gate": "The East Gate is comprised of two flagstone towers and an iron portcullis held up into a gatehouse above.",
+          "countryside": "Therus's countryside is dark and lush, with deep forests and grey skies.",
+          "country": "Therus's countryside is dark and lush, with deep forests and grey skies.",
+          "therus": "Therus is a sprawling city, with multiple suburbs, streets, and alleys to get lost in.",
+          "forest": "While most of the countryside is lush hills with a light covering of trees, you notice a trail to the East leading into one of the area's darker, denser forests."
+      },
+      "inventory": {
+      },
+      "region": {
+          "area" : ["therus countryside"],
+          "map" : "TherusCountryside"
+      }         
+    }       
+]
+}

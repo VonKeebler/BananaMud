@@ -1,0 +1,200 @@
+{
+    "TherusThievesGuildRooms": [
+    {
+      "id": 0,
+      "roomid": "THERUSTHIEVES1",
+      "name": "Dilapidated Entry Hall",
+      "description": "   You stand in a dilapidated entry hall of an equally disheveled flat house. The walls are covered in peeling, ancient wallpaper, the thick cedar floorboards creak and moan with each step, which echo through the hall. A stack of stools and a small table stand here, the only thing in the hall that looks recently occupied. The hallway continues south down a set of steps.",
+      "mapX": 224,
+      "mapY": 284,
+      "roomExits": {
+        "North": "OLDSILVERHOLLOW7",
+        "South": "THERUSTHIEVES2"
+      },
+      "flavorObjects": {
+          "walls": "They're covered in peeling dusty wallpaper, bleached from time. The underlying plaster is missing in places, revealing wooden frameboards.",
+          "floorboards": "Old cedar planks are the only thing separating you from the dirt, or worse, underneath.",
+          "stools": "They're stacked up as if they've been put away, but it looks like someone uses them in this configuration frequently.",
+          "table": "Just a small table with a burnt down candle on it. Someone has etched a few words into it.",
+          "words": "A series of words, each seem scratched out. The only one remaining unscratched is 'Nothing'.",
+          "etching": "A series of words, each seem scratched out. The only one remaining unscratched is 'Nothing'.",
+          "hall": "The hall is a horrifying quality. The floorboards are ancient cedar, the walls are peeling, revealing old cracked plaster. The ceiling is missing chunks."
+      },
+      "inventory": {
+
+      },
+
+      "region": {
+          "area" : ["therus thieves guild"],
+          "map" : "TherusThievesGuild"
+      }         
+    },
+        {
+      "id": 0,
+      "roomid": "THERUSTHIEVES2",
+      "name": "Dilapidated Hallway",
+      "description": "   As you walk down the hallway of this disheveled flat house, your footsteps echo and the floorboards creak. The peeling wallpaper and broken plaster walls only get worse and the ceiling is missing chunks, allowing the mysterious dark upper sections of the building to peek through. An old wooden door stands furiously against time in the eastern wall. The hallway comes to an abrupt turn here, continuing west or toward the entrance hall north.",
+      "mapX": 224,
+      "mapY": 304,
+      "roomExits": {
+        "North": "THERUSTHIEVES1",
+        "West": "THERUSTHIEVES3"
+      },
+      "flavorObjects": {
+          "walls": "They're covered in peeling dusty wallpaper, bleached from time. The underlying plaster is missing in places, revealing wooden frameboards.",
+          "floorboards": "Old cedar planks are the only thing separating you from the dirt, or worse, underneath.",
+          "hall": "The hall is a horrifying quality. The floorboards are ancient cedar, the walls are peeling, revealing old cracked plaster. The ceiling is missing chunks.",
+          "ceiling": "Sections of plaster have fallen from the ceiling, leaving gaping holes in places you'd rather not look.",
+          "door": "The door is solid and has an old fashioned lock.",
+          "lock": "Its one of those weird skeleton key locks. You wouldn't even begin to know where to find a key."          
+      },
+      "inventory": {
+
+      },
+
+      "region": {
+          "area" : ["therus thieves guild"],
+          "map" : "TherusThievesGuild"
+      }         
+    },
+        {
+      "id": 0,
+      "roomid": "THERUSTHIEVES3",
+      "name": "Dilapidated Hallway",
+      "description": "   As you walk down the hallway of this disheveled flat house, your footsteps echo and the floorboards creak. The peeling wallpaper and broken plaster walls only get worse and the ceiling is missing chunks, allowing the mysterious dark upper sections of the building to peek through. Another door appears in the northern wall, this one shut with a large plank of wood nailed into the doorframe. The hallway runs east and west from here.",
+      "mapX": 204,
+      "mapY": 304,
+      "roomExits": {
+        "East": "THERUSTHIEVES2",
+        "West": "THERUSTHIEVES4"
+      },
+      "flavorObjects": {
+          "walls": "They're covered in peeling dusty wallpaper, bleached from time. The underlying plaster is missing in places, revealing wooden frameboards.",
+          "floorboards": "Old cedar planks are the only thing separating you from the dirt, or worse, underneath.",
+          "hall": "The hall is a horrifying quality. The floorboards are ancient cedar, the walls are peeling, revealing old cracked plaster. The ceiling is missing chunks.",
+          "ceiling": "Sections of plaster have fallen from the ceiling, leaving gaping holes in places you'd rather not look.",
+          "door": "The door is solid oak, but the wooden board nailed across it is made of cedar. It looks recent."
+      },
+      "inventory": {
+
+      },
+
+      "region": {
+          "area" : ["therus thieves guild"],
+          "map" : "TherusThievesGuild"
+      }         
+    },
+        {
+      "id": 0,
+      "roomid": "THERUSTHIEVES4",
+      "name": "Dilapidated Hallway",
+      "description": "   As you walk down the hallway of this disheveled flat house, your footsteps echo and the floorboards creak. Somewhere distant you hear a faint rhythmic dripping sound, like that of water on a hard wood floor. The hallway runs east and west from here.",
+      "mapX": 184,
+      "mapY": 304,
+      "roomExits": {
+        "East": "THERUSTHIEVES3",
+        "West": "THERUSTHIEVES5"
+      },
+      "flavorObjects": {
+          "walls": "They're covered in peeling dusty wallpaper, bleached from time. The underlying plaster is missing in places, revealing wooden frameboards.",
+          "floorboards": "Old cedar planks are the only thing separating you from the dirt, or worse, underneath.",
+          "hall": "The hall is a horrifying quality. The floorboards are ancient cedar, the walls are peeling, revealing old cracked plaster. The ceiling is missing chunks.",
+          "ceiling": "Sections of plaster have fallen from the ceiling, leaving gaping holes in places you'd rather not look."
+      },
+      "inventory": {
+
+      },
+
+      "region": {
+          "area" : ["therus thieves guild"],
+          "map" : "TherusThievesGuild"
+      }         
+    },
+        {
+      "id": 0,
+      "roomid": "THERUSTHIEVES5",
+      "name": "Dilapidated Hallway",
+      "description": "   As you walk down the hallway of this disheveled flat house, your footsteps echo and the floorboards creak. Somewhere distant you hear a faint rhythmic dripping sound, like that of water on a hard wood floor. A wooden door is fashioned into the western wall here. The hallway takes a turn here, continuing south and east.",
+      "mapX": 164,
+      "mapY": 304,
+      "roomExits": {
+        "East": "THERUSTHIEVES4",
+        "South": "THERUSTHIEVES6"
+      },
+      "flavorObjects": {
+          "walls": "They're covered in peeling dusty wallpaper, bleached from time. The underlying plaster is missing in places, revealing wooden frameboards.",
+          "floorboards": "Old cedar planks are the only thing separating you from the dirt, or worse, underneath.",
+          "hall": "The hall is a horrifying quality. The floorboards are ancient cedar, the walls are peeling, revealing old cracked plaster. The ceiling is missing chunks.",
+          "ceiling": "Sections of plaster have fallen from the ceiling, leaving gaping holes in places you'd rather not look.",
+          "door": "Another door, this one with an ornate brass lock."          
+      },
+      "inventory": {
+
+      },
+
+      "region": {
+          "area" : ["therus thieves guild"],
+          "map" : "TherusThievesGuild"
+      }         
+    },
+        {
+      "id": 0,
+      "roomid": "THERUSTHIEVES6",
+      "name": "Dilapidated Hallway",
+      "description": "   You've reached the end of the hallway. In the southern wall, a dark wooden door stands, its brass fixtures shining in what light it can find in this room. The only exits from here are through the door to the south and back through the hallway to the north.",
+      "mapX": 164,
+      "mapY": 324,
+      "roomExits": {
+        "North": "THERUSTHIEVES5",
+        "South": "THERUSTHIEVESDEN"
+      },
+      "flavorObjects": {
+          "walls": "They're covered in peeling dusty wallpaper, bleached from time. The underlying plaster is missing in places, revealing wooden frameboards.",
+          "floorboards": "Old cedar planks are the only thing separating you from the dirt, or worse, underneath.",
+          "hall": "The hall is a horrifying quality. The floorboards are ancient cedar, the walls are peeling, revealing old cracked plaster. The ceiling is missing chunks.",
+          "ceiling": "Sections of plaster have fallen from the ceiling, leaving gaping holes in places you'd rather not look.",
+          "door": "This door looks better kept. Its fixtures are still shiny, altough also well worn."          
+      },
+      "inventory": {
+
+      },
+
+      "region": {
+          "area" : ["therus thieves guild"],
+          "map" : "TherusThievesGuild"
+      }         
+    },
+        {
+      "id": 0,
+      "roomid": "THERUSTHIEVESDEN",
+      "name": "Den of the Wet Noose",
+      "description": "   As soon as you enter the room, you are faced with the heady smell of old cigar smoke and loose bourbon. This room is very well kept, as opposed to the rest of the building leading up to it. A pair of portraits hang on the western wall, bordering a lit fireplace. Paintings adorn the walls and a sizeable round table, replete with chairs, takes up the center of the room. The entry door is in the north wall.",
+      "mapX": 164,
+      "mapY": 344,
+      "roomExits": {
+        "North": "THERUSTHIEVES6"
+      },
+      "flavorObjects": {
+          "walls": "The walls here are freshly renewed. The plaster is neat and the trim is clean.",
+          "floorboards": "The floorboards here are still old, but they have been cleaned and well maintained.",
+          "ceiling": "The ceiling here is intact and clean.",
+          "door": "This door looks better kept. Its fixtures are still shiny, altough also well worn.",
+          "portraits": "The portraits of are two men, one looks gaunt and haughty, the other is thicker and jovial.",
+          "gaunt haughty man": "The man on the left is thin and his face is stern. He looks down on the room from above the fireplace. Underneath the portrait is the name 'Hector Know-Nothing'.",
+          "thick jovial man": "The man on the right is larger, with a round face and a hint of a grin. He looks out over the room. Underneath the portrait is the name 'Sealey Know-Nothing'.",
+          "paintings": "General paintings of a landscape, a farm house, an apple orchard. Nothing out of the ordinary.",
+          "round table": "The table is round, with four strong legs. On it is a lit candle, some coins, and paperwork in disarray. The table is flanked by four captains chairs.",
+          "captains chairs": "Four solid wooden chairs sit at attention around the table."          
+          
+      },
+      "inventory": {
+
+      },
+
+      "region": {
+          "area" : ["therus thieves guild"],
+          "map" : "TherusThievesGuild"
+      }         
+    }        
+]
+}

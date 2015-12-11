@@ -1,0 +1,69 @@
+{
+  "Employees": [
+      {
+      "cityTherus": {
+          "Milbank Thurgood": {
+              "race": "Human",
+              "gender": "male",
+              "upkeep": 275,
+              "skills": {
+                  "food": ".50",
+                  "drink": ".45",
+                  "armor": ".20",              
+                  "manufacturing": {
+                      "food": ".75",
+                      "drink": ".60"
+                  }
+              }
+          },
+          "Peoria Tillsmith": {
+              "race": "Halfling",
+              "gender": "female",
+              "upkeep": 175,
+              "skills": {
+                  "food": ".30",
+                  "drink": ".30",
+                  "services": ".45",           
+                  "magic": ".45"
+              }
+        
+          },
+          "Gluggle Ulgug": {
+              "race": "Gillman",
+              "gender": "male",
+              "upkeep": 55,
+              "skills": {
+                  "food": ".10",
+                  "drink": ".10",
+                  "weapons": ".10",           
+                  "armor": ".10"
+              }
+          },
+          "Belfist Ringsmither": {
+              "race": "Dwarf",
+              "gender": "male",
+              "upkeep": 250,
+              "skills": {
+                  "weapons": ".30",           
+                  "armor": ".30",
+                  "manufacturing": {
+                      "weapons": ".60",
+                      "armor": ".60"
+                  }                  
+              }
+          },
+          "Sisik": {
+              "race": "Lizardman",
+              "gender": "female",
+              "upkeep": 150,
+              "skills": {
+                  "food": ".20",
+                  "drink": ".20",
+                  "inn": ".65",           
+                  "housing": ".65"                
+              }
+          }           
+      }
+    }
+  ]
+}

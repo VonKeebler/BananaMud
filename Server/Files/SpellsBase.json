@@ -1,0 +1,43 @@
+{
+  "Spells": [
+    {
+      "id": 0,
+      "skillID": "spellShield",
+      "name": "Shield",
+      "description": "Conjure a non-chocolate magic shell to cover you or your ally for 10 seconds or until it is depleted. Blocks 2 damage on each incoming attack up to 10 damage total.",
+      "imageIndex": 51,
+      "powerCost": 1,
+      "magicCost": 4,
+      "type": ["friendly", "buff", "damage reduction", "combat"],
+      "time": 10000,
+      "onHitValue": 2,
+      "totalValue": 10
+    },
+    {
+      "id": 1,
+      "skillID": "spellFireball",
+      "name": "Fireball",
+      "description": "Sling some minor fire at your enemies for straight damage. Something around 6 damage.",
+      "imageIndex": 71,
+      "powerCost": 2,
+      "magicCost": 6,
+      "type": ["hostile", "immediate", "damage", "combat"],
+      "time": 0,
+      "onHitValue": 6,
+      "totalValue": 0
+    },
+    {
+      "id": 2,
+      "skillID": "spellLight",
+      "name": "Light",
+      "description": "Emit light from something like your wand, weirdo. Can light up dark rooms for 10 minutes.",
+      "imageIndex": 61,
+      "powerCost": 1,
+      "magicCost": 4,
+      "type": ["immediate", "non-combat", "light"],
+      "time": 600000,
+      "onHitValue": 0,
+      "totalValue": 50
+    }
+  ]
+}
