@@ -229,21 +229,22 @@ function onPlayerUpdateInventory (data) {
 
     for(var i=0; i<data.inventory.length; i++){
         if(i < 4){
-            displayInventory[i] = game.add.sprite(charSheetBaseX-240+(i*(42)), charSheetBaseY+173, data.inventory[i].invImage);
+            displayInventory[i] = game.add.sprite(charSheetBaseX-240+(i*(42)), charSheetBaseY+173, 'inventoryIcons');
+            displayInventory[i].frame = data.inventory[i].imageIndex;
             if(data.inventory[i].count > 1){ 
                 displayInventoryCountPanel[i] = game.add.sprite(charSheetBaseX-242+(i*(42)), charSheetBaseY+198, 'inventoryCountPanel');
                 displayInventoryCount[i] =  displayInventoryCountPanel[i].addChild( game.add.text(0, 0, data.inventory[i].count, { font: "12px Arial", fill: "#000000", boundsAlignH: 'right'}) );
                 displayInventoryCount[i].setTextBounds(0, 0, 33, 13);
             }
         } else if(i<8) {
-            displayInventory[i] = game.add.sprite(charSheetBaseX-240+((i-4)*(42)), charSheetBaseY+215, data.inventory[i].invImage);
+            displayInventory[i] = game.add.sprite(charSheetBaseX-240+((i-4)*(42)), charSheetBaseY+215, data.inventory[i].imageIndex);
             if(data.inventory[i].count > 1){ 
                 displayInventoryCountPanel[i] = game.add.sprite(charSheetBaseX-242+(i-4*(42)), charSheetBaseY+240, 'inventoryCountPanel');
                 displayInventoryCount[i] =  displayInventoryCountPanel[i].addChild( game.add.text(0, 0, data.inventory[i].count, { font: "12px Arial", fill: "#000000", boundsAlignH: 'right'}) );
                 displayInventoryCount[i].setTextBounds(0, 0, 33, 13);
             }            
         } else {
-            displayInventory[i] = game.add.sprite(charSheetBaseX-240+((i-8)*(42)), charSheetBaseY+257, data.inventory[i].invImage);            
+            displayInventory[i] = game.add.sprite(charSheetBaseX-240+((i-8)*(42)), charSheetBaseY+257, data.inventory[i].imageIndex);            
             if(data.inventory[i].count > 1){ 
                 displayInventoryCountPanel[i] = game.add.sprite(charSheetBaseX-242+(i-8*(42)), charSheetBaseY+282, 'inventoryCountPanel');
                 displayInventoryCount[i] =  displayInventoryCountPanel[i].addChild( game.add.text(0, 0, data.inventory[i].count, { font: "12px Arial", fill: "#000000", boundsAlignH: 'right'}) );
@@ -284,7 +285,8 @@ function onPlayerUpdateInventory (data) {
             y = charSheetBaseY+114;
         }         
 
-        displayEquipment[i] = game.add.sprite(x, y, data.equipment[i].invImage);
+        displayEquipment[i] = game.add.sprite(x, y, 'inventoryIcons');
+        displayEquipment[i].frame = data.equipment[i].imageIndex;
         displayEquipment[i].anchor.x = 0;
         displayEquipment[i].anchor.y = 0;
         displayEquipment[i].inputEnabled = true;

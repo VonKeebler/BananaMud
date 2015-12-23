@@ -9,7 +9,7 @@ var roamingTimeOut;
 ** GAME NPC CLASS
 ************************************************ */
 var NPC = function (id, name, alias, roomdescription, description, roomid, inventory, money, dialog, secretdialog, idleEmotes, allegiance, currentBattle, health, maxhealth, energy, maxenergy, magic, maxmagic, strength, agility, intellect, meleepower, speed, spellpower, hitchance, stealth, criticalchance, defence, attack, roaming, equipment, visibility) {
-  this.id = server.getRandomInt(0, 99999);
+  this.id = server.generateId();
   
   this.name = name;
   this.alias = alias;

@@ -8,7 +8,7 @@ var disintegrateTimeout;
 ** GAME CORPSE CLASS
 ************************************************ */
 var Corpse = function ( name, description, roomid) {
-  this.id = server.getRandomInt(0, 99999);
+  this.id = server.generateId();
 
   this.name = name;
   this.description = description;

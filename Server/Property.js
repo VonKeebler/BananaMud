@@ -34,7 +34,7 @@ var Property = function (propertyID, city, owner, status, type, value, upkeep, e
             var amenityType = Object.keys(this.amenities)[i];
             var amenityData = this.amenities[Object.keys(this.amenities)[i]];
 
-            if(amenityType != 'manufacturing'){
+            if(amenityType != 'cooking' && amenityType != 'brewing' && amenityType != 'weapon smithing' && amenityType != 'armor smithing' && amenityType != 'enchanting' && amenityType != 'refinery'){
           
                 //THE TOTAL VALUE OF AN AMENITY IN A CITY IS THE MARKET DEMAND TIMES CITY POPULATION TIMES MARKET VALUE
                 // EX. 0.125 (THERUS FOOD DEMAND) TIMES 4988 (THERUS POP) IS 623.5. TIMES 25 (THERUS FOOD VALUE) IS 15,587.5

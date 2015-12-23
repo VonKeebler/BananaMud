@@ -1,0 +1,104 @@
+{
+  "Employees": [
+    {
+      "cityTherus": {
+        "Milbank Thurgood": {
+          "id": "123123",
+          "race": "Human",
+          "gender": "Male",
+          "upkeep": 275,
+          "status": "available",
+          "employer": "none",
+          "skills": {
+            "food": ".50",
+            "drink": ".45",
+            "armor": ".20",
+            "cooking": ".75",
+            "brewing": ".60"
+          }
+        },
+        "Peoria Tillsmith": {
+          "id": "321321",
+          "race": "Halfling",
+          "gender": "Female",
+          "upkeep": 175,
+          "status": "available",
+          "employer": "none",
+          "skills": {
+            "food": ".30",
+            "drink": ".30",
+            "services": ".45",
+            "magic": ".45"
+          }
+        },
+        "Gluggle Ulgug": {
+          "id": "11111",
+          "race": "Gillman",
+          "gender": "Male",
+          "upkeep": 55,
+          "status": "available",
+          "employer": "none",
+          "skills": {
+            "food": ".10",
+            "drink": ".10",
+            "weapons": ".10",
+            "armor": ".10"
+          }
+        },
+        "Belfist Ringsmither": {
+          "id": "22222",
+          "race": "Dwarf",
+          "gender": "Male",
+          "upkeep": 250,
+          "status": "available",
+          "employer": "none",
+          "skills": {
+            "weapons": ".30",
+            "armor": ".30",
+            "weapon smithing": ".60",
+            "armor smithing": ".60"
+          }
+        },
+        "Sisik": {
+          "id": "33333",
+          "race": "Lizardman",
+          "gender": "Female",
+          "upkeep": 150,
+          "status": "available",
+          "employer": "none",
+          "skills": {
+            "food": ".20",
+            "drink": ".20",
+            "inn": ".65",
+            "housing": ".65"
+          }
+        },
+        "Alost Telvanlal": {
+          "id": "6bc36c1e-7b95-4558-abf6-850728d5782d",
+          "race": "House Elf",
+          "gender": "Male",
+          "upkeep": 60,
+          "status": "available",
+          "employer": "none",
+          "skills": {
+            "drink": 0.15,
+            "cooking": 0.23,
+            "services": 0.89,
+            "armor": 0.8
+          }
+        },
+        "Ctybho": {
+          "id": "1f2f014b-9df6-4a1f-b060-4eeec476e8e2",
+          "race": "Gillman",
+          "gender": "Male",
+          "upkeep": 55,
+          "status": "available",
+          "employer": "none",
+          "skills": {
+            "enchanting": 0.93
+          }
+        }
+      }
+    }
+  ]
+}

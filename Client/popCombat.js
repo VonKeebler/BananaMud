@@ -87,7 +87,8 @@ function popCombatPrep(data){ // on receipt of prep combat
         if(data.inventory != undefined){
             combatInventory = data.inventory;
             for(var i=0; i < combatInventory.length; i++){
-                combatDisplayInventory[i] = combatPop.addChild(game.add.sprite((625-(combatPop.width/2)) + (42*i), 365-(combatPop.height/2), data.inventory[i].invImage));
+                combatDisplayInventory[i] = combatPop.addChild(game.add.sprite((625-(combatPop.width/2)) + (42*i), 365-(combatPop.height/2), 'inventoryIcons'));
+                combatDisplayInventory[i].frame = data.inventory[i].imageIndex;
             }
         } 
         
@@ -201,7 +202,8 @@ function onCombatUpdate(data) {
     if(data.inventory != undefined){
         combatInventory = data.inventory;
         for(var i=0; i < combatInventory.length; i++){
-            combatDisplayInventory[i] = combatPop.addChild(game.add.sprite((625-(combatPop.width/2)) + (42*i), 365-(combatPop.height/2), data.inventory[i].invImage));
+            combatDisplayInventory[i] = combatPop.addChild(game.add.sprite((625-(combatPop.width/2)) + (42*i), 365-(combatPop.height/2), 'inventoryIcons'));
+            combatDisplayInventory[i].frame = data.inventory[i].imageIndex;
         }
     }   
     
@@ -223,11 +225,14 @@ function onCombatUpdate(data) {
 }
 
 function onCombatHit (data){
+    var targetFrameX, targetFrameY;
     
     console.log(data.characterHitting.side + ' character number '+ data.characterHitting.index + ' should hit character ' + data.characterHit.index + ' on side '+data.characterHit.side + ' with a '+data.attackDamage.status+' attack for '+ data.attackDamage.totalDamage +' damage');
     
     if(data.characterHitting.side == "home" && data.characterHit.side == "away"){
-        
+        targetFrameX = combatPop.x + combatAwayNamePlates[data.characterHit.index].targetPoint.x; // FOR PARTICLES
+        targetFrameY = combatPop.y + combatAwayNamePlates[data.characterHit.index].targetPoint.y;
+            
         var tweenHit = game.add.tween(combatHomeNamePlates[data.characterHitting.index]).to({x: combatAwayNamePlates[data.characterHit.index].targetPoint.x-225,  y: combatAwayNamePlates[data.characterHit.index].targetPoint.y}, 250, Phaser.Easing.Exponential.In);
         var tweenReturn = game.add.tween(combatHomeNamePlates[data.characterHitting.index]).to({x: combatHomeNamePlates[data.characterHitting.index].position.x,  y: combatHomeNamePlates[data.characterHitting.index].position.y}, 250, Phaser.Easing.Back.Out);   
         tweenHit.chain(tweenReturn);
@@ -235,6 +240,8 @@ function onCombatHit (data){
     }
     
     if(data.characterHitting.side == "away" && data.characterHit.side == "home"){
+        targetFrameX = combatPop.x + combatHomeNamePlates[data.characterHit.index].targetPoint.x; //FOR PARTICLES
+        targetFrameY = combatPop.y + combatHomeNamePlates[data.characterHit.index].targetPoint.y;
         
         var tweenHit = game.add.tween(combatAwayNamePlates[data.characterHitting.index]).to({x: combatHomeNamePlates[data.characterHit.index].targetPoint.x,  y: combatHomeNamePlates[data.characterHit.index].targetPoint.y}, 250, Phaser.Easing.Exponential.In);
         var tweenReturn = game.add.tween(combatAwayNamePlates[data.characterHitting.index]).to({x: combatAwayNamePlates[data.characterHitting.index].position.x,  y: combatAwayNamePlates[data.characterHitting.index].position.y}, 250, Phaser.Easing.Back.Out);   
@@ -242,22 +249,25 @@ function onCombatHit (data){
         tweenHit.start();
     }
 
-    combatHitTimers.push( setTimeout(applyDamage, 250, {side: data.characterHit.side, index: data.characterHit.index, status: data.attackDamage.status, totalDamage: data.attackDamage.totalDamage}) ); // APPLY DAMAGE AND GRAPHIC
+    combatHitTimers.push( setTimeout(applyDamage, 250, {targetX: targetFrameX, targetY: targetFrameY, side: data.characterHit.side, index: data.characterHit.index, status: data.attackDamage.status, totalDamage: data.attackDamage.totalDamage}) ); // APPLY DAMAGE AND GRAPHIC
 }
 
 function applyDamage (data){
-    console.log('APPLYING '+data.totalDamage+' DAMAGE');
     if(data.side == "away"){
         //combatAwayHealths[data.index].text = parseInt(combatAwayHealths[data.index].text) - data.totalDamage;
-        if(data.status == "critical hit"){
-            console.log("CRITICAL HIT");
-        }
+
     } else {
         //combatHomeHealths[data.index].text = parseInt(combatHomeHealths[data.index].text) - data.totalDamage;
-        if(data.status == "critical hit"){
-            console.log("CRITICAL HIT");
-        }
+
     }
+
+    if(data.status == "critical hit"){
+        console.log("CRITICAL HIT");
+        popMeleeCriticalHit({targetX: data.targetX, targetY: data.targetY }); //LETS TRY PARTICLES?
+    } else {
+        popMeleeHit({targetX: data.targetX, targetY: data.targetY }); //LETS TRY PARTICLES?
+    }    
+
 
 }
 

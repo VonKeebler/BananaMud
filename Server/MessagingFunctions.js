@@ -20,12 +20,16 @@ function onPlayerViewMessages(data) {
     
     var pagedMessageArray = [];
     
-    if((data.messagesPage*5) > messagingCharacter.messages.length){
-        data.messagesPage = Math.floor(messagingCharacter.messages.length/5);
-    }
+    if(messagingCharacter.messages != undefined){
     
-    for(var i=data.messagesPage*5; i<(data.messagesPage*5)+5; i++){
-        pagedMessageArray.push(messagingCharacter.messages[i]);
+        if((data.messagesPage*5) > messagingCharacter.messages.length){
+            data.messagesPage = Math.floor(messagingCharacter.messages.length/5);
+        }
+
+        for(var i=data.messagesPage*5; i<(data.messagesPage*5)+5; i++){
+            pagedMessageArray.push(messagingCharacter.messages[i]);
+        }
+        
     }
     
     server.socket.to(data.id).emit('player view messages response', {messages: pagedMessageArray});            

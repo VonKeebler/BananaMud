@@ -80,7 +80,9 @@ function preload() {
     game.load.image('doubleupArrow', 'assets/doubleupArrow.png');
     game.load.image('doubledownArrow', 'assets/doubledownArrow.png');
 
-    game.load.image('foodTurkey', 'assets/foodTurkey.png');
+    game.load.spritesheet('inventoryIcons', 'assets/itemImages.png', 40, 40);    
+    
+    /*game.load.image('foodTurkey', 'assets/foodTurkey.png');
     game.load.image('foodFoulMeal', 'assets/foodFoulMeal.png');
     game.load.image('foodHotDog', 'assets/foodHotDog.png');
     game.load.image('foodToppedHotDog', 'assets/foodToppedHotDog.png');
@@ -103,7 +105,7 @@ function preload() {
     game.load.image('itemHealthPotion', 'assets/itemHealthPotion.png');
     game.load.image('itemLetter', 'assets/itemLetter.png');
     game.load.image('itemEnvelope', 'assets/itemEnvelope.png');
-    game.load.image('itemNote', 'assets/itemNote.png');
+    game.load.image('itemNote', 'assets/itemNote.png');*/
 
     game.load.image('cartIcon', 'assets/cart.png');
     game.load.image('cartIconDisabled', 'assets/disabledCart.png');
@@ -114,9 +116,12 @@ function preload() {
     game.load.spritesheet('alertIcon', 'assets/AlertSpriteSheet.png', 36, 32);
     game.load.spritesheet('propertyIcon', 'assets/buyManageProperty.png', 36, 32);
 
-    game.load.spritesheet('buyManagePropertyMenu', 'assets/buyManagePropertyMenu.png', 316, 286);
+    game.load.spritesheet('buyManagePropertyMenu', 'assets/buyManagePropertyMenu.png', 316, 309);
     game.load.image('buyManagePropertyMenuEditButton', 'assets/managePropertyEditButton.png');
     game.load.image('buyManagePropertyMenuEditDescriptionButton', 'assets/managePropertyEditDescriptionButton.png');
+    
+    game.load.image('editButton', 'assets/editButton.png');
+    game.load.image('inventoryButton', 'assets/inventoryButton.png');
     
     game.load.spritesheet('buyManagePropertyAmenitiesIcons', 'assets/managePropertyMenuAmenitiesIcons.png', 40, 40);
     game.load.spritesheet('buyManagePropertyEmployeesIcons', 'assets/managePropertyMenuEmployeeIcon.png', 40, 40);
@@ -125,8 +130,15 @@ function preload() {
     game.load.image('PropertyEditMenuNameField', 'assets/propertyEditNameField.png');
     game.load.image('PropertyEditMenuDescField', 'assets/propertyEditDescField.png');
     
+    game.load.image('buyManagePropertyInventoryMenu', 'assets/managePropertyInventoryMenu.png');    
+    
     game.load.image('buyManagePropertyManageEmployeeMenu', 'assets/manageEmployeeMenu.png');
     game.load.image('buyManagePropertyAddEmployeeMenu', 'assets/hireEmployeeMenu.png');
+    
+    game.load.image('hireButton', 'assets/hireButton.png');
+    
+    game.load.image('buyManagePropertyManageAmenityMenu', 'assets/manageAmenityMenu.png');
+    game.load.image('buyManagePropertyAddAmenityMenu', 'assets/addAmenityMenu.png');    
     
     game.load.spritesheet('buysellButton', 'assets/buysellButton.png', 78, 24);    
     
@@ -140,8 +152,8 @@ function preload() {
     game.load.image('messagesViewMenu', 'assets/MessagesView.png');
     game.load.image('messagesNewMessageMenu', 'assets/MessagesNewMessage.png');
     
-    game.load.image('messagesMenuUp', 'assets/MessagesView.png');
-    game.load.image('messagesMenuDown', 'assets/MessagesView.png');
+    game.load.image('messagesMenuUp', 'assets/messagesMenuUp.png');
+    game.load.image('messagesMenuDown', 'assets/messagesMenuDown.png');
     
     game.load.image('NewMessageFromSubjectField', 'assets/newMessageFromSubjectField.png');
     game.load.image('NewMessageBodyField', 'assets/newMessageBodyField.png');
@@ -155,7 +167,7 @@ function preload() {
     game.load.image('shoppingMenu', 'assets/shoppingMenu.png');
     game.load.image('shoppingItemSelector', 'assets/itemSelector.png');
     game.load.image('shoppingBuySellMenu', 'assets/buysellMenu.png');
-    game.load.image('shoppingBuySellMenuBuyButton', 'assets/buysellMenuBuyButton.png');
+    game.load.image('buyButton', 'assets/buyButton.png');
     game.load.image('shoppingAddButton', 'assets/addButton.png');
     game.load.image('shoppingSubtractButton', 'assets/subtractButton.png');
 
@@ -224,6 +236,9 @@ function preload() {
     game.load.image('cousinLetterPop', 'assets/cousinLetterPop.png');
     game.load.image('cousinLetter2Pop', 'assets/cousinLetter2Pop.png');
     game.load.image('OldSilvermereInnNotePop', 'assets/itemOldSilvermereInnNote.png');
+    
+    //PARTICLES
+    game.load.spritesheet('meleeHitParticles', 'assets/combatMeleeHitParticles.png', 1, 1);
 
 }
 
@@ -285,7 +300,7 @@ function startMud(data){
     graphics = game.add.graphics(0, 0);
     
     game.physics.startSystem(Phaser.Physics.ARCADE); // FOR PARTICLES
-    var particleEmitter = game.add.emitter(0, 0, 100); // FOR PARTICLES    
+    particleEmitter = game.add.emitter(game.world.centerX, 400, 400); // FOR PARTICLES    
 
     gameState = "Started";
     queueMessage({message: "Welcome to: ", styles: [{color: '#ffffff', weight: 'Bold'}]});
@@ -631,11 +646,23 @@ var setEventHandlers = function () {
   // POP PROPERTY MANAGE MENU
   socket.on('player manage property response', onPropertyManage);    
     
+  // PLAYER SUCCEEDS IN BUYING PROPERTY
+  socket.on('player buy property success', onPropertyBuySuccess);        
+    
   // POP PROPERTY EDIT MENU
   socket.on('player edit property data', onPropertyEditData);      
     
   // POP ADD EMPLOYEE MENU
   socket.on('player employees available', onEmployeeAdd);    
+    
+  // Show add amenities info
+  socket.on('add amenities info', onAddAmenities); 
+    
+  // PLAYER SUCCEEDS IN BUYING PROPERTY AMENITY
+  socket.on('player buy amenity success', onAmenityBuySuccess);            
+    
+  // PLAYER SUCCEEDS IN HIRING PROPERTY EMPLOYEE
+  socket.on('player hire employee success', onEmployeeHireSuccess);                
 }
 
 // Socket connected

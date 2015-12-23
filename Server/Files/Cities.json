@@ -10,41 +10,49 @@
       "market": {
         "food": {
           "demand": ".125",
+          "supply": "0",
           "value": 25,
           "tax": ".05"
         },
         "drink": {
           "demand": ".125",
+          "supply": "0",
           "value": 25,
           "tax": ".05"            
         },          
         "services": {
           "demand": ".125",
+          "supply": "0",
           "value": 25,
           "tax": ".05"            
         },
         "inn": {
           "demand": ".125",
+          "supply": "0",            
           "value": 25,
           "tax": ".05"            
         },
         "housing": {
           "demand": ".125",
+          "supply": "0",            
           "value": 25,
           "tax": ".05"            
         },
         "weapons": {
           "demand": ".125",
+          "supply": "0",            
           "value": 25,
           "tax": ".05"            
         },
         "armor": {
           "demand": ".125",
+          "supply": "0",            
           "value": 25,
           "tax": ".05"            
         },
         "magic": {
           "demand": ".125",
+          "supply": "0",            
           "value": 25,
           "tax": ".05"            
         }

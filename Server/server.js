@@ -7,6 +7,7 @@ var io = require('socket.io')
 var Player = require('./Player')
 var Room = require('./Room')
 var Property = require('./Property')
+var Amenity = require('./Amenity')
 var Employee = require('./Employee')
 var City = require('./City')
 var Item = require('./Item')
@@ -35,6 +36,8 @@ var itemTransfer = require('./itemTransfer')
 var Combat = require('./Combat')
 var Movement = require('./Movement')
 
+var Definitions = require('./Definitions')
+
 var Fileloader = require('./Fileloader.js');
 
 var port = process.env.PORT || 3000
@@ -49,6 +52,7 @@ global.players	// Array of connected players
 global.npcs //Array of active npcs
 global.rooms; // Array of rooms
 global.properties; // Array of properties
+global.amenities; // Array of amenities
 global.employees; // Array of property employees
 global.cities; // Array of cities
 global.items // Array of items
@@ -79,6 +83,7 @@ function init () {
   players = [];
   rooms = [];
   properties = [];
+  amenities = [];
   employees = [];    
   cities = [];
   items = [];
@@ -88,7 +93,7 @@ function init () {
   spells = [];
   combatSkills = [];
   stealthSkills = [];
-
+    
   saveDataTimeout = null;
 
   // Attach Socket.IO to server
@@ -141,6 +146,10 @@ var serverHeartbeat = setInterval(
             properties[i].heartbeat();
         }
         
+        for(var i=0; i<cities.length; i++){
+            cities[i].heartbeat();
+        }
+        
         
 
         if(saveDataTimeout == null){
@@ -165,6 +174,9 @@ function saveData(){
     
     util.log('SAVING PROPERTIES...')
     Fileloader.saveProperties();    
+    
+    util.log('SAVING EMPLOYEES...')
+    Fileloader.saveEmployees();        
 
     clearTimeout(saveDataTimeout);
     saveDataTimeout = null;
@@ -299,6 +311,15 @@ function onSocketConnection (client) {
   
   // Listen for character looking for employee
   client.on('player add employee', PropertyFunctions.onPlayerAddEmployee)      
+
+  // Listen for character hiring employee at property
+  client.on('player hire employee', PropertyFunctions.onPlayerHireEmployee)      
+  
+  // Listen for character looking at property amenities (trying to add)
+  client.on('player view amenities', PropertyFunctions.onPlayerViewAddAmenities)      
+  
+  // Listen for character buying amenity at property
+  client.on('player buy amenity', PropertyFunctions.onPlayerBuyAmenity)    
 
 }
 
@@ -785,6 +806,7 @@ function employeesByCity (id) {
   var i;
   var employeesInCity = [];
   for (i = 0; i < employees.length; i++) {
+
     if (employees[i].city === id) {
       employeesInCity.push(employees[i])
     }
@@ -793,6 +815,82 @@ function employeesByCity (id) {
   return employeesInCity;
 }
 module.exports.employeesByCity = employeesByCity;
+
+// Find available employees by city
+function availableEmployeesByCity (id) {
+  var i;
+  var availableEmployeesInCity = [];
+  for (i = 0; i < employees.length; i++) {
+
+    if (employees[i].city === id && employees[i].status === 'available') {
+      availableEmployeesInCity.push(employees[i])
+    }
+  }
+
+  return availableEmployeesInCity;
+}
+module.exports.availableEmployeesByCity = availableEmployeesByCity;
+
+// Find the total number of times an amenity can be upgraded
+function getAmenityRankCount (id) {
+  var i;
+  for (i = 0; i < amenities.length; i++) {
+    if (amenities[i].amenityID === id) {
+      return Object.keys(amenities[i].upgrades).length;
+    }
+  }
+
+  return undefined
+}
+module.exports.getAmenityRankCount = getAmenityRankCount;
+
+// Find amenity information by Amenity ID
+function getAmenityById (id) {
+  var i;
+  for (i = 0; i < amenities.length; i++) {
+    if (amenities[i].amenityID === id) {
+      return amenities[i];
+    }
+  }
+
+  return undefined
+}
+module.exports.getAmenityById = getAmenityById;
+
+// Add amenity to property
+function addAmenityToProperty (propertyID, amenityID) {
+  var property = propertyById(propertyID);
+  var amenity = getAmenityById(amenityID);
+  
+  property.amenities[amenity.amenityID] = {rank: 1, marketing: 0};
+    
+}
+module.exports.addAmenityToProperty = addAmenityToProperty;
+
+// Find employee information by Employee ID
+function getEmployeeById (id) {
+  var i;
+  for (i = 0; i < employees.length; i++) {
+    if (employees[i].id === id) {
+      return employees[i];
+    }
+  }
+
+  return undefined
+}
+module.exports.getEmployeeById = getEmployeeById;
+
+// Add employee to property
+function addEmployeeToProperty (propertyID, employeeID) {
+  var property = propertyById(propertyID);
+  var employee = getEmployeeById(employeeID);
+          
+  var employeeObject = {id: employee.id, race: employee.race, gender: employee.gender, upkeep: employee.upkeep, skills: employee.skills}
+  
+  property.employees[employee.name] = employeeObject;
+    
+}
+module.exports.addEmployeeToProperty = addEmployeeToProperty;
 
 // Find city by ID
 function cityById (id) {
@@ -1145,11 +1243,6 @@ function parseEquipment(inventoryObject){
 
 }
 module.exports.parseInventory = parseInventory;
-
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-module.exports.getRandomInt = getRandomInt;
 
 function addItemToRoom(itemID, roomid, count){
     var item = itemByItemID(itemID);
@@ -1960,3 +2053,65 @@ function getFormattedDate(){
     
 }
 module.exports.getFormattedDate = getFormattedDate;
+
+function getAvailableEmployeeCount(cityID){
+    var count = 0;
+    for(var i=0; i<employees.length; i++){
+
+        if(employees[i].city == cityID && employees[i].status == "available"){
+            count++;
+        }
+    }
+    return count;
+}
+module.exports.getAvailableEmployeeCount = getAvailableEmployeeCount;
+/* ******************************************************************************************************
+** RANDOM FUNCTIONS
+********************************************************************************************************* */
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+module.exports.getRandomInt = getRandomInt;
+
+function generateId() {
+    var d = new Date().getTime();
+    var id = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = (d + Math.random()*16)%16 | 0;
+        d = Math.floor(d/16);
+        return (c=='x' ? r : (r&0x3|0x8)).toString(16);
+    });
+    return id;
+}
+module.exports.generateId = generateId;
+
+function randomRace() {
+  //Human, Wood Elf, House Elf, Halfling, Orc, Gnome, Dwarf, Gillman, Golem, Lizard Man
+  var races = ['Human', 'Wood Elf', 'House Elf', 'Halfling', 'Orc', 'Gnome', 'Dwarf', 'Gillman', 'Golem', 'Lizard Man']
+  var random = getRandomInt(0, 9);
+    
+  return races[random];
+}
+module.exports.randomRace = randomRace;
+
+function randomGender() {
+  //Male, Female
+  var genders = ['Male', 'Female']
+  var random = getRandomInt(0, 1);
+    
+  return genders[random];
+}
+module.exports.randomGender = randomGender;
+
+function randomName(race, gender) {
+  var firstName = Definitions.DEFNames[race][gender].First[getRandomInt(0,Definitions.DEFNames[race][gender].First.length-1)];
+  var lastName = "";
+  if(race != "Gillman" && race != "Golem" && race != "Lizard Man"){
+      var lastName = " " + Definitions.DEFNames[race][gender].Last[getRandomInt(0,Definitions.DEFNames[race][gender].Last.length-1)];
+  } else {
+  }
+  var name = firstName + lastName;
+    
+  return name;
+}
+module.exports.randomName = randomName;

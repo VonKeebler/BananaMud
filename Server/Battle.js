@@ -20,7 +20,7 @@ var attackTimers;
 ************************************************ */
 var Battle = function (roomid, homeCombatants, awayCombatants) {
 
-  this.id = server.getRandomInt(0, 99999);
+  this.id = server.generateId();
   this.roomid = roomid;  
   this.homeCombatants = homeCombatants;
   this.awayCombatants = awayCombatants;

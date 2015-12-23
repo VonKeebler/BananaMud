@@ -17,7 +17,8 @@ function spawnNPC (npcName, roomid) {
     }
     
     var id, name, alias, roomdescription, description, startingroom, inventory, money, dialog, secretdialog, idleEmotes, allegiance, currentBattle, health, maxhealth, energy, maxenergy, magic, maxmagic, strength, agility, intellect, meleepower, speed, spellpower, hitchance, stealth, criticalchance, defence, attack, roaming, equipment;
-    id = npcToSpawn['id'];
+    //id = npcToSpawn['id'];
+    id = server.generateId();
     name = npcToSpawn['name'];
     alias = npcToSpawn['alias'];
     roomdescription = npcToSpawn['roomdescription'];

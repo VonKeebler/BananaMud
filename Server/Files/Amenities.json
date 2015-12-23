@@ -1,0 +1,224 @@
+{
+  "Amenities": [
+    {
+      "amenityID": "food",
+      "name": "Food",
+      "imageIndex": 1,
+      "description": "Serving food for those willing to eat.",
+      "upgrades": {
+          "1" : {
+              "baseValue": 10,
+              "baseCost": 80,
+              "baseUpkeep": 10,
+              "itemLevel": 1
+          },
+          "2" : {
+              "baseValue": 20,
+              "baseCost": 160,
+              "baseUpkeep": 20,              
+              "itemLevel": 2              
+          },
+          "3" : {
+              "baseValue": 40,
+              "baseCost": 320,
+              "baseUpkeep": 40,              
+              "itemLevel": 3              
+          }
+      }
+    },
+    {
+      "amenityID": "drink",
+      "name": "Drink",
+      "imageIndex": 2,
+      "description": "Serving beverages for those willing to drink.",
+      "upgrades": {
+          "1" : {
+              "baseValue": 10,
+              "baseCost": 80,
+              "baseUpkeep": 10,
+              "itemLevel": 1
+          },
+          "2" : {
+              "baseValue": 20,
+              "baseCost": 160,
+              "baseUpkeep": 20,
+              "itemLevel": 2              
+          },
+          "3" : {
+              "baseValue": 40,
+              "baseCost": 320,
+              "baseUpkeep": 40,
+              "itemLevel": 3             
+          }          
+      }
+    },
+    {
+      "amenityID": "services",
+      "name": "Services",
+      "imageIndex": 3,
+      "description": "Providing simple services, whatever those are.",
+      "upgrades": {
+          "1" : {
+              "baseValue": 15,
+              "baseCost": 120,
+              "baseUpkeep": 15,
+              "itemLevel": 1
+          }          
+      }
+    },
+    {
+      "amenityID": "inn",
+      "name": "Inn",
+      "imageIndex": 4,
+      "description": "Beds and rooms for rent.",
+      "upgrades": {
+          "1" : {
+              "baseValue": 20,
+              "baseCost": 160,
+              "baseUpkeep": 20,
+              "itemLevel": 1
+          }          
+      }
+    },
+    {
+      "amenityID": "housing",
+      "name": "Housing",
+      "imageIndex": 5,
+      "description": "Homes with storage and places for rest.",
+      "upgrades": {
+          "1" : {
+              "baseValue": 40,
+              "baseCost": 320,
+              "baseUpkeep": 40,
+              "itemLevel": 1
+          }          
+      }
+    },
+    {
+      "amenityID": "weapons",
+      "name": "Weapons",
+      "imageIndex": 6,
+      "description": "Offering weapons for sale.",
+      "upgrades": {
+          "1" : {
+              "baseValue": 50,
+              "baseCost": 400,
+              "baseUpkeep": 50,
+              "itemLevel": 1
+          }          
+      }
+    },
+    {
+      "amenityID": "armor",
+      "name": "Armor",
+      "imageIndex": 7,
+      "description": "Offering armor for sale.",
+      "upgrades": {
+          "1" : {
+              "baseValue": 50,
+              "baseCost": 400,
+              "baseUpkeep": 50,
+              "itemLevel": 1
+          }          
+      }
+    },
+    {
+      "amenityID": "magic",
+      "name": "Magic",
+      "imageIndex": 8,
+      "description": "Offering magic items for sale.",
+      "upgrades": {
+          "1" : {
+              "baseValue": 50,
+              "baseCost": 400,
+              "baseUpkeep": 50,
+              "itemLevel": 1
+          }          
+      }
+    },
+    {
+      "amenityID": "cooking",
+      "name": "Cooking",
+      "imageIndex": 9,
+      "description": "Offering tools for crafting a variety of foods.",
+      "upgrades": {
+          "1" : {
+              "baseValue": 30,
+              "baseCost": 240,
+              "baseUpkeep": 30,
+              "itemLevel": 1
+          }          
+      }
+    },
+    {
+      "amenityID": "brewing",
+      "name": "Brewing",
+      "imageIndex": 9,
+      "description": "Offering tools for crafting a variety of drinks.",
+      "upgrades": {
+          "1" : {
+              "baseValue": 30,
+              "baseCost": 240,
+              "baseUpkeep": 30,
+              "itemLevel": 1
+          }          
+      }
+    },
+    {
+      "amenityID": "weapon smithing",
+      "name": "Weapon Smithing",
+      "imageIndex": 9,
+      "description": "Offering tools for crafting a variety of weapons.",
+      "upgrades": {
+          "1" : {
+              "baseValue": 60,
+              "baseCost": 480,
+              "baseUpkeep": 60,
+              "itemLevel": 1
+          }          
+      }
+    },
+    {
+      "amenityID": "armor smithing",
+      "name": "Armor Smithing",
+      "imageIndex": 9,
+      "description": "Offering tools for crafting a variety of armor.",
+      "upgrades": {
+          "1" : {
+              "baseValue": 60,
+              "baseCost": 480,
+              "baseUpkeep": 60,
+              "itemLevel": 1
+          }          
+      }
+    },
+    {
+      "amenityID": "enchanting",
+      "name": "Enchanting",
+      "imageIndex": 9,
+      "description": "Offering tools for crafting a variety of magic items.",
+      "upgrades": {
+          "1" : {
+              "baseValue": 60,
+              "baseCost": 480,
+              "baseUpkeep": 60,
+              "itemLevel": 1
+          }          
+      }
+    },
+    {
+      "amenityID": "refinery",
+      "name": "Refinery",
+      "imageIndex": 9,
+      "description": "Offering tools for refining gatherables into resources.",
+      "upgrades": {
+          "1" : {
+              "baseValue": 40,
+              "baseCost": 320,
+              "baseUpkeep": 40,
+              "itemLevel": 1
+          }          
+      }
+    }      
+  ]
+}

@@ -6,7 +6,7 @@ var validRooms;
 
 var validTherusRooms, validTherusCountrysideRooms, validTherusThievesGuildRooms, validTherusSewerRooms;
 
-var validProperties, validCities, validEmployees;
+var validProperties, validCities, validEmployees, validAmenities;
 
 var baseNPCs;
 var baseItems;
@@ -21,6 +21,7 @@ var server = require('./server');
 var Player = require('./Player')
 var Room = require('./Room')
 var Property = require('./Property')
+var Amenity = require('./Amenity')
 var Employee = require('./Employee')
 var City = require('./City')
 var Item = require('./Item')
@@ -42,6 +43,7 @@ fs.readFile('./Files/ItemsBase.json', loadItems);
 fs.readFile('./Files/PCs.json', loadPCs);
 
 fs.readFile('./Files/Properties.json', loadProperties);
+fs.readFile('./Files/Amenities.json', loadAmenities);
 fs.readFile('./Files/Employees.json', loadEmployees);
 fs.readFile('./Files/Cities.json', loadCities);
 
@@ -145,6 +147,13 @@ function loadProperties(err, data) {
     if (err) throw err;
     validProperties = JSON.parse(data);
     readProperties();
+    // You can now play with your datas
+}
+
+function loadAmenities(err, data) {
+    if (err) throw err;
+    validAmenities = JSON.parse(data);
+    readAmenities();
     // You can now play with your datas
 }
 
@@ -269,7 +278,7 @@ module.exports = {
         for(var i=0; i<characterInfo.length; i++){
 
         }
-        var newPCID = server.getRandomInt(0, 99999)
+        var newPCID = server.generateId();
 
         var newData = {id : newPCID, playerName : playerName, name : name, gender : gender, race : race,  description : description, level: level, health: health, maxhealth: maxhealth, energy: energy, maxenergy: maxenergy, magic: magic, maxmagic: maxmagic, strength: strength, agility: agility, intellect: intellect, meleepower: meleepower, speed: speed, spellpower: spellpower, hitchance: hitchance, stealth: stealth, criticalchance: criticalchance, defence: defence, attack: attack, combatSkills: combatSkills, stealthSkills: stealthSkills, magicSpells: magicSpells, roomid: roomid, inventory: inventory, money: money, allegiances: allegiances, equipment: equipment, messages: messages};
         validPCs['PCs'].push(newData);
@@ -336,7 +345,44 @@ module.exports = {
 
 
         return;
-    }    
+    },
+    saveEmployees : function (){
+
+        var employeeData = [];
+        var employeeCities = [];
+        for(var i=0; i<employees.length; i++){
+            if(employeeCities.indexOf(employees[i].city) == -1){
+                employeeCities.push(employees[i].city);
+            }
+
+        }
+        var employeeCityObject = {};
+        
+        for(var i=0; i<employeeCities.length; i++){
+            var employeesInCity = server.employeesByCity(employeeCities[i]);
+
+            var employeeNameObject = {};
+            
+            for(var j=0; j<employeesInCity.length; j++){
+                
+                var employeeObject = {id: employeesInCity[j].id, race: employeesInCity[j].race, gender: employeesInCity[j].gender, upkeep: employeesInCity[j].upkeep, status: employeesInCity[j].status, employer: employeesInCity[j].employer, skills: employeesInCity[j].skills};
+                
+                employeeNameObject[[employeesInCity[j].name]] = employeeObject;
+                
+            }
+            
+            employeeCityObject[employeeCities[i]] = employeeNameObject;
+            
+            employeeData.push(employeeCityObject);
+        }
+        
+        var savingEmployees = {Employees: employeeData};
+
+        fs.writeFile('./Files/Employees.json', JSON.stringify(savingEmployees), function (err) { if (err) throw err;});
+
+
+        return;
+    } 
 
 }
 
@@ -476,19 +522,19 @@ function readNPCs(){
 function readItems(){
     var itemInfo = baseItems['Items'];
     items = [];
-    var id, itemID, name, description, type, invImage, baseValue, stats, use;
+    var id, itemID, name, description, type, imageIndex, baseValue, stats, use;
     for(var i=0; i < itemInfo.length; i++){
         id = itemInfo[i]['id'];
         itemID = itemInfo[i]['itemID'];
         name = itemInfo[i]['name'];
         description = itemInfo[i]['description'];
         type = itemInfo[i]['type'];
-        invImage = itemInfo[i]['invImage'];
+        imageIndex = itemInfo[i]['imageIndex'];
         baseValue = itemInfo[i]['baseValue'];
         stats = itemInfo[i]['stats'];
         use = itemInfo[i]['use'];
 
-        newItem = new Item(id, itemID, name, description, type, invImage, baseValue, stats, use);
+        newItem = new Item(id, itemID, name, description, type, imageIndex, baseValue, stats, use);
         items.push(newItem);
 
     }
@@ -632,6 +678,24 @@ function readProperties(){
     }
 }
 
+function readAmenities(){
+    var amenityInfo = validAmenities['Amenities'];
+
+    var amenityID, name, imageIndex, description, upgrades;
+
+    for(var i=0; i < amenityInfo.length; i++){
+        amenityID = amenityInfo[i]['amenityID'];
+        name = amenityInfo[i]['name'];
+        imageIndex = amenityInfo[i]['imageIndex'];
+        description = amenityInfo[i]['description'];
+        upgrades = amenityInfo[i]['upgrades'];
+
+        newAmenity = new Amenity(amenityID, name, imageIndex, description, upgrades);
+        amenities.push(newAmenity);
+
+    }
+}
+
 function readCities(){
     var cityInfo = validCities['Cities'];
 
@@ -665,13 +729,16 @@ function readEmployees(){
         
             var employeeData = employeeInfo[i][employeeCity][employeeNames[j]];
             
+            id = employeeData['id'];
             name = employeeNames[j];
             race = employeeData['race'];
             gender = employeeData['gender'];
             upkeep = employeeData['upkeep'];
+            status = employeeData['status'];
+            employer = employeeData['employer'];
             skills = employeeData['skills'];
             
-            newEmployee = new Employee(name, employeeCity, race, gender, upkeep, skills);
+            newEmployee = new Employee(id, name, employeeCity, race, gender, upkeep, status, employer, skills);
             employees.push(newEmployee);
             
         }

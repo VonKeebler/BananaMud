@@ -1,13 +1,81 @@
 {
   "Blueprints": [
     {
+      "resources": {
+          "copperBar": {
+              "name": "Copper Bar",
+              "description": "A sturdy copper bar. Made from copper ore.",
+              "type": "metal bar",
+              "imageIndex": "11",
+              "baseValue": 5,\
+              "skill": "refinery",
+              "materials": {
+                  "required": {
+                      "copperOre": 1
+                  },
+                  "optional": {
+                      "coal": 1
+                  }                  
+              },
+              "stats": {
+                "quality": 4,
+                "defence": 2,
+                "attack": 2
+              }
+          },
+          "lightLeather": {
+              "name": "Light Leather",
+              "description": "A thin, wide panel of leather, tanned at a tannery.",
+              "type": "light leather",
+              "imageIndex": "41",
+              "baseValue": 3,
+              "skill": "refinery",
+              "materials": {
+                  "required": {
+                      "animal skin": 1
+                  },
+                  "optional": {
+
+                  }                  
+              },
+              "stats": {
+                "quality": 2,
+                "speed": 3,
+                "criticalchance": 3,
+                "stealth": 1
+              }
+          },
+          "softplanksPine": {
+              "name": "Pine Planks",
+              "description": "A stack of light pine planks.",
+              "type": "soft planks",
+              "imageIndex": "61",
+              "baseValue": 2,
+              "skill": "refinery",
+              "materials": {
+                  "required": {
+                      "softlogsPine": 1
+                  },
+                  "optional": {
+
+                  }                  
+              },
+              "stats": {
+                "quality": 2,
+                "speed": 4,
+                "stealth": 3,
+                "meleepower": 2
+              }
+          }          
+      },        
       "components": {
           "componentHilt": {
               "name": "Hilt",
               "description": "A weapon hilt. Used to create slashing and poking weapons.",
               "type": "componentHilt",
-              "invImage": "?",
+              "imageIndex": "0",
               "baseValue": 3,
+              "skill": "weapon smithing",
               "materials": {
                   "required": {
                       "metal bar": 1,
@@ -27,8 +95,9 @@
               "name": "Dragon Hilt",
               "description": "A weapon hilt with a detailed dragon mouth as the guard. Used to create slashing and poking weapons.",
               "type": "componentHilt",
-              "invImage": "?",
+              "imageIndex": "0",
               "baseValue": 4,
+              "skill": "weapon smithing",
               "materials": {
                   "required": {
                       "metal bar": 1,
@@ -48,8 +117,9 @@
               "name": "Long Blade",
               "description": "A lengthy piece of sharpened metal. Used to make long sharp and pointy weapons.",
               "type": "componentLongBlade",
-              "invImage": "?",
+              "imageIndex": "0",
               "baseValue": 4,
+              "skill": "weapon smithing",
               "materials": {
                   "required": {
                       "metal bar": 2,
@@ -68,8 +138,9 @@
               "name": "Short Blade",
               "description": "A short piece of sharpened metal. Used to make short pointy weapons.",
               "type": "componentShortBlade",
-              "invImage": "?",
+              "imageIndex": "0",
               "baseValue": 3,
+              "skill": "weapon smithing",
               "materials": {
                   "required": {
                       "metal bar": 1,
@@ -90,8 +161,9 @@
               "name": "Dagger",
               "description": "A pokin' sharp dagger, ready to stab!",
               "type": "weapon",
-              "invImage": "weaponDagger",
+              "imageIndex": "151",
               "baseValue": 10,
+              "skill": "weapon smithing",
               "materials": {
                   "required": {
                       "componentHilt": 1,
@@ -112,8 +184,9 @@
               "name": "Longsword",
               "description": "It is practically wieldy.",
               "type": "weapon",
-              "invImage": "weaponLongsword",
+              "imageIndex": "152",
               "baseValue": 18,
+              "skill": "weapon smithing",
               "materials": {
                   "required": {
                       "componentHilt": 1,
@@ -133,8 +206,9 @@
               "name": "Saber",
               "description": "This curved sword is traditionally used by mounted cavalry. You appear to be swinging it around like a dairy farmer.",
               "type": "weapon",
-              "invImage": "weaponSaber",
+              "imageIndex": "?",
               "baseValue": 18,
+              "skill": "weapon smithing",
               "materials": {
                   "required": {
                       "componentHilt": 1,
@@ -156,8 +230,9 @@
               "name": "Leather Hat",
               "description": "A spongy leather hat.",
               "type": "headarmor",
-              "invImage": "armorLeatherHat",
-              "baseValue": 12,
+              "imageIndex": "101",
+              "baseValue": 12,\
+              "skill": "armor smithing",
               "materials": {
                   "required": {
                       "light leather": 2

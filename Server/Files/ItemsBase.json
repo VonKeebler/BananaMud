@@ -6,7 +6,7 @@
       "name": "Turkey",
       "description": "A smokin' fresh turkey, ready to eat!",
       "type": "food",
-      "invImage": "foodTurkey",
+      "imageIndex": 281,
       "baseValue": 3,
       "stats": {
         "health": 4
@@ -18,7 +18,7 @@
       "name": "Dagger",
       "description": "A pokin' sharp dagger, ready to stab!",
       "type": "weapon",
-      "invImage": "weaponDagger",
+      "imageIndex": 151,
       "baseValue": 10,
       "stats": {
         "attack": 3,
@@ -33,7 +33,7 @@
       "name": "Longsword",
       "description": "It is practically wieldy.",
       "type": "weapon",
-      "invImage": "weaponLongsword",
+      "imageIndex": 152,
       "baseValue": 18,
       "stats": {
         "attack": 4,
@@ -47,7 +47,7 @@
       "name": "Torch",
       "description": "Smells like danger.",
       "type": "item",
-      "invImage": "itemTorch",
+      "imageIndex": 261,
       "baseValue": 2,
       "stats": {
 
@@ -59,7 +59,7 @@
       "name": "Health Potion",
       "description": "A gooey red liquid in a glass.",
       "type": "item",
-      "invImage": "itemHealthPotion",
+      "imageIndex": 241,
       "baseValue": 20,
       "stats": {
           "health": 20
@@ -71,7 +71,7 @@
       "name": "Wooden Shield",
       "description": "A hefty wooden shield.",
       "type": "shield",
-      "invImage": "armorShield",
+      "imageIndex": 141,
       "baseValue": 16,
       "stats": {
         "defence": 4,
@@ -84,7 +84,7 @@
       "name": "Wooden Bow",
       "description": "A cheap bendy wooden bow.",
       "type": "2hweapon",
-      "invImage": "weaponWoodenBow",
+      "imageIndex": 161,
       "baseValue": 20,
       "stats": {
         "attack": 10,
@@ -98,7 +98,7 @@
       "name": "Cheap Beer",
       "description": "Fuzzy water.",
       "type": "drink",
-      "invImage": "drinkCheapBeer",
+      "imageIndex": 291,
       "baseValue": 2,
       "stats": {
         "health": 1,
@@ -111,7 +111,7 @@
       "name": "Expensive Wine",
       "description": "Plant water.",
       "type": "drink",
-      "invImage": "drinkExpensiveWine",
+      "imageIndex": 292,
       "baseValue": 200,
       "stats": {
         "health": 5,
@@ -124,7 +124,7 @@
       "name": "Simple Meal",
       "description": "Vermin protein and a bed of kale on which a thin red liquid has been poured. BON APPARATE!",
       "type": "food",
-      "invImage": "foodFoulMeal",
+      "imageIndex": 282,
       "baseValue": 4,
       "stats": {
         "health": 1
@@ -136,7 +136,7 @@
       "name": "Leather Hat",
       "description": "A spongy leather hat.",
       "type": "headarmor",
-      "invImage": "armorLeatherHat",
+      "imageIndex": 101,
       "baseValue": 12,
       "stats": {
         "defence": 2,
@@ -149,7 +149,7 @@
       "name": "Cheap Sandals",
       "description": "A pair of your cheapest sandals, sir, and make them sticky as hell.",
       "type": "feetarmor",
-      "invImage": "armorSandals",
+      "imageIndex": 131,
       "baseValue": 1,
       "stats": {
         "defence": 1
@@ -161,7 +161,7 @@
       "name": "Old Dungarees",
       "description": "A solid pair of dungarees will keep licking flames and fucking imps at bay. These are not solid.",
       "type": "legarmor",
-      "invImage": "armorDungarees",
+      "imageIndex": 121,
       "baseValue": 1,
       "stats": {
         "defence": 1
@@ -173,7 +173,7 @@
       "name": "El Cheapo™ Tunic",
       "description": "Its an old tunic some elf sold you on your way here. It has 'Link' written on the tag.",
       "type": "bodyarmor",
-      "invImage": "armorElCheapoTunic",
+      "imageIndex": 111,
       "baseValue": 1,
       "stats": {
         "defence": 1
@@ -185,7 +185,7 @@
       "name": "Letter from Your Cousin",
       "description": "It is a letter from your cousin! You should read it (or use it, whatever).",
       "type": "item",
-      "invImage": "itemLetter",
+      "imageIndex": 272,
       "baseValue": 0,
       "stats": {
       },
@@ -197,7 +197,7 @@
       "name": "HotDog",
       "description": "A long frank made of animal meats in a basic bun.",
       "type": "food",
-      "invImage": "foodHotDog",
+      "imageIndex": 283,
       "baseValue": 5,
       "stats": {
         "health": 3
@@ -209,7 +209,7 @@
       "name": "HotDog with Toppings",
       "description": "A long frank made of animal meats, slathered in condiments, in a basic bun.",
       "type": "food",
-      "invImage": "foodToppedHotDog",
+      "imageIndex": 284,
       "baseValue": 7,
       "stats": {
         "health": 4
@@ -222,7 +222,7 @@
       "name": "Bermudadonkulous HotDog",
       "description": "A long frank made of animal meats, slathered in condiments, covered in small slivers of something in a poppy seed bun.",
       "type": "food",
-      "invImage": "foodWeirdHotDog",
+      "imageIndex": 285,
       "baseValue": 10,
       "stats": {
         "health": 6
@@ -234,7 +234,7 @@
       "name": "A Strange Envelope",
       "description": "Herod says its for you. What could be in it?",
       "type": "item",
-      "invImage": "itemEnvelope",
+      "imageIndex": 271,
       "baseValue": 0,
       "stats": {
       },
@@ -246,7 +246,7 @@
       "name": "Another Letter from Your Cousin",
       "description": "Hey, your cousin needs to invest in a better pen. Regardless, you could read what he wrote to you.",
       "type": "item",
-      "invImage": "itemLetter",
+      "imageIndex": 272,
       "baseValue": 0,
       "stats": {
       },
@@ -258,7 +258,7 @@
       "name": "A Mysterious Note",
       "description": "Where did you get this?",
       "type": "item",
-      "invImage": "itemNote",
+      "imageIndex": 273,
       "baseValue": 0,
       "stats": {
       },

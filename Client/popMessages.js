@@ -1,4 +1,4 @@
-var messagesPop, messagesViewPop;
+var messagesPop, messagesViewPop, messagesNewMessagePop;
 
 var messagesPage, messagesPageText;
 
@@ -111,6 +111,7 @@ function messagesViewMessageClick (data){
     if(messagesViewPop != undefined){
         dePopMessagesViewMenu();
     }
+    
     if(messagesNewMessagePop != undefined){
         dePopMessagesNewMessage();
     }

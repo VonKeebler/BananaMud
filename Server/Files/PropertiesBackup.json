@@ -1,0 +1,106 @@
+{
+  "Properties": [
+    {
+      "id": 0,
+      "propertyID": "RREASTUMBERPROPERTY",
+      "city": "cityTherus",
+      "owner": "none",
+      "status": "sale",
+      "type": "Commercial",
+      "value": 10,
+      "upkeep": 5,
+      "employees": {
+
+      },
+      "amenities": {
+
+      },
+      "inventory":{
+        
+      }
+    },
+      {
+      "id": 1,
+      "propertyID": "WESTRINGSILVERPROPERTY",
+      "city": "cityTherus",
+      "owner": "none",
+      "status": "sale",
+      "type": "Commercial",
+      "value": 6000,
+      "upkeep": 1000,
+      "employees": {
+        "Chazrak Hadron": {
+          "id": "83823",
+          "race": "House Elf",
+          "gender": "male",
+          "upkeep": 100,
+          "services": ".10",
+          "weapons": ".20",
+          "armor": ".20"
+        }
+      },
+      "amenities": {
+        "food": {
+          "rank": 1,
+          "marketing": 0
+        },
+        "drink": {
+          "rank": 1,
+          "marketing": 0
+        },          
+        "services": {
+          "rank": 1,
+          "marketing": 0
+        },
+        "inn": {
+          "rank": 1,
+          "marketing": 0
+        },
+        "housing": {
+          "rank": 1,
+          "marketing": 0
+        },
+        "weapons": {
+          "rank": 1,
+          "marketing": 0
+        },
+        "armor": {
+          "rank": 1,
+          "marketing": 0
+        },
+        "magic": {
+          "rank": 1,
+          "marketing": 0
+        },
+        "cooking": {
+          "rank": 1,
+          "marketing": 0
+        },
+        "brewing": {
+          "rank": 1,
+          "marketing": 0
+        },
+        "weapon smithing": {
+          "rank": 1,
+          "marketing": 0
+        },
+        "armor smithing": {
+          "rank": 1,
+          "marketing": 0
+        },
+        "enchanting": {
+          "rank": 1,
+          "marketing": 0
+        },
+        "refinery": {
+          "rank": 1,
+          "marketing": 0
+        }
+          
+      },
+      "inventory":{
+        
+      }
+    }      
+  ]
+}

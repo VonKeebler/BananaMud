@@ -223,7 +223,7 @@ function BuySellMenu(item){
         shopBuySellSubtract.inputEnabled = true;
         shopBuySellSubtract.events.onInputDown.add(shopBuySellSubtractClick, this);
         
-        shopBuySellBuy = shopBuySellMenuPop.addChild(game.add.sprite(233, 190, 'shoppingBuySellMenuBuyButton'));
+        shopBuySellBuy = shopBuySellMenuPop.addChild(game.add.sprite(233, 190, 'buyButton'));
         shopBuySellBuy.inputEnabled = true;
         shopBuySellBuy.events.onInputDown.add(shopTransactButton, this);        
 
